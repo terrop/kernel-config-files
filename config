@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.28-rc8-ATR1
-# Thu Dec 11 08:52:57 2008
+# Linux kernel version: 2.6.28-rc9
+# Fri Dec 19 10:15:41 2008
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1762,7 +1762,6 @@ CONFIG_NET_DMA=y
 CONFIG_DCA=m
 # CONFIG_UIO is not set
 # CONFIG_STAGING is not set
-CONFIG_STAGING_EXCLUDE_BUILD=y
 
 #
 # Firmware Drivers
