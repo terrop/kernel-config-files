@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.28-rc9
-# Fri Dec 19 10:15:41 2008
+# Linux kernel version: 2.6.28
+# Thu Dec 25 10:18:52 2008
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -216,8 +216,7 @@ CONFIG_X86_DEBUGCTLMSR=y
 CONFIG_CPU_SUP_INTEL=y
 CONFIG_CPU_SUP_AMD=y
 CONFIG_CPU_SUP_CENTAUR_64=y
-CONFIG_X86_DS=y
-CONFIG_X86_PTRACE_BTS=y
+# CONFIG_X86_DS is not set
 CONFIG_HPET_TIMER=y
 CONFIG_HPET_EMULATE_RTC=y
 CONFIG_DMI=y
