@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.29-rc1
-# Sun Jan 11 11:54:59 2009
+# Linux kernel version: 2.6.29-rc2
+# Sat Jan 17 10:19:00 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -77,10 +77,6 @@ CONFIG_FAIR_GROUP_SCHED=y
 CONFIG_RT_GROUP_SCHED=y
 CONFIG_USER_SCHED=y
 # CONFIG_CGROUP_SCHED is not set
-
-#
-# Control Group support
-#
 # CONFIG_CGROUPS is not set
 # CONFIG_SYSFS_DEPRECATED_V2 is not set
 # CONFIG_RELAY is not set
@@ -1152,6 +1148,7 @@ CONFIG_HWMON=y
 # CONFIG_SENSORS_ADT7462 is not set
 # CONFIG_SENSORS_ADT7470 is not set
 # CONFIG_SENSORS_ADT7473 is not set
+# CONFIG_SENSORS_ADT7475 is not set
 # CONFIG_SENSORS_K8TEMP is not set
 # CONFIG_SENSORS_ASB100 is not set
 # CONFIG_SENSORS_ATXP1 is not set
@@ -1231,6 +1228,7 @@ CONFIG_SSB_DRIVER_PCICORE=y
 # CONFIG_MFD_TMIO is not set
 # CONFIG_MFD_WM8400 is not set
 # CONFIG_MFD_WM8350_I2C is not set
+# CONFIG_MFD_PCF50633 is not set
 # CONFIG_REGULATOR is not set
 
 #
@@ -1681,7 +1679,6 @@ CONFIG_LEDS_CLASS=y
 #
 # CONFIG_LEDS_ALIX2 is not set
 # CONFIG_LEDS_PCA9532 is not set
-# CONFIG_LEDS_HP_DISK is not set
 # CONFIG_LEDS_CLEVO_MAIL is not set
 # CONFIG_LEDS_PCA955X is not set
 
