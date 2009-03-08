@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.29-rc6-ATR1
-# Sun Mar  1 12:50:38 2009
+# Linux kernel version: 2.6.29-rc7
+# Wed Mar  4 08:14:50 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1723,16 +1723,12 @@ CONFIG_DMIID=y
 # File systems
 #
 # CONFIG_EXT2_FS is not set
-CONFIG_EXT3_FS=y
-CONFIG_EXT3_FS_XATTR=y
-CONFIG_EXT3_FS_POSIX_ACL=y
-# CONFIG_EXT3_FS_SECURITY is not set
+# CONFIG_EXT3_FS is not set
 CONFIG_EXT4_FS=y
 # CONFIG_EXT4DEV_COMPAT is not set
 CONFIG_EXT4_FS_XATTR=y
 CONFIG_EXT4_FS_POSIX_ACL=y
 # CONFIG_EXT4_FS_SECURITY is not set
-CONFIG_JBD=y
 CONFIG_JBD2=y
 CONFIG_FS_MBCACHE=y
 # CONFIG_REISERFS_FS is not set
