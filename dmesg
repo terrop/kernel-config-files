@@ -1,5 +1,5 @@
 Initializing cgroup subsys cpu
-Linux version 2.6.29 (terrop@terrop) (gcc version 4.4.0 20090307 (Red Hat 4.4.0-0.23) (GCC) ) #1 SMP Tue Mar 24 08:03:35 EET 2009
+Linux version 2.6.30-rc1 (terrop@terrop) (gcc version 4.4.0 20090330 (Red Hat 4.4.0-0.31) (GCC) ) #1 SMP Thu Apr 9 09:44:22 EEST 2009
 Command line: ro root=/dev/VolGroup00/LogVol00
 KERNEL supported cpus:
   Intel GenuineIntel
@@ -15,39 +15,55 @@ BIOS-provided physical RAM map:
  BIOS-e820: 00000000ffb00000 - 0000000100000000 (reserved)
 DMI 2.5 present.
 AMI BIOS detected: BIOS may corrupt low RAM, working around it.
+e820 update range: 0000000000000000 - 0000000000010000 (usable) ==> (reserved)
 last_pfn = 0xbff80 max_arch_pfn = 0x100000000
+MTRR default type: uncachable
+MTRR fixed ranges enabled:
+  00000-9FFFF write-back
+  A0000-BFFFF uncachable
+  C0000-CFFFF write-protect
+  D0000-DFFFF uncachable
+  E0000-EFFFF write-through
+  F0000-FFFFF write-protect
+MTRR variable ranges enabled:
+  0 base 000000000 mask F80000000 write-back
+  1 base 080000000 mask FC0000000 write-back
+  2 disabled
+  3 disabled
+  4 disabled
+  5 disabled
+  6 disabled
+  7 disabled
 x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
 init_memory_mapping: 0000000000000000-00000000bff80000
  0000000000 - 00bfe00000 page 2M
  00bfe00000 - 00bff80000 page 4k
 kernel direct mapping tables up to bff80000 @ 10000-15000
-last_map_addr: bff80000 end: bff80000
-RAMDISK: 37cd9000 - 37fef572
-ACPI: RSDP 000F9370, 0024 (r2 ACPIAM)
-ACPI: XSDT BFF80100, 007C (r1 _ASUS_ Notebook 20080811 MSFT       97)
-ACPI: FACP BFF80290, 00F4 (r3 081108 FACP2148 20080811 MSFT       97)
-ACPI Warning (tbfadt-0568): 32/64X length mismatch in Gpe0Block: 128/64 [20081204]
-FADT: X_PM1a_EVT_BLK.bit_width (16) does not match PM1_EVT_LEN (4)
-ACPI: DSDT BFF80680, BE20 (r1  M50V0 M50V0206      206 INTL 20051117)
-ACPI: FACS BFF8E800, 0040
-ACPI: APIC BFF80390, 005C (r1 081108 APIC2148 20080811 MSFT       97)
-ACPI: MCFG BFF80430, 003C (r1 081108 OEMMCFG  20080811 MSFT       97)
-ACPI: SLIC BFF80470, 0176 (r1 _ASUS_ Notebook 20080811 MSFT       97)
-ACPI: ECDT BFF80620, 0054 (r1 081108 OEMECDT  20080811 MSFT       97)
-ACPI: DBGP BFF803F0, 0034 (r1 081108 DBGP2148 20080811 MSFT       97)
-ACPI: BOOT BFF805F0, 0028 (r1 081108 BOOT2148 20080811 MSFT       97)
-ACPI: OEMB BFF8E840, 0071 (r1 081108 OEMB2148 20080811 MSFT       97)
-ACPI: HPET BFF8C4A0, 0038 (r1 081108 OEMHPET  20080811 MSFT       97)
-ACPI: ATKG BFF8EAC0, 8024 (r1 022008  OEMATKG 20080220 MSFT       97)
-ACPI: SSDT BFF97610, 04F0 (r1  PmRef    CpuPm     3000 INTL 20051117)
+RAMDISK: 37cd6000 - 37fef4d9
+ACPI: RSDP 00000000000f9370 00024 (v02 ACPIAM)
+ACPI: XSDT 00000000bff80100 0007C (v01 _ASUS_ Notebook 20080811 MSFT 00000097)
+ACPI: FACP 00000000bff80290 000F4 (v03 081108 FACP2148 20080811 MSFT 00000097)
+ACPI: DSDT 00000000bff80680 0BE20 (v01  M50V0 M50V0206 00000206 INTL 20051117)
+ACPI: FACS 00000000bff8e800 00040
+ACPI: APIC 00000000bff80390 0005C (v01 081108 APIC2148 20080811 MSFT 00000097)
+ACPI: MCFG 00000000bff80430 0003C (v01 081108 OEMMCFG  20080811 MSFT 00000097)
+ACPI: SLIC 00000000bff80470 00176 (v01 _ASUS_ Notebook 20080811 MSFT 00000097)
+ACPI: ECDT 00000000bff80620 00054 (v01 081108 OEMECDT  20080811 MSFT 00000097)
+ACPI: DBGP 00000000bff803f0 00034 (v01 081108 DBGP2148 20080811 MSFT 00000097)
+ACPI: BOOT 00000000bff805f0 00028 (v01 081108 BOOT2148 20080811 MSFT 00000097)
+ACPI: OEMB 00000000bff8e840 00071 (v01 081108 OEMB2148 20080811 MSFT 00000097)
+ACPI: HPET 00000000bff8c4a0 00038 (v01 081108 OEMHPET  20080811 MSFT 00000097)
+ACPI: ATKG 00000000bff8eac0 08024 (v01 022008  OEMATKG 20080220 MSFT 00000097)
+ACPI: SSDT 00000000bff97610 004F0 (v01  PmRef    CpuPm 00003000 INTL 20051117)
 ACPI: Local APIC address 0xfee00000
-(6 early reservations) ==> bootmem [0000000000 - 00bff80000]
+(7 early reservations) ==> bootmem [0000000000 - 00bff80000]
   #0 [0000000000 - 0000001000]   BIOS data page ==> [0000000000 - 0000001000]
   #1 [0000006000 - 0000008000]       TRAMPOLINE ==> [0000006000 - 0000008000]
-  #2 [0000200000 - 00006ab6e4]    TEXT DATA BSS ==> [0000200000 - 00006ab6e4]
-  #3 [0037cd9000 - 0037fef572]          RAMDISK ==> [0037cd9000 - 0037fef572]
+  #2 [0000200000 - 00006bb9e4]    TEXT DATA BSS ==> [0000200000 - 00006bb9e4]
+  #3 [0037cd6000 - 0037fef4d9]          RAMDISK ==> [0037cd6000 - 0037fef4d9]
   #4 [000009ec00 - 0000100000]    BIOS reserved ==> [000009ec00 - 0000100000]
-  #5 [0000010000 - 0000013000]          PGTABLE ==> [0000010000 - 0000013000]
+  #5 [00006bc000 - 00006bc292]              BRK ==> [00006bc000 - 00006bc292]
+  #6 [0000010000 - 0000013000]          PGTABLE ==> [0000010000 - 0000013000]
  [ffffe20000000000-ffffe200029fffff] PMD -> [ffff880001200000-ffff880003bfffff] on node 0
 Zone PFN ranges:
   DMA      0x00000010 -> 0x00001000
@@ -59,8 +75,8 @@ early_node_map[2] active PFN ranges
     0: 0x00000100 -> 0x000bff80
 On node 0 totalpages: 786190
   DMA zone: 56 pages used for memmap
-  DMA zone: 1298 pages reserved
-  DMA zone: 2628 pages, LIFO batch:0
+  DMA zone: 1314 pages reserved
+  DMA zone: 2612 pages, LIFO batch:0
   DMA32 zone: 10695 pages used for memmap
   DMA32 zone: 771513 pages, LIFO batch:31
 ACPI: PM-Timer IO Port: 0x808
@@ -80,23 +96,26 @@ SMP: Allowing 2 CPUs, 0 hotplug CPUs
 nr_irqs_gsi: 24
 Allocating PCI resources starting at c4000000 (gap: c0000000:3ee00000)
 NR_CPUS:2 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
-PERCPU: Allocating 53248 bytes of per cpu data
-Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 774141
+PERCPU: Embedded 25 pages at ffff88000101c000, static data 70368 bytes
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 774125
 Kernel command line: ro root=/dev/VolGroup00/LogVol00
 Initializing CPU#0
+Experimental hierarchical RCU implementation.
+Experimental hierarchical RCU init done.
+NR_IRQS:320
 PID hash table entries: 4096 (order: 12, 32768 bytes)
 Extended CMOS year: 2000
 Fast TSC calibration using PIT
-Detected 2261.127 MHz processor.
+Detected 2260.873 MHz processor.
 Console: colour VGA+ 80x25
 console [tty0] enabled
 Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
 Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
-Memory: 3086700k/3145216k available (2771k kernel code, 456k absent, 57396k reserved, 1245k data, 320k init)
-SLUB: Genslabs=12, HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Memory: 3086500k/3145216k available (2824k kernel code, 456k absent, 57572k reserved, 1262k data, 344k init)
+SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
 hpet clockevent registered
 HPET: 4 timers in total, 0 timers will be used for per-cpu timer
-Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.25 BogoMIPS (lpj=2261127)
+Calibrating delay loop (skipped), value calculated using timer frequency.. 4521.74 BogoMIPS (lpj=2260873)
 Mount-cache hash table entries: 256
 Initializing cgroup subsys ns
 Initializing cgroup subsys devices
@@ -108,13 +127,13 @@ CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 0
 CPU0: Thermal monitoring handled by SMI
 using mwait in idle threads.
-ACPI: Core revision 20081204
+ACPI: Core revision 20090320
 Setting APIC routing to flat
 ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
 CPU0: Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz stepping 06
 Booting processor 1 APIC 0x1 ip 0x6000
 Initializing CPU#1
-Calibrating delay using timer specific routine.. 4522.30 BogoMIPS (lpj=2261152)
+Calibrating delay using timer specific routine.. 4522.32 BogoMIPS (lpj=2261164)
 CPU: L1 I cache: 32K, L1 D cache: 32K
 CPU: L2 cache: 3072K
 [ds] using Core 2/Atom configuration
@@ -125,8 +144,8 @@ x86 PAT enabled: cpu 1, old 0x7040600070406, new 0x7010600070106
 CPU1: Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz stepping 06
 checking TSC synchronization [CPU#0 -> CPU#1]: passed.
 Brought up 2 CPUs
-Total of 2 processors activated (9044.55 BogoMIPS).
-net_namespace: 1792 bytes
+Total of 2 processors activated (9044.07 BogoMIPS).
+net_namespace: 1832 bytes
 NET: Registered protocol family 16
 ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
 ACPI: bus type pci registered
@@ -145,6 +164,7 @@ PCI: MCFG area at e0000000 reserved in ACPI motherboard resources
 PCI: Using MMCONFIG at e0000000 - efffffff
 ACPI: EC: GPE = 0x1b, I/O: command/status = 0x66, data = 0x62
 ACPI: EC: driver started in poll mode
+ACPI Warning (tbutils-0246): Incorrect checksum in table [ATKG] - 6F, should be E5 [20090320]
 ACPI: No dock devices found.
 ACPI: PCI Root Bridge [PCI0] (0000:00)
 pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
@@ -242,7 +262,6 @@ ACPI: PCI Interrupt Link [LNKE] (IRQs 6) *0, disabled.
 ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 *7 10 12)
 ACPI: PCI Interrupt Link [LNKG] (IRQs 3 *4 5 6 7 10 12)
 ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 7 *10 12)
-ACPI Warning (tbutils-0242): Incorrect checksum in table [ATKG] - 6F, should be E5 [20081204]
 SCSI subsystem initialized
 libata version 3.00 loaded.
 usbcore: registered new interface driver usbfs
@@ -258,9 +277,9 @@ cfg80211: Regulatory domain: US
 	(5210000 KHz - 5230000 KHz @ 40000 KHz), (600 mBi, 2300 mBm)
 	(5230000 KHz - 5330000 KHz @ 40000 KHz), (600 mBi, 2300 mBm)
 	(5735000 KHz - 5835000 KHz @ 40000 KHz), (600 mBi, 3000 mBm)
-cfg80211: Calling CRDA for country: US
 hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0
 hpet0: 4 comparators, 64-bit 14.318180 MHz counter
+cfg80211: Calling CRDA for country: US
 pnp: PnP ACPI init
 ACPI: bus type pnp registered
 pnp: PnP ACPI: found 16 devices
@@ -386,61 +405,59 @@ TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
 TCP: Hash tables configured (established 262144 bind 65536)
 TCP reno registered
 NET: Registered protocol family 1
-checking if image is initramfs... it is
-Freeing initrd memory: 3161k freed
+checking if image is initramfs...
+rootfs image is initramfs; unpacking...
+Freeing initrd memory: 3173k freed
 Simple Boot Flag at 0x51 set to 0x1
 fuse init (API version 7.11)
-msgmni has been set to 6036
+msgmni has been set to 6035
 alg: No test for stdrng (krng)
 Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
 io scheduler noop registered
 io scheduler cfq registered (default)
 pci 0000:01:00.0: Boot video device
-pcieport-driver 0000:00:01.0: setting latency timer to 64
 pcieport-driver 0000:00:01.0: irq 24 for MSI/MSI-X
-pcieport-driver 0000:00:1c.0: setting latency timer to 64
+pcieport-driver 0000:00:01.0: setting latency timer to 64
 pcieport-driver 0000:00:1c.0: irq 25 for MSI/MSI-X
-pcieport-driver 0000:00:1c.1: setting latency timer to 64
+pcieport-driver 0000:00:1c.0: setting latency timer to 64
 pcieport-driver 0000:00:1c.1: irq 26 for MSI/MSI-X
-pcieport-driver 0000:00:1c.2: setting latency timer to 64
+pcieport-driver 0000:00:1c.1: setting latency timer to 64
 pcieport-driver 0000:00:1c.2: irq 27 for MSI/MSI-X
-pcieport-driver 0000:00:1c.3: setting latency timer to 64
+pcieport-driver 0000:00:1c.2: setting latency timer to 64
 pcieport-driver 0000:00:1c.3: irq 28 for MSI/MSI-X
-pcieport-driver 0000:00:1c.4: setting latency timer to 64
+pcieport-driver 0000:00:1c.3: setting latency timer to 64
 pcieport-driver 0000:00:1c.4: irq 29 for MSI/MSI-X
-pcieport-driver 0000:00:1c.5: setting latency timer to 64
+pcieport-driver 0000:00:1c.4: setting latency timer to 64
 pcieport-driver 0000:00:1c.5: irq 30 for MSI/MSI-X
+pcieport-driver 0000:00:1c.5: setting latency timer to 64
 ACPI: AC Adapter [AC0] (on-line)
-ACPI: EC: non-query interrupt received, switching to interrupt mode
-Switched to high resolution mode on CPU 1
-Switched to high resolution mode on CPU 0
-ACPI: Battery Slot [BAT0] (battery present)
 input: Power Button (FF) as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
 ACPI: Power Button (FF) [PWRF]
 input: Sleep Button (CM) as /devices/LNXSYSTM:00/device:00/PNP0C0E:00/input/input1
 ACPI: Sleep Button (CM) [SLPB]
 input: Lid Switch as /devices/LNXSYSTM:00/device:00/PNP0C0D:00/input/input2
+ACPI: EC: non-query interrupt received, switching to interrupt mode
 ACPI: Lid Switch [LID]
 acpi device:1e: registered as cooling_device0
 input: Video Bus as /devices/LNXSYSTM:00/device:00/PNP0A08:00/device:19/device:1a/input/input3
 ACPI: Video Device [VGA] (multi-head: yes  rom: no  post: no)
-ACPI: SSDT BFF96BC0, 0248 (r1  PmRef  Cpu0Ist     3000 INTL 20051117)
-ACPI: SSDT BFF96EA0, 0765 (r1  PmRef  Cpu0Cst     3001 INTL 20051117)
+ACPI: SSDT 00000000bff96bc0 00248 (v01  PmRef  Cpu0Ist 00003000 INTL 20051117)
+ACPI: SSDT 00000000bff96ea0 00765 (v01  PmRef  Cpu0Cst 00003001 INTL 20051117)
 Monitor-Mwait will be used to enter C-1 state
 Monitor-Mwait will be used to enter C-3 state
 ACPI: CPU0 (power states: C1[C1] C2[C3])
 processor ACPI_CPU:00: registered as cooling_device1
 ACPI: Processor [P001] (supports 8 throttling states)
-ACPI: SSDT BFF96AF0, 00CC (r1  PmRef  Cpu1Ist     3000 INTL 20051117)
-ACPI: SSDT BFF96E10, 0085 (r1  PmRef  Cpu1Cst     3000 INTL 20051117)
+ACPI: SSDT 00000000bff96af0 000CC (v01  PmRef  Cpu1Ist 00003000 INTL 20051117)
+ACPI: SSDT 00000000bff96e10 00085 (v01  PmRef  Cpu1Cst 00003000 INTL 20051117)
 ACPI: CPU1 (power states: C1[C1] C2[C3])
 processor ACPI_CPU:01: registered as cooling_device2
 ACPI: Processor [P002] (supports 8 throttling states)
-ACPI Warning (nspredef-0940): \_TZ_.THRM._PSL: Return Package type mismatch at index 0 - found Processor, expected Reference [20081204]
+ACPI Warning (nspredef-0949): \_TZ_.THRM._PSL: Return Package type mismatch at index 0 - found Processor, expected Reference [20090320]
 ACPI: Expecting a [Reference] package element, found type C
 ACPI: Invalid passive threshold
 thermal LNXTHERM:01: registered as thermal_zone0
-ACPI: Thermal Zone [THRM] (49 C)
+ACPI: Thermal Zone [THRM] (52 C)
 Non-volatile memory driver v1.3
 brd: module loaded
 loop: module loaded
@@ -465,42 +482,6 @@ ata3: DUMMY
 ata4: DUMMY
 ata5: DUMMY
 ata6: SATA max UDMA/133 abar m2048@0xf9fff000 port 0xf9fff380 irq 31
-ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
-ata1.00: ACPI cmd f5/00:00:00:00:00:a0 filtered out
-ata1.00: ACPI cmd ef/10:06:00:00:00:a0 succeeded
-ata1.00: ACPI cmd ef/90:03:00:00:00:a0 succeeded
-ata1.00: ATA-8: Hitachi HTS543232L9A300, FB4OC40C, max UDMA/133
-ata1.00: 625142448 sectors, multi 0: LBA48 NCQ (depth 31/32)
-ata1.00: ACPI cmd f5/00:00:00:00:00:a0 filtered out
-ata1.00: ACPI cmd ef/10:06:00:00:00:a0 succeeded
-ata1.00: ACPI cmd ef/90:03:00:00:00:a0 succeeded
-ata1.00: configured for UDMA/133
-scsi 0:0:0:0: Direct-Access     ATA      Hitachi HTS54323 FB4O PQ: 0 ANSI: 5
-sd 0:0:0:0: [sda] 625142448 512-byte hardware sectors: (320 GB/298 GiB)
-sd 0:0:0:0: [sda] Write Protect is off
-sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
-sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
-sd 0:0:0:0: [sda] 625142448 512-byte hardware sectors: (320 GB/298 GiB)
-sd 0:0:0:0: [sda] Write Protect is off
-sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
-sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
- sda: sda1 sda2 sda3 sda4 < sda5 >
-sd 0:0:0:0: [sda] Attached SCSI disk
-sd 0:0:0:0: Attached scsi generic sg0 type 0
-ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
-ata2.00: ACPI cmd ef/10:06:00:00:00:a0 succeeded
-ata2.00: ACPI cmd ef/90:03:00:00:00:a0 succeeded
-ata2.00: ATAPI: TSSTcorp CDDVDW TS-L633A, AS00, max UDMA/100, ATAPI AN
-ata2.00: applying bridge limits
-ata2.00: ACPI cmd ef/10:06:00:00:00:a0 succeeded
-ata2.00: ACPI cmd ef/90:03:00:00:00:a0 succeeded
-ata2.00: configured for UDMA/100
-scsi 1:0:0:0: CD-ROM            TSSTcorp CDDVDW TS-L633A  AS00 PQ: 0 ANSI: 5
-sr0: scsi3-mmc drive: 24x/24x writer dvd-ram cd/rw xa/form2 cdda tray
-Uniform CD-ROM driver Revision: 3.20
-sr 1:0:0:0: Attached scsi CD-ROM sr0
-sr 1:0:0:0: Attached scsi generic sg1 type 5
-ata6: SATA link down (SStatus 0 SControl 300)
 usbmon: debugfs is not available
 ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
 ehci_hcd 0000:00:1a.7: PCI INT C -> GSI 18 (level, low) -> IRQ 18
@@ -514,7 +495,7 @@ ehci_hcd 0000:00:1a.7: USB 2.0 started, EHCI 1.00
 usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb1: Product: EHCI Host Controller
-usb usb1: Manufacturer: Linux 2.6.29 ehci_hcd
+usb usb1: Manufacturer: Linux 2.6.30-rc1 ehci_hcd
 usb usb1: SerialNumber: 0000:00:1a.7
 usb usb1: configuration #1 chosen from 1 choice
 hub 1-0:1.0: USB hub found
@@ -530,7 +511,7 @@ ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00
 usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb2: Product: EHCI Host Controller
-usb usb2: Manufacturer: Linux 2.6.29 ehci_hcd
+usb usb2: Manufacturer: Linux 2.6.30-rc1 ehci_hcd
 usb usb2: SerialNumber: 0000:00:1d.7
 usb usb2: configuration #1 chosen from 1 choice
 hub 2-0:1.0: USB hub found
@@ -545,7 +526,7 @@ uhci_hcd 0000:00:1a.0: irq 16, io base 0x0000bc00
 usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb3: Product: UHCI Host Controller
-usb usb3: Manufacturer: Linux 2.6.29 uhci_hcd
+usb usb3: Manufacturer: Linux 2.6.30-rc1 uhci_hcd
 usb usb3: SerialNumber: 0000:00:1a.0
 usb usb3: configuration #1 chosen from 1 choice
 hub 3-0:1.0: USB hub found
@@ -558,7 +539,7 @@ uhci_hcd 0000:00:1a.1: irq 21, io base 0x0000b880
 usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb4: Product: UHCI Host Controller
-usb usb4: Manufacturer: Linux 2.6.29 uhci_hcd
+usb usb4: Manufacturer: Linux 2.6.30-rc1 uhci_hcd
 usb usb4: SerialNumber: 0000:00:1a.1
 usb usb4: configuration #1 chosen from 1 choice
 hub 4-0:1.0: USB hub found
@@ -571,7 +552,7 @@ uhci_hcd 0000:00:1a.2: irq 19, io base 0x0000b800
 usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb5: Product: UHCI Host Controller
-usb usb5: Manufacturer: Linux 2.6.29 uhci_hcd
+usb usb5: Manufacturer: Linux 2.6.30-rc1 uhci_hcd
 usb usb5: SerialNumber: 0000:00:1a.2
 usb usb5: configuration #1 chosen from 1 choice
 hub 5-0:1.0: USB hub found
@@ -584,7 +565,7 @@ uhci_hcd 0000:00:1d.0: irq 23, io base 0x0000b480
 usb usb6: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb6: Product: UHCI Host Controller
-usb usb6: Manufacturer: Linux 2.6.29 uhci_hcd
+usb usb6: Manufacturer: Linux 2.6.30-rc1 uhci_hcd
 usb usb6: SerialNumber: 0000:00:1d.0
 usb usb6: configuration #1 chosen from 1 choice
 hub 6-0:1.0: USB hub found
@@ -597,7 +578,7 @@ uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000b400
 usb usb7: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb7: Product: UHCI Host Controller
-usb usb7: Manufacturer: Linux 2.6.29 uhci_hcd
+usb usb7: Manufacturer: Linux 2.6.30-rc1 uhci_hcd
 usb usb7: SerialNumber: 0000:00:1d.1
 usb usb7: configuration #1 chosen from 1 choice
 hub 7-0:1.0: USB hub found
@@ -610,7 +591,7 @@ uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000b080
 usb usb8: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb8: Product: UHCI Host Controller
-usb usb8: Manufacturer: Linux 2.6.29 uhci_hcd
+usb usb8: Manufacturer: Linux 2.6.30-rc1 uhci_hcd
 usb usb8: SerialNumber: 0000:00:1d.2
 usb usb8: configuration #1 chosen from 1 choice
 hub 8-0:1.0: USB hub found
@@ -626,39 +607,67 @@ serio: i8042 AUX1 port at 0x60,0x64 irq 12
 serio: i8042 AUX2 port at 0x60,0x64 irq 12
 serio: i8042 AUX3 port at 0x60,0x64 irq 12
 mice: PS/2 mouse device common for all mice
+ACPI: Battery Slot [BAT0] (battery present)
 rtc_cmos 00:03: RTC can wake from S4
 rtc_cmos 00:03: rtc core: registered rtc_cmos as rtc0
 rtc0: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
 device-mapper: ioctl: 4.14.0-ioctl (2008-04-23) initialised: dm-devel@redhat.com
 cpuidle: using governor ladder
 cpuidle: using governor menu
-Marking TSC unstable due to TSC halts in idle
 usbcore: registered new interface driver hiddev
 usbcore: registered new interface driver usbhid
 usbhid: v2.6:USB HID core driver
 TCP cubic registered
 Initializing XFRM netlink socket
 NET: Registered protocol family 17
-Freeing unused kernel memory: 320k freed
+Switched to high resolution mode on CPU 1
+Switched to high resolution mode on CPU 0
+Marking TSC unstable due to TSC halts in idle
 input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input4
+ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+ata1.00: ACPI cmd f5/00:00:00:00:00:a0 filtered out
+ata1.00: ACPI cmd ef/10:06:00:00:00:a0 succeeded
+ata1.00: ACPI cmd ef/90:03:00:00:00:a0 succeeded
+ata1.00: ATA-8: Hitachi HTS543232L9A300, FB4OC40C, max UDMA/133
+ata1.00: 625142448 sectors, multi 0: LBA48 NCQ (depth 31/32)
+ata1.00: ACPI cmd f5/00:00:00:00:00:a0 filtered out
+ata1.00: ACPI cmd ef/10:06:00:00:00:a0 succeeded
+ata1.00: ACPI cmd ef/90:03:00:00:00:a0 succeeded
+ata1.00: configured for UDMA/133
+scsi 0:0:0:0: Direct-Access     ATA      Hitachi HTS54323 FB4O PQ: 0 ANSI: 5
+sd 0:0:0:0: Attached scsi generic sg0 type 0
+sd 0:0:0:0: [sda] 625142448 512-byte hardware sectors: (320 GB/298 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+ sda: sda1 sda2 sda3 sda4 < sda5 >
+sd 0:0:0:0: [sda] Attached SCSI disk
 usb 2-5: new high speed USB device using ehci_hcd and address 3
+Clocksource tsc unstable (delta = -292346506 ns)
 usb 2-5: New USB device found, idVendor=04f2, idProduct=b033
 usb 2-5: New USB device strings: Mfr=0, Product=1, SerialNumber=0
 usb 2-5: Product: USB2.0 1.3M UVC WebCam
 usb 2-5: configuration #1 chosen from 1 choice
-Clocksource tsc unstable (delta = -144163920 ns)
 usb 5-2: new full speed USB device using uhci_hcd and address 2
-EXT4-fs: barriers enabled
-kjournald2 starting: pid 725, dev dm-0:8, commit interval 5 seconds
-EXT4-fs: delayed allocation enabled
-EXT4-fs: mballoc enabled
-EXT4-fs: mounted filesystem dm-0 with ordered data mode
 usb 5-2: New USB device found, idVendor=08ff, idProduct=1600
 usb 5-2: New USB device strings: Mfr=0, Product=1, SerialNumber=0
 usb 5-2: Product: Fingerprint Sensor
 usb 5-2: configuration #1 chosen from 1 choice
 Synaptics Touchpad, model: 1, fw: 6.2, id: 0x280b1, caps: 0xb04711/0x60040d
+ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+ata2.00: ACPI cmd ef/10:06:00:00:00:a0 succeeded
+ata2.00: ACPI cmd ef/90:03:00:00:00:a0 succeeded
 input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio4/input/input5
+ata2.00: ATAPI: TSSTcorp CDDVDW TS-L633A, AS00, max UDMA/100, ATAPI AN
+ata2.00: applying bridge limits
+ata2.00: ACPI cmd ef/10:06:00:00:00:a0 succeeded
+ata2.00: ACPI cmd ef/90:03:00:00:00:a0 succeeded
+ata2.00: configured for UDMA/100
+scsi 1:0:0:0: CD-ROM            TSSTcorp CDDVDW TS-L633A  AS00 PQ: 0 ANSI: 5
+sr0: scsi3-mmc drive: 24x/24x writer dvd-ram cd/rw xa/form2 cdda tray
+Uniform CD-ROM driver Revision: 3.20
+sr 1:0:0:0: Attached scsi CD-ROM sr0
+sr 1:0:0:0: Attached scsi generic sg1 type 5
 usb 7-1: new low speed USB device using uhci_hcd and address 2
 usb 7-1: New USB device found, idVendor=046d, idProduct=c019
 usb 7-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
@@ -667,67 +676,82 @@ usb 7-1: Manufacturer: Logitech
 usb 7-1: configuration #1 chosen from 1 choice
 input: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:1d.1/usb7/7-1/7-1:1.0/input/input6
 generic-usb 0003:046D:C019.0001: input,hidraw0: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:1d.1-1/input0
+ata6: SATA link down (SStatus 0 SControl 300)
+Freeing unused kernel memory: 344k freed
+EXT4-fs: barriers enabled
+kjournald2 starting: pid 1607, dev dm-0:8, commit interval 5 seconds
+EXT4-fs: delayed allocation enabled
+EXT4-fs: mballoc enabled
+EXT4-fs: mounted filesystem dm-0 with ordered data mode
 udev: starting version 139
 asus-laptop: Asus Laptop Support version 0.42
 asus-laptop:   M50Vm model detected
-r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
-r8169 0000:08:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
-r8169 0000:08:00.0: setting latency timer to 64
-r8169 0000:08:00.0: irq 32 for MSI/MSI-X
-eth0: RTL8168c/8111c at 0xffffc200106a8000, 00:23:54:13:6b:f2, XID 3c4000c0 IRQ 32
 asus-laptop: Brightness ignored, must be controlled by ACPI video driver
 input: Asus Laptop extra buttons as /devices/virtual/input/input7
 Registered led device: asus::mail
 Registered led device: asus::touchpad
+iTCO_wdt: Intel TCO WatchDog Timer Driver v1.05
+iTCO_wdt: Found a ICH9M TCO device (Version=2, TCOBASE=0x0860)
+iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
+r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
+r8169 0000:08:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+r8169 0000:08:00.0: setting latency timer to 64
+r8169 0000:08:00.0: irq 32 for MSI/MSI-X
+eth0: RTL8168c/8111c at 0xffffc2001009e000, 00:23:54:13:6b:f2, XID 3c4000c0 IRQ 32
 input: PC Speaker as /devices/platform/pcspkr/input/input8
+firewire_ohci 0000:09:01.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 Linux video capture interface: v2.00
 sdhci: Secure Digital Host Controller Interface driver
 sdhci: Copyright(c) Pierre Ossman
-firewire_ohci 0000:09:01.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 firewire_ohci: Added fw-ohci device 0000:09:01.0, OHCI version 1.0
 sdhci-pci 0000:09:01.1: SDHCI controller found [1180:0822] (rev 22)
 sdhci-pci 0000:09:01.1: PCI INT B -> GSI 17 (level, low) -> IRQ 17
 sdhci-pci 0000:09:01.1: Will use DMA mode even though HW doesn't fully claim to support it.
 Registered led device: mmc0::
 mmc0: SDHCI controller on PCI [0000:09:01.1] using DMA
-uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
-input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input9
-iwlagn: Intel(R) Wireless WiFi Link AGN driver for Linux, 1.3.27ks
-iwlagn: Copyright(c) 2003-2008 Intel Corporation
+iwlagn: Intel(R) Wireless WiFi Link AGN driver for Linux, 1.3.27k
+iwlagn: Copyright(c) 2003-2009 Intel Corporation
 iwlagn 0000:03:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
 iwlagn 0000:03:00.0: setting latency timer to 64
-iwlagn: Detected Intel Wireless WiFi Link 5100AGN REV=0x54
-iwlagn: Tunable channels: 13 802.11bg, 24 802.11a channels
-iwlagn 0000:03:00.0: PCI INT A disabled
-wmaster0 (iwlagn): not using net_device_ops yet
+iwlagn 0000:03:00.0: Detected Intel Wireless WiFi Link 5100AGN REV=0x54
+uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
+iwlagn 0000:03:00.0: Tunable channels: 13 802.11bg, 24 802.11a channels
+iwlagn 0000:03:00.0: irq 33 for MSI/MSI-X
+input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input9
 phy0: Selected rate control algorithm 'iwl-agn-rs'
-wlan0 (iwlagn): not using net_device_ops yet
 usbcore: registered new interface driver uvcvideo
 USB Video Class driver (v0.1.0)
 firewire_core: created device fw0: GUID 001e8c0000057669, S400
 HDA Intel 0000:00:1b.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
 HDA Intel 0000:00:1b.0: setting latency timer to 64
+cfg80211: Calling CRDA for country: FI
+cfg80211: Regulatory domain changed to country: FI
+	(start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+	(2402000 KHz - 2482000 KHz @ 40000 KHz), (N/A, 2000 mBm)
+	(5170000 KHz - 5250000 KHz @ 40000 KHz), (N/A, 2000 mBm)
+	(5250000 KHz - 5330000 KHz @ 40000 KHz), (N/A, 2000 mBm)
+	(5490000 KHz - 5710000 KHz @ 40000 KHz), (N/A, 2700 mBm)
 nvidia: module license 'NVIDIA' taints kernel.
 nvidia 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 nvidia 0000:01:00.0: setting latency timer to 64
-NVRM: loading NVIDIA UNIX x86_64 Kernel Module  180.37  Fri Mar  6 00:32:38 PST 2009
+NVRM: loading NVIDIA UNIX x86_64 Kernel Module  185.19  Sat Apr  4 07:04:57 PST 2009
 device-mapper: multipath: version 1.0.5 loaded
 EXT4 FS on dm-0, internal journal on dm-0:8
 EXT4-fs: barriers enabled
-kjournald2 starting: pid 1772, dev dm-1:8, commit interval 5 seconds
+kjournald2 starting: pid 3446, dev dm-1:8, commit interval 5 seconds
 EXT4 FS on dm-1, internal journal on dm-1:8
 EXT4-fs: delayed allocation enabled
 EXT4-fs: file extents enabled
 EXT4-fs: mballoc enabled
 EXT4-fs: mounted filesystem dm-1 with ordered data mode
 EXT4-fs: barriers enabled
-kjournald2 starting: pid 1773, dev dm-2:8, commit interval 5 seconds
+kjournald2 starting: pid 3453, dev dm-2:8, commit interval 5 seconds
 EXT4 FS on dm-2, internal journal on dm-2:8
 EXT4-fs: delayed allocation enabled
 EXT4-fs: mballoc enabled
 EXT4-fs: mounted filesystem dm-2 with ordered data mode
 EXT4-fs: barriers enabled
-kjournald2 starting: pid 1774, dev sda3:8, commit interval 5 seconds
+kjournald2 starting: pid 3454, dev sda3:8, commit interval 5 seconds
 EXT4 FS on sda3, internal journal on sda3:8
 EXT4-fs: delayed allocation enabled
 EXT4-fs: mballoc enabled
@@ -736,37 +760,73 @@ Adding 7569400k swap on /dev/mapper/VolGroup00-LogVol03.  Priority:-1 extents:1 
 platform microcode: firmware: requesting intel-ucode/06-17-06
 platform microcode: firmware: requesting intel-ucode/06-17-06
 Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+------------[ cut here ]------------
+WARNING: at fs/sysfs/group.c:138 sysfs_remove_group+0x4d/0xa4()
+Hardware name: M50Vm               
+sysfs group ffffffffa0b12330 not found for kobject 'cpu0'
+Modules linked in: microcode(-) dm_multipath nvidia(P) snd_hda_codec_realtek snd_hda_intel snd_hda_codec snd_hwdep uvcvideo snd_pcm iwlagn sdhci_pci sdhci videodev firewire_ohci mmc_core iwlcore snd_timer firewire_core snd v4l2_compat_ioctl32 pcspkr r8169 i2c_core soundcore snd_page_alloc iTCO_wdt rfkill mii crc_itu_t asus_laptop dm_snapshot dm_zero dm_mirror dm_region_hash dm_log [last unloaded: scsi_wait_scan]
+Pid: 3725, comm: rmmod Tainted: P           2.6.30-rc1 #1
+Call Trace:
+ [<ffffffff8024c907>] warn_slowpath+0xaf/0xd6
+ [<ffffffff802e6ed8>] ? sysfs_ilookup_test+0x0/0x14
+ [<ffffffff8029bac0>] ? add_partial+0x1b/0x64
+ [<ffffffff8029ca49>] ? __slab_free+0x77/0x252
+ [<ffffffff804be88d>] ? mutex_lock+0x11/0x38
+ [<ffffffff802e711b>] ? sysfs_find_dirent+0x1c/0x31
+ [<ffffffff802e8b15>] sysfs_remove_group+0x4d/0xa4
+ [<ffffffffa0b1035f>] mc_sysdev_remove+0x33/0x3a [microcode]
+ [<ffffffff803a5d72>] sysdev_driver_unregister+0x59/0x8f
+ [<ffffffffa0b10c0f>] microcode_exit+0x34/0x60 [microcode]
+ [<ffffffff8026d381>] sys_delete_module+0x1ae/0x215
+ [<ffffffff80230065>] ? show_cache_disable+0x115/0x145
+ [<ffffffff80224d2b>] system_call_fastpath+0x16/0x1b
+---[ end trace 0030864633961c9b ]---
+------------[ cut here ]------------
+WARNING: at fs/sysfs/group.c:138 sysfs_remove_group+0x4d/0xa4()
+Hardware name: M50Vm               
+sysfs group ffffffffa0b12330 not found for kobject 'cpu1'
+Modules linked in: microcode(-) dm_multipath nvidia(P) snd_hda_codec_realtek snd_hda_intel snd_hda_codec snd_hwdep uvcvideo snd_pcm iwlagn sdhci_pci sdhci videodev firewire_ohci mmc_core iwlcore snd_timer firewire_core snd v4l2_compat_ioctl32 pcspkr r8169 i2c_core soundcore snd_page_alloc iTCO_wdt rfkill mii crc_itu_t asus_laptop dm_snapshot dm_zero dm_mirror dm_region_hash dm_log [last unloaded: scsi_wait_scan]
+Pid: 3725, comm: rmmod Tainted: P        W  2.6.30-rc1 #1
+Call Trace:
+ [<ffffffff8024c907>] warn_slowpath+0xaf/0xd6
+ [<ffffffff802e6ed8>] ? sysfs_ilookup_test+0x0/0x14
+ [<ffffffff8029bac0>] ? add_partial+0x1b/0x64
+ [<ffffffff8029ca49>] ? __slab_free+0x77/0x252
+ [<ffffffff804be88d>] ? mutex_lock+0x11/0x38
+ [<ffffffff802e711b>] ? sysfs_find_dirent+0x1c/0x31
+ [<ffffffff802e8b15>] sysfs_remove_group+0x4d/0xa4
+ [<ffffffffa0b1035f>] mc_sysdev_remove+0x33/0x3a [microcode]
+ [<ffffffff803a5d72>] sysdev_driver_unregister+0x59/0x8f
+ [<ffffffffa0b10c0f>] microcode_exit+0x34/0x60 [microcode]
+ [<ffffffff8026d381>] sys_delete_module+0x1ae/0x215
+ [<ffffffff80230065>] ? show_cache_disable+0x115/0x145
+ [<ffffffff80224d2b>] system_call_fastpath+0x16/0x1b
+---[ end trace 0030864633961c9c ]---
 Microcode Update Driver: v2.00 removed.
-JBD: barrier-based sync failed on dm-0:8 - disabling barriers
-Bluetooth: Core ver 2.14
+Bluetooth: Core ver 2.15
 NET: Registered protocol family 31
 Bluetooth: HCI device and connection manager initialized
 Bluetooth: HCI socket layer initialized
-Bluetooth: L2CAP ver 2.11
+Bluetooth: L2CAP ver 2.13
 Bluetooth: L2CAP socket layer initialized
 Bluetooth: SCO (Voice Link) ver 0.6
 Bluetooth: SCO socket layer initialized
 Bluetooth: BNEP (Ethernet Emulation) ver 1.3
 Bluetooth: BNEP filters: protocol multicast
+Bridge firewalling registered
 NET: Registered protocol family 10
 lo: Disabled Privacy Extensions
-Bridge firewalling registered
-IRQ 16/nvidia: IRQF_DISABLED is not guaranteed on shared IRQs
 r8169: eth0: link up
 r8169: eth0: link up
-iwlagn 0000:03:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
-iwlagn 0000:03:00.0: restoring config space at offset 0x1 (was 0x100002, writing 0x100006)
-iwlagn 0000:03:00.0: irq 33 for MSI/MSI-X
 iwlagn 0000:03:00.0: firmware: requesting iwlwifi-5000-1.ucode
-iwlagn loaded firmware version 5.4.1.16
-iwlagn: Radio disabled by HW RF Kill switch
+iwlagn 0000:03:00.0: loaded firmware version 5.4.1.16
+iwlagn 0000:03:00.0: Radio disabled by HW RF Kill switch
 ADDRCONF(NETDEV_UP): wlan0: link is not ready
-iwlagn 0000:03:00.0: PCI INT A disabled
+IRQ 16/nvidia: IRQF_DISABLED is not guaranteed on shared IRQs
 CE: hpet increasing min_delta_ns to 15000 nsec
 CE: hpet increasing min_delta_ns to 22500 nsec
 CE: hpet increasing min_delta_ns to 33750 nsec
 CE: hpet increasing min_delta_ns to 50624 nsec
 CE: hpet increasing min_delta_ns to 75936 nsec
+CE: hpet increasing min_delta_ns to 113904 nsec
 eth0: no IPv6 routers present
-JBD: barrier-based sync failed on dm-1:8 - disabling barriers
-JBD: barrier-based sync failed on dm-2:8 - disabling barriers
