@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.30-rc1
-# Mon Apr 13 15:00:20 2009
+# Linux kernel version: 2.6.30-rc2
+# Wed Apr 15 07:55:33 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -121,6 +121,7 @@ CONFIG_UID16=y
 CONFIG_SYSCTL_SYSCALL=y
 CONFIG_KALLSYMS=y
 # CONFIG_KALLSYMS_EXTRA_PASS is not set
+CONFIG_STRIP_ASM_SYMS=y
 CONFIG_HOTPLUG=y
 CONFIG_PRINTK=y
 CONFIG_BUG=y
