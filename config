@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.30-rc4
-# Thu Apr 30 08:22:49 2009
+# Fri May  8 13:56:16 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -2136,8 +2136,8 @@ CONFIG_CRYPTO_DEV_HIFN_795X_RNG=y
 CONFIG_HAVE_KVM=y
 CONFIG_HAVE_KVM_IRQCHIP=y
 CONFIG_VIRTUALIZATION=y
-CONFIG_KVM=y
-CONFIG_KVM_INTEL=y
+CONFIG_KVM=m
+CONFIG_KVM_INTEL=m
 # CONFIG_KVM_AMD is not set
 # CONFIG_KVM_TRACE is not set
 CONFIG_VIRTIO=m
