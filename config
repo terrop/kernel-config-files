@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.30-rc6
-# Sat May 16 08:28:25 2009
+# Linux kernel version: 2.6.30-rc7
+# Sun May 24 10:29:08 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1819,7 +1819,8 @@ CONFIG_FILE_LOCKING=y
 # CONFIG_XFS_FS is not set
 # CONFIG_GFS2_FS is not set
 # CONFIG_OCFS2_FS is not set
-# CONFIG_BTRFS_FS is not set
+CONFIG_BTRFS_FS=m
+CONFIG_BTRFS_FS_POSIX_ACL=y
 CONFIG_DNOTIFY=y
 CONFIG_INOTIFY=y
 CONFIG_INOTIFY_USER=y
