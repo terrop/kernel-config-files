@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.31-rc1
-# Thu Jun 25 08:55:50 2009
+# Linux kernel version: 2.6.31-rc2
+# Sun Jul  5 08:56:35 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1140,7 +1140,6 @@ CONFIG_I2C_I801=m
 #
 # I2C system bus drivers (mostly embedded / system-on-chip)
 #
-# CONFIG_I2C_DESIGNWARE is not set
 # CONFIG_I2C_OCORES is not set
 # CONFIG_I2C_SIMTEC is not set
 
@@ -1733,7 +1732,7 @@ CONFIG_LEDS_CLASS=y
 #
 # CONFIG_LEDS_ALIX2 is not set
 # CONFIG_LEDS_PCA9532 is not set
-# CONFIG_LEDS_LP5521 is not set
+# CONFIG_LEDS_LP3944 is not set
 # CONFIG_LEDS_CLEVO_MAIL is not set
 # CONFIG_LEDS_PCA955X is not set
 # CONFIG_LEDS_BD2802 is not set
@@ -1840,7 +1839,6 @@ CONFIG_ASUS_LAPTOP=m
 # CONFIG_SONY_LAPTOP is not set
 # CONFIG_THINKPAD_ACPI is not set
 # CONFIG_INTEL_MENLOW is not set
-# CONFIG_EEEPC_LAPTOP is not set
 # CONFIG_ACPI_WMI is not set
 # CONFIG_ACPI_ASUS is not set
 # CONFIG_ACPI_TOSHIBA is not set
