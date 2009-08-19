@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.31-rc6
-# Fri Aug 14 07:47:25 2009
+# Wed Aug 19 12:45:13 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1863,7 +1863,7 @@ CONFIG_EXT4_FS=y
 # CONFIG_EXT4DEV_COMPAT is not set
 CONFIG_EXT4_FS_XATTR=y
 CONFIG_EXT4_FS_POSIX_ACL=y
-# CONFIG_EXT4_FS_SECURITY is not set
+CONFIG_EXT4_FS_SECURITY=y
 CONFIG_JBD2=y
 CONFIG_FS_MBCACHE=y
 # CONFIG_REISERFS_FS is not set
