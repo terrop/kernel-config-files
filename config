@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.31-rc6
-# Wed Aug 19 12:45:13 2009
+# Linux kernel version: 2.6.31-rc7
+# Sat Aug 22 09:40:08 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
