@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.31-rc8
-# Fri Aug 28 09:16:34 2009
+# Mon Aug 31 12:47:13 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1509,7 +1509,7 @@ CONFIG_SND_HDA_CODEC_REALTEK=y
 # CONFIG_SND_HDA_CODEC_SIGMATEL is not set
 # CONFIG_SND_HDA_CODEC_VIA is not set
 # CONFIG_SND_HDA_CODEC_ATIHDMI is not set
-# CONFIG_SND_HDA_CODEC_NVHDMI is not set
+CONFIG_SND_HDA_CODEC_NVHDMI=y
 # CONFIG_SND_HDA_CODEC_INTELHDMI is not set
 # CONFIG_SND_HDA_CODEC_CONEXANT is not set
 # CONFIG_SND_HDA_CODEC_CA0110 is not set
