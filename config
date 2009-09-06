@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.31-rc8
-# Mon Aug 31 12:47:13 2009
+# Linux kernel version: 2.6.31-rc9
+# Sun Sep  6 09:35:27 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1407,8 +1407,8 @@ CONFIG_LCD_CLASS_DEVICE=m
 CONFIG_LCD_PLATFORM=m
 CONFIG_BACKLIGHT_CLASS_DEVICE=y
 # CONFIG_BACKLIGHT_GENERIC is not set
-CONFIG_BACKLIGHT_PROGEAR=m
-CONFIG_BACKLIGHT_MBP_NVIDIA=m
+# CONFIG_BACKLIGHT_PROGEAR is not set
+# CONFIG_BACKLIGHT_MBP_NVIDIA is not set
 # CONFIG_BACKLIGHT_SAHARA is not set
 
 #
