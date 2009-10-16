@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.32-rc4
-# Mon Oct 12 08:23:10 2009
+# Linux kernel version: 2.6.32-rc5
+# Fri Oct 16 07:58:11 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -991,6 +991,7 @@ CONFIG_IWL5000=y
 # CONFIG_NETPOLL is not set
 # CONFIG_NET_POLL_CONTROLLER is not set
 CONFIG_VIRTIO_NET=m
+# CONFIG_VMXNET3 is not set
 # CONFIG_ISDN is not set
 # CONFIG_PHONE is not set
 
@@ -1658,7 +1659,6 @@ CONFIG_USB_UHCI_HCD=y
 # CONFIG_USB_R8A66597_HCD is not set
 # CONFIG_USB_WHCI_HCD is not set
 # CONFIG_USB_HWA_HCD is not set
-# CONFIG_USB_MUSB_HDRC is not set
 
 #
 # USB Device Class drivers
