@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.32-rc8
-# Fri Nov 20 08:50:57 2009
+# Linux kernel version: 2.6.32
+# Thu Dec  3 08:37:48 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -2106,6 +2106,8 @@ CONFIG_OPTIMIZE_INLINING=y
 # CONFIG_SECURITYFS is not set
 CONFIG_SECURITY_FILE_CAPABILITIES=y
 # CONFIG_IMA is not set
+CONFIG_ASYNC_TX_DISABLE_PQ_VAL_DMA=y
+CONFIG_ASYNC_TX_DISABLE_XOR_VAL_DMA=y
 CONFIG_CRYPTO=y
 
 #
