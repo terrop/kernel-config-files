@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.33-rc1
-# Fri Dec 18 09:12:01 2009
+# Linux kernel version: 2.6.33-rc2
+# Sat Dec 26 08:07:36 2009
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1915,6 +1915,7 @@ CONFIG_ASUS_LAPTOP=m
 # CONFIG_TOPSTAR_LAPTOP is not set
 # CONFIG_ACPI_TOSHIBA is not set
 # CONFIG_TOSHIBA_BT_RFKILL is not set
+# CONFIG_ACPI_CMPC is not set
 
 #
 # Firmware Drivers
