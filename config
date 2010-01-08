@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.33-rc3
-# Fri Jan  8 12:21:10 2010
+# Fri Jan  8 12:42:59 2010
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -854,7 +854,7 @@ CONFIG_SCSI=y
 CONFIG_SCSI_DMA=y
 # CONFIG_SCSI_TGT is not set
 # CONFIG_SCSI_NETLINK is not set
-CONFIG_SCSI_PROC_FS=y
+# CONFIG_SCSI_PROC_FS is not set
 
 #
 # SCSI support type (disk, tape, CD-ROM)
