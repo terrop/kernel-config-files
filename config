@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.33-rc3
-# Fri Jan  8 12:42:59 2010
+# Fri Jan  8 12:44:46 2010
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -461,7 +461,7 @@ CONFIG_PCIEAER=y
 # CONFIG_PCIEASPM is not set
 CONFIG_ARCH_SUPPORTS_MSI=y
 CONFIG_PCI_MSI=y
-CONFIG_PCI_LEGACY=y
+# CONFIG_PCI_LEGACY is not set
 # CONFIG_PCI_STUB is not set
 CONFIG_HT_IRQ=y
 # CONFIG_PCI_IOV is not set
