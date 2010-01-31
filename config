@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.33-rc6
-# Sat Jan 30 16:16:25 2010
+# Sun Jan 31 10:21:25 2010
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1936,7 +1936,7 @@ CONFIG_DMIID=y
 # CONFIG_EXT2_FS is not set
 # CONFIG_EXT3_FS is not set
 CONFIG_EXT4_FS=y
-CONFIG_EXT4_USE_FOR_EXT23=y
+# CONFIG_EXT4_USE_FOR_EXT23 is not set
 CONFIG_EXT4_FS_XATTR=y
 CONFIG_EXT4_FS_POSIX_ACL=y
 CONFIG_EXT4_FS_SECURITY=y
