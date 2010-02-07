@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.33-rc6
-# Sun Jan 31 10:21:25 2010
+# Linux kernel version: 2.6.33-rc7
+# Sun Feb  7 10:39:43 2010
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -742,6 +742,7 @@ CONFIG_BT_HCIBPA10X=m
 CONFIG_BT_HCIBFUSB=m
 CONFIG_BT_HCIVHCI=m
 # CONFIG_BT_MRVL is not set
+# CONFIG_BT_ATH3K is not set
 # CONFIG_AF_RXRPC is not set
 CONFIG_FIB_RULES=y
 CONFIG_WIRELESS=y
