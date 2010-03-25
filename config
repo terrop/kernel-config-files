@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.34-rc2
-# Sat Mar 20 13:03:45 2010
+# Thu Mar 25 09:08:33 2010
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -82,7 +82,8 @@ CONFIG_POSIX_MQUEUE_SYSCTL=y
 CONFIG_BSD_PROCESS_ACCT=y
 # CONFIG_BSD_PROCESS_ACCT_V3 is not set
 # CONFIG_TASKSTATS is not set
-# CONFIG_AUDIT is not set
+CONFIG_AUDIT=y
+# CONFIG_AUDITSYSCALL is not set
 
 #
 # RCU Subsystem
