@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86_64 2.6.37-rc2 Kernel Configuration
-# Tue Nov 16 09:46:11 2010
+# Linux/x86_64 2.6.37-rc3 Kernel Configuration
+# Mon Nov 22 07:47:28 2010
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -393,7 +393,6 @@ CONFIG_SUSPEND_FREEZER=y
 # CONFIG_HIBERNATION is not set
 # CONFIG_PM_RUNTIME is not set
 CONFIG_PM_OPS=y
-# CONFIG_PM_OPP is not set
 CONFIG_ACPI=y
 CONFIG_ACPI_SLEEP=y
 CONFIG_ACPI_PROCFS=y
