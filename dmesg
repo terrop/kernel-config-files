@@ -1,6 +1,6 @@
 Initializing cgroup subsys cpuset
 Initializing cgroup subsys cpu
-Linux version 2.6.37-rc3 (terrop@terrop) (gcc version 4.5.1 20101112 (Red Hat 4.5.1-5) (GCC) ) #1 SMP Mon Nov 22 08:15:33 EET 2010
+Linux version 2.6.37-rc4+ (terrop@terrop) (gcc version 4.5.1 20101112 (Red Hat 4.5.1-5) (GCC) ) #2 SMP Wed Dec 1 19:50:00 EET 2010
 Command line: ro root=/dev/sda3
 BIOS-provided physical RAM map:
  BIOS-e820: 0000000000000000 - 000000000009ec00 (usable)
@@ -41,7 +41,7 @@ init_memory_mapping: 0000000000000000-00000000bff80000
  0000000000 - 00bfe00000 page 2M
  00bfe00000 - 00bff80000 page 4k
 kernel direct mapping tables up to bff80000 @ 1fffb000-20000000
-RAMDISK: 37896000 - 37ff0000
+RAMDISK: 37894000 - 37ff0000
 ACPI: RSDP 00000000000f9370 00024 (v02 ACPIAM)
 ACPI: XSDT 00000000bff80100 0007C (v01 _ASUS_ Notebook 20080811 MSFT 00000097)
 ACPI: FACP 00000000bff80290 000F4 (v03 081108 FACP2148 20080811 MSFT 00000097)
@@ -98,7 +98,7 @@ Kernel command line: ro root=/dev/sda3
 PID hash table entries: 4096 (order: 3, 32768 bytes)
 Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
 Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
-Memory: 3082012k/3145216k available (3448k kernel code, 456k absent, 62748k reserved, 1495k data, 396k init)
+Memory: 3082016k/3145216k available (3439k kernel code, 456k absent, 62744k reserved, 1492k data, 396k init)
 SLUB: Genslabs=15, HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
 Hierarchical RCU implementation.
 	RCU-based detection of stalled CPUs is disabled.
@@ -108,16 +108,14 @@ Console: colour VGA+ 80x25
 console [tty0] enabled
 hpet clockevent registered
 Fast TSC calibration using PIT
-Detected 2261.522 MHz processor.
-Calibrating delay loop (skipped), value calculated using timer frequency.. 4523.04 BogoMIPS (lpj=2261522)
+Detected 2260.881 MHz processor.
+Calibrating delay loop (skipped), value calculated using timer frequency.. 4521.76 BogoMIPS (lpj=2260881)
 pid_max: default: 32768 minimum: 301
 Mount-cache hash table entries: 256
 Initializing cgroup subsys ns
 ns_cgroup deprecated: consider using the 'clone_children' flag without the ns_cgroup.
-Initializing cgroup subsys cpuacct
 Initializing cgroup subsys devices
 Initializing cgroup subsys freezer
-Initializing cgroup subsys blkio
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 0
 mce: CPU supports 6 MCE banks
@@ -135,12 +133,10 @@ ACPI: Core revision 20101013
 Setting APIC routing to flat
 ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
 CPU0: Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz stepping 06
-APIC calibration not consistent with PM-Timer: 119ms instead of 100ms
-APIC delta adjusted to PM-Timer: 1662678 (1995192)
 Booting Node   0, Processors  #1 Ok.
 CPU1: Thermal monitoring handled by SMI
 Brought up 2 CPUs
-Total of 2 processors activated (9045.35 BogoMIPS).
+Total of 2 processors activated (9044.06 BogoMIPS).
 devtmpfs: initialized
 NET: Registered protocol family 16
 ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
@@ -282,6 +278,8 @@ pci 0000:00:1c.5:   bridge window [io  0xe000-0xefff]
 pci 0000:00:1c.5:   bridge window [mem 0xfea00000-0xfeafffff]
 pci 0000:00:1c.5:   bridge window [mem 0xf8f00000-0xf8ffffff 64bit pref]
 pci 0000:09:01.0: [1180:0832] type 0 class 0x000c00
+pci 0000:09:01.0: proprietary Ricoh MMC controller disabled (via firewire function)
+pci 0000:09:01.0: MMC cards are now supported by standard SDHCI controller
 pci 0000:09:01.0: reg 10: [mem 0xfebff800-0xfebfffff]
 pci 0000:09:01.0: PME# supported from D0 D3hot D3cold
 pci 0000:09:01.0: PME# disabled
@@ -291,12 +289,12 @@ pci 0000:09:01.1: supports D1 D2
 pci 0000:09:01.1: PME# supported from D0 D1 D2 D3hot D3cold
 pci 0000:09:01.1: PME# disabled
 pci 0000:09:01.2: [1180:0592] type 0 class 0x000880
-pci 0000:09:01.2: reg 10: [mem 0xfebff000-0xfebff0ff]
+pci 0000:09:01.2: reg 10: [mem 0xfebfec00-0xfebfecff]
 pci 0000:09:01.2: supports D1 D2
 pci 0000:09:01.2: PME# supported from D0 D1 D2 D3hot D3cold
 pci 0000:09:01.2: PME# disabled
 pci 0000:09:01.3: [1180:0852] type 0 class 0x000880
-pci 0000:09:01.3: reg 10: [mem 0xfebfec00-0xfebfecff]
+pci 0000:09:01.3: reg 10: [mem 0xfebfe800-0xfebfe8ff]
 pci 0000:09:01.3: supports D1 D2
 pci 0000:09:01.3: PME# supported from D0 D1 D2 D3hot D3cold
 pci 0000:09:01.3: PME# disabled
@@ -556,7 +554,7 @@ NET: Registered protocol family 1
 pci 0000:01:00.0: Boot video device
 PCI: CLS 32 bytes, default 64
 Trying to unpack rootfs image as initramfs...
-Freeing initrd memory: 7528k freed
+Freeing initrd memory: 7536k freed
 Simple Boot Flag at 0x51 set to 0x1
 msgmni has been set to 6034
 Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
@@ -599,7 +597,7 @@ Monitor-Mwait will be used to enter C-3 state
 Marking TSC unstable due to TSC halts in idle
 Switching to clocksource hpet
 thermal LNXTHERM:00: registered as thermal_zone0
-ACPI: Thermal Zone [THRM] (53 C)
+ACPI: Thermal Zone [THRM] (34 C)
 Non-volatile memory driver v1.3
 brd: module loaded
 loop: module loaded
@@ -634,7 +632,7 @@ ehci_hcd 0000:00:1a.7: USB 2.0 started, EHCI 1.00
 usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb1: Product: EHCI Host Controller
-usb usb1: Manufacturer: Linux 2.6.37-rc3 ehci_hcd
+usb usb1: Manufacturer: Linux 2.6.37-rc4+ ehci_hcd
 usb usb1: SerialNumber: 0000:00:1a.7
 hub 1-0:1.0: USB hub found
 hub 1-0:1.0: 6 ports detected
@@ -643,14 +641,14 @@ ehci_hcd 0000:00:1d.7: setting latency timer to 64
 ehci_hcd 0000:00:1d.7: EHCI Host Controller
 ehci_hcd 0000:00:1d.7: new USB bus registered, assigned bus number 2
 ehci_hcd 0000:00:1d.7: debug port 1
+ACPI: Battery Slot [BAT0] (battery present)
 ehci_hcd 0000:00:1d.7: cache line size of 32 is not supported
 ehci_hcd 0000:00:1d.7: irq 23, io mem 0xf9fff800
-ACPI: Battery Slot [BAT0] (battery present)
 ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00
 usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb2: Product: EHCI Host Controller
-usb usb2: Manufacturer: Linux 2.6.37-rc3 ehci_hcd
+usb usb2: Manufacturer: Linux 2.6.37-rc4+ ehci_hcd
 usb usb2: SerialNumber: 0000:00:1d.7
 hub 2-0:1.0: USB hub found
 hub 2-0:1.0: 6 ports detected
@@ -664,7 +662,7 @@ uhci_hcd 0000:00:1a.0: irq 16, io base 0x0000bc00
 usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb3: Product: UHCI Host Controller
-usb usb3: Manufacturer: Linux 2.6.37-rc3 uhci_hcd
+usb usb3: Manufacturer: Linux 2.6.37-rc4+ uhci_hcd
 usb usb3: SerialNumber: 0000:00:1a.0
 hub 3-0:1.0: USB hub found
 hub 3-0:1.0: 2 ports detected
@@ -676,7 +674,7 @@ uhci_hcd 0000:00:1a.1: irq 21, io base 0x0000b880
 usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb4: Product: UHCI Host Controller
-usb usb4: Manufacturer: Linux 2.6.37-rc3 uhci_hcd
+usb usb4: Manufacturer: Linux 2.6.37-rc4+ uhci_hcd
 usb usb4: SerialNumber: 0000:00:1a.1
 hub 4-0:1.0: USB hub found
 hub 4-0:1.0: 2 ports detected
@@ -688,7 +686,7 @@ uhci_hcd 0000:00:1a.2: irq 19, io base 0x0000b800
 usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb5: Product: UHCI Host Controller
-usb usb5: Manufacturer: Linux 2.6.37-rc3 uhci_hcd
+usb usb5: Manufacturer: Linux 2.6.37-rc4+ uhci_hcd
 usb usb5: SerialNumber: 0000:00:1a.2
 hub 5-0:1.0: USB hub found
 hub 5-0:1.0: 2 ports detected
@@ -700,7 +698,7 @@ uhci_hcd 0000:00:1d.0: irq 23, io base 0x0000b480
 usb usb6: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb6: Product: UHCI Host Controller
-usb usb6: Manufacturer: Linux 2.6.37-rc3 uhci_hcd
+usb usb6: Manufacturer: Linux 2.6.37-rc4+ uhci_hcd
 usb usb6: SerialNumber: 0000:00:1d.0
 hub 6-0:1.0: USB hub found
 hub 6-0:1.0: 2 ports detected
@@ -712,7 +710,7 @@ uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000b400
 usb usb7: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb7: Product: UHCI Host Controller
-usb usb7: Manufacturer: Linux 2.6.37-rc3 uhci_hcd
+usb usb7: Manufacturer: Linux 2.6.37-rc4+ uhci_hcd
 usb usb7: SerialNumber: 0000:00:1d.1
 hub 7-0:1.0: USB hub found
 hub 7-0:1.0: 2 ports detected
@@ -724,7 +722,7 @@ uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000b080
 usb usb8: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb8: Product: UHCI Host Controller
-usb usb8: Manufacturer: Linux 2.6.37-rc3 uhci_hcd
+usb usb8: Manufacturer: Linux 2.6.37-rc4+ uhci_hcd
 usb usb8: SerialNumber: 0000:00:1d.2
 hub 8-0:1.0: USB hub found
 hub 8-0:1.0: 2 ports detected
@@ -804,55 +802,82 @@ Freeing unused kernel memory: 396k freed
 dracut: dracut-008-0.10.gitb2415f4.fc15
 udev[112]: starting version 164
 dracut: Starting plymouth daemon
-firewire_ohci 0000:09:01.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 sdhci: Secure Digital Host Controller Interface driver
 sdhci: Copyright(c) Pierre Ossman
-firewire_ohci: Added fw-ohci device 0000:09:01.0, OHCI v1.0, 4 IR + 4 IT contexts, quirks 0x1
 sdhci-pci 0000:09:01.1: SDHCI controller found [1180:0822] (rev 22)
 sdhci-pci 0000:09:01.1: PCI INT B -> GSI 17 (level, low) -> IRQ 17
 sdhci-pci 0000:09:01.1: Will use DMA mode even though HW doesn't fully claim to support it.
 Registered led device: mmc0::
 mmc0: SDHCI controller on PCI [0000:09:01.1] using DMA
-EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
+firewire_ohci 0000:09:01.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+firewire_ohci: Added fw-ohci device 0000:09:01.0, OHCI v1.0, 4 IR + 4 IT contexts, quirks 0x1
 firewire_core: created device fw0: GUID 001e8c0000057669, S400
+EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
 dracut: Checking filesystems
 dracut: fsck -T -t noopts=_netdev -A -a
-dracut: /dev/sda3: clean, 203506/2575440 files, 1830575/10290203 blocks
+dracut: /dev/sda3: clean, 209761/2575440 files, 1894674/10290203 blocks
 dracut: Remounting /dev/sda3 with -o ro,
 EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
 dracut: Mounted root filesystem /dev/sda3
 dracut: Loading SELinux policy
 dracut: /sbin/load_policy: Can't load policy file /etc/selinux/targeted/policy/policy.-1: No such file or directory
 dracut: Switching root
-systemd[1]: systemd 13 running in system mode. (+PAM +LIBWRAP +AUDIT +SELINUX +SYSVINIT +LIBCRYPTSETUP; fedora)
+systemd[1]: systemd 15 running in system mode. (+PAM +LIBWRAP +AUDIT +SELINUX +SYSVINIT +LIBCRYPTSETUP; fedora)
 NET: Registered protocol family 10
 lo: Disabled Privacy Extensions
 systemd[1]: Set hostname to <terrop>.
-systemd[1]: /etc/mtab is not a symlink or not pointing to /proc/self/mounts. This is not supported anymore. Please make sure to replace this file by a symlink to avoid incorrect or misleading mount(8) output.
 systemd[1]: Failed to connect to audit log: Protocol not supported
 systemd[1]: [/lib/systemd/system/fedora-configure.service:11] Invalid executable path in command line, ignoring: rm -f /.unconfigured
 systemd[1]: Failed to initialize automounter: No such file or directory
 systemd[1]: Unit sys-kernel-security.automount entered failed state.
-systemd-sysctl[367]: Failed to write '0' to '/proc/sys/net/bridge/bridge-nf-call-ip6tables': No such file or directory
-systemd-sysctl[367]: Failed to write '0' to '/proc/sys/net/bridge/bridge-nf-call-iptables': No such file or directory
-systemd-sysctl[367]: Failed to write '0' to '/proc/sys/net/bridge/bridge-nf-call-arptables': No such file or directory
-systemd-fsck[371]: /dev/sda3: clean, 203506/2575440 files, 1830575/10290203 blocks
+systemd-sysctl[371]: Failed to write '0' to '/proc/sys/net/bridge/bridge-nf-call-ip6tables': No such file or directory
+systemd-sysctl[371]: Failed to write '0' to '/proc/sys/net/bridge/bridge-nf-call-iptables': No such file or directory
+systemd-sysctl[371]: Failed to write '0' to '/proc/sys/net/bridge/bridge-nf-call-arptables': No such file or directory
+systemd-fsck[376]: /dev/sda3: clean, 209761/2575440 files, 1894674/10290203 blocks
 EXT4-fs (sda3): re-mounted. Opts: (null)
-udev[368]: starting version 164
-udevd-work[414]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/power/level} for writing: No such file or directory
-udevd-work[408]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/5-2:1.0/power/level} for writing: No such file or directory
-input: PC Speaker as /devices/platform/pcspkr/input/input7
+------------[ cut here ]------------
+WARNING: at drivers/tty/tty_io.c:1331 tty_open+0x547/0x550()
+Hardware name: M50Vm               
+Modules linked in: ipv6 firewire_ohci sdhci_pci firewire_core sdhci crc_itu_t mmc_core
+Pid: 150, comm: plymouthd Not tainted 2.6.37-rc4+ #2
+Call Trace:
+ [<ffffffff8103b07a>] warn_slowpath_common+0x7a/0xb0
+ [<ffffffff8103b0c5>] warn_slowpath_null+0x15/0x20
+ [<ffffffff811f1067>] tty_open+0x547/0x550
+ [<ffffffff810c43f6>] chrdev_open+0xb6/0x190
+ [<ffffffff810c4340>] ? chrdev_open+0x0/0x190
+ [<ffffffff810bec4d>] __dentry_open.clone.16+0xbd/0x2c0
+ [<ffffffff810bfd76>] nameidata_to_filp+0x46/0x50
+ [<ffffffff810cd4e0>] do_last.clone.42+0x3d0/0x680
+ [<ffffffff810cd9b3>] do_filp_open+0x223/0x620
+ [<ffffffff810f7dbb>] ? sys_epoll_wait+0x9b/0x460
+ [<ffffffff8119e982>] ? __strncpy_from_user+0x22/0x60
+ [<ffffffff810d8cf7>] ? alloc_fd+0x47/0x140
+ [<ffffffff810352e0>] ? default_wake_function+0x0/0x10
+ [<ffffffff810bfde3>] do_sys_open+0x63/0x120
+ [<ffffffff810d02ea>] ? sys_ioctl+0x4a/0x80
+ [<ffffffff810bfebb>] sys_open+0x1b/0x20
+ [<ffffffff810025bb>] system_call_fastpath+0x16/0x1b
+---[ end trace ce48b591a5ef6aa0 ]---
+udev[372]: starting version 164
 microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
 asus_laptop: Asus Laptop Support version 0.42
 asus_laptop:   M50Vm model detected
 asus_laptop: Backlight controlled by ACPI video driver
-input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input8
+input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input7
 Registered led device: asus::mail
 Registered led device: asus::touchpad
+udevd-work[448]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/power/level} for writing: No such file or directory
+udevd-work[448]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/5-2:1.0/power/level} for writing: No such file or directory
+input: PC Speaker as /devices/platform/pcspkr/input/input8
 iTCO_wdt: Intel TCO WatchDog Timer Driver v1.06
 iTCO_wdt: Found a ICH9M TCO device (Version=2, TCOBASE=0x0860)
 iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
-cfg80211: Calling CRDA to update world regulatory domain
+r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
+r8169 0000:08:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+r8169 0000:08:00.0: setting latency timer to 64
+r8169 0000:08:00.0: irq 48 for MSI/MSI-X
+r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc900101aa000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
 microcode: CPU1 sig=0x10676, pf=0x80, revision=0x60c
 microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
 Linux video capture interface: v2.00
@@ -860,14 +885,20 @@ uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
 input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input9
 usbcore: registered new interface driver uvcvideo
 USB Video Class driver (v1.0.0)
-r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
-r8169 0000:08:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
-r8169 0000:08:00.0: setting latency timer to 64
-r8169 0000:08:00.0: irq 48 for MSI/MSI-X
-r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc90010388000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
+cfg80211: Calling CRDA to update world regulatory domain
+iwlagn: Intel(R) Wireless WiFi Link AGN driver for Linux, in-tree:
+iwlagn: Copyright(c) 2003-2010 Intel Corporation
+iwlagn 0000:03:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+iwlagn 0000:03:00.0: setting latency timer to 64
+iwlagn 0000:03:00.0: Detected Intel(R) WiFi Link 5100 AGN, REV=0x54
+iwlagn 0000:03:00.0: device EEPROM VER=0x11f, CALIB=0x4
+iwlagn 0000:03:00.0: Tunable channels: 13 802.11bg, 24 802.11a channels
+iwlagn 0000:03:00.0: irq 49 for MSI/MSI-X
 HDA Intel 0000:00:1b.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
-HDA Intel 0000:00:1b.0: irq 49 for MSI/MSI-X
+HDA Intel 0000:00:1b.0: irq 50 for MSI/MSI-X
 HDA Intel 0000:00:1b.0: setting latency timer to 64
+iwlagn 0000:03:00.0: loaded firmware version 8.24.2.12
+ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
 hda_codec: ALC663: SKU not ready 0x598301f0
 cfg80211: World regulatory domain updated:
     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
@@ -876,22 +907,6 @@ cfg80211: World regulatory domain updated:
     (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
     (5170000 KHz - 5250000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
     (5735000 KHz - 5835000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
-iwlagn: Intel(R) Wireless WiFi Link AGN driver for Linux, in-tree:
-iwlagn: Copyright(c) 2003-2010 Intel Corporation
-iwlagn 0000:03:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
-iwlagn 0000:03:00.0: setting latency timer to 64
-iwlagn 0000:03:00.0: Detected Intel(R) WiFi Link 5100 AGN, REV=0x54
-iwlagn 0000:03:00.0: device EEPROM VER=0x11f, CALIB=0x4
-iwlagn 0000:03:00.0: Tunable channels: 13 802.11bg, 24 802.11a channels
-iwlagn 0000:03:00.0: irq 50 for MSI/MSI-X
-iwlagn 0000:03:00.0: loaded firmware version 8.24.2.12
-ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
-nvidia: module license 'NVIDIA' taints kernel.
-Disabling lock debugging due to kernel taint
-nvidia 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
-nvidia 0000:01:00.0: setting latency timer to 64
-vgaarb: device changed decodes: PCI:0000:01:00.0,olddecodes=io+mem,decodes=none:owns=io+mem
-NVRM: loading NVIDIA UNIX x86_64 Kernel Module  260.19.12  Fri Oct  8 11:17:08 PDT 2010
 cfg80211: Calling CRDA for country: FI
 cfg80211: Regulatory domain changed to country: FI
     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
@@ -899,56 +914,71 @@ cfg80211: Regulatory domain changed to country: FI
     (5170000 KHz - 5250000 KHz @ 40000 KHz), (N/A, 2000 mBm)
     (5250000 KHz - 5330000 KHz @ 40000 KHz), (N/A, 2000 mBm)
     (5490000 KHz - 5710000 KHz @ 40000 KHz), (N/A, 2700 mBm)
+nvidia: module license 'NVIDIA' taints kernel.
+Disabling lock debugging due to kernel taint
+nvidia 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+nvidia 0000:01:00.0: setting latency timer to 64
+vgaarb: device changed decodes: PCI:0000:01:00.0,olddecodes=io+mem,decodes=none:owns=io+mem
+NVRM: loading NVIDIA UNIX x86_64 Kernel Module  260.19.21  Thu Nov  4 21:16:27 PDT 2010
 systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
 systemd[1]: Unit dev-hugepages.mount entered failed state.
 systemd[1]: plymouth-start.service: control process exited, code=exited status=69
 systemd[1]: Unit plymouth-start.service entered failed state.
 systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
 systemd[1]: Unit dev-hugepages.mount entered failed state.
-systemd-fsck[764]: /usr/local: clean, 144110/2883584 files, 8461209/11517952 blocks
+systemd-fsck[779]: /usr/local: clean, 188649/2883584 files, 8553421/11517952 blocks
 Btrfs loaded
-device label /home devid 1 transid 141899 /dev/mapper/VolGroup00-home
+device label /home devid 1 transid 152080 /dev/mapper/VolGroup00-home
 Adding 7569404k swap on /dev/mapper/VolGroup00-swap.  Priority:0 extents:1 across:7569404k 
 EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null)
+systemd-tmpfiles[829]: Failed to insert item /var/run/console: File exists
+systemd[1]: systemd-tmpfiles-setup.service: main process exited, code=exited, status=1
+systemd[1]: Unit systemd-tmpfiles-setup.service entered failed state.
 systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
 systemd[1]: Unit dev-hugepages.mount entered failed state.
-rtkit-daemon[840]: Successfully called chroot.
-rtkit-daemon[840]: Successfully dropped privileges.
-rtkit-daemon[840]: Successfully limited resources.
-rtkit-daemon[840]: Running.
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Watchdog thread running.
-rtkit-daemon[840]: Canary thread running.
+/usr/sbin/gpm[886]: *** info [daemon/startup.c(136)]:
+/usr/sbin/gpm[886]: Started gpm successfully. Entered daemon mode.
+/usr/sbin/crond[848]: (CRON) INFO (running with inotify support)
+atd[844]: unknown option
+rtkit-daemon[875]: Successfully called chroot.
+rtkit-daemon[875]: Successfully dropped privileges.
+rtkit-daemon[875]: Successfully limited resources.
+rtkit-daemon[875]: Running.
+rtkit-daemon[875]: Canary thread running.
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Watchdog thread running.
+systemd[1]: atd.service: main process exited, code=exited, status=1
+systemd[1]: Unit atd.service entered failed state.
 r8169 0000:08:00.0: eth0: link up
 r8169 0000:08:00.0: eth0: link up
-sshd (999): /proc/999/oom_adj is deprecated, please use /proc/999/oom_score_adj instead.
+sshd (992): /proc/992/oom_adj is deprecated, please use /proc/992/oom_score_adj instead.
 eth0: no IPv6 routers present
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
 ata1.00: configured for UDMA/133
 ata1: EH complete
 EXT4-fs (sda3): re-mounted. Opts: commit=0
 EXT4-fs (dm-1): re-mounted. Opts: commit=0
 fuse init (API version 7.15)
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-rtkit-daemon[840]: Failed to make ourselves RT: Operation not permitted
-bluetoothd[1436]: bluetoothd[1436]: Bluetooth deamon 4.79
-bluetoothd[1436]: bluetoothd[1436]: Starting SDP server
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+rtkit-daemon[875]: Failed to make ourselves RT: Operation not permitted
+bluetoothd[1429]: bluetoothd[1429]: Bluetooth deamon 4.80
+bluetoothd[1429]: bluetoothd[1429]: Starting SDP server
 Bluetooth: Core ver 2.15
 NET: Registered protocol family 31
 Bluetooth: HCI device and connection manager initialized
@@ -957,7 +987,10 @@ Bluetooth: L2CAP ver 2.15
 Bluetooth: L2CAP socket layer initialized
 Bluetooth: BNEP (Ethernet Emulation) ver 1.3
 Bluetooth: BNEP filters: protocol multicast
-bluetoothd[1436]: bluetoothd[1436]: Parsing /etc/bluetooth/input.conf failed: No such file or directory
-bluetoothd[1436]: bluetoothd[1436]: Parsing /etc/bluetooth/audio.conf failed: No such file or directory
+bluetoothd[1429]: bluetoothd[1429]: Parsing /etc/bluetooth/input.conf failed: No such file or directory
+bluetoothd[1429]: bluetoothd[1429]: Parsing /etc/bluetooth/audio.conf failed: No such file or directory
 Bluetooth: SCO (Voice Link) ver 0.6
 Bluetooth: SCO socket layer initialized
+/usr/sbin/crond[2112]: pam_systemd(crond:session): Moving new user session for root into control group /user/root/4c.
+CE: hpet increased min_delta_ns to 7500 nsec
+CE: hpet increased min_delta_ns to 11250 nsec

@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86_64 2.6.37-rc3 Kernel Configuration
-# Wed Nov 24 15:47:00 2010
+# Linux/x86_64 2.6.37-rc4 Kernel Configuration
+# Fri Dec  3 10:25:19 2010
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -2225,6 +2225,7 @@ CONFIG_CIFS_XATTR=y
 CONFIG_CIFS_POSIX=y
 # CONFIG_CIFS_DEBUG2 is not set
 # CONFIG_CIFS_DFS_UPCALL is not set
+# CONFIG_CIFS_ACL is not set
 CONFIG_CIFS_EXPERIMENTAL=y
 # CONFIG_NCP_FS is not set
 # CONFIG_CODA_FS is not set
