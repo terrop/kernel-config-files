@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86_64 2.6.38-rc3 Kernel Configuration
-# Tue Feb  1 06:56:39 2011
+# Linux/x86_64 2.6.38-rc4 Kernel Configuration
+# Tue Feb  8 07:32:41 2011
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -397,8 +397,8 @@ CONFIG_SUSPEND_FREEZER=y
 CONFIG_PM_OPS=y
 CONFIG_ACPI=y
 CONFIG_ACPI_SLEEP=y
-CONFIG_ACPI_PROCFS=y
-CONFIG_ACPI_PROCFS_POWER=y
+# CONFIG_ACPI_PROCFS is not set
+# CONFIG_ACPI_PROCFS_POWER is not set
 # CONFIG_ACPI_POWER_METER is not set
 # CONFIG_ACPI_EC_DEBUGFS is not set
 # CONFIG_ACPI_PROC_EVENT is not set
