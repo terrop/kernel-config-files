@@ -1,6 +1,6 @@
 Initializing cgroup subsys cpuset
 Initializing cgroup subsys cpu
-Linux version 2.6.38-rc8 (terrop@terrop) (gcc version 4.6.0 20110304 (Red Hat 4.6.0-0.12) (GCC) ) #1 SMP Tue Mar 8 09:37:15 EET 2011
+Linux version 2.6.38 (terrop@terrop) (gcc version 4.6.0 20110304 (Red Hat 4.6.0-0.12) (GCC) ) #1 SMP Tue Mar 15 09:25:01 EET 2011
 Command line: ro root=/dev/sda3
 BIOS-provided physical RAM map:
  BIOS-e820: 0000000000000000 - 000000000009ec00 (usable)
@@ -108,8 +108,8 @@ Console: colour VGA+ 80x25
 console [tty0] enabled
 hpet clockevent registered
 Fast TSC calibration using PIT
-Detected 2261.425 MHz processor.
-Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.85 BogoMIPS (lpj=2261425)
+Detected 2261.173 MHz processor.
+Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.34 BogoMIPS (lpj=2261173)
 pid_max: default: 32768 minimum: 301
 Mount-cache hash table entries: 256
 Initializing cgroup subsys ns
@@ -125,8 +125,6 @@ ACPI: Core revision 20110112
 Setting APIC routing to flat
 ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
 CPU0: Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz stepping 06
-APIC calibration not consistent with PM-Timer: 119ms instead of 100ms
-APIC delta adjusted to PM-Timer: 1662684 (1995204)
 Performance Events: PEBS fmt0+, Core2 events, Intel PMU driver.
 ... version:                2
 ... bit width:              40
@@ -138,7 +136,7 @@ Performance Events: PEBS fmt0+, Core2 events, Intel PMU driver.
 Booting Node   0, Processors  #1 Ok.
 CPU1: Thermal monitoring handled by SMI
 Brought up 2 CPUs
-Total of 2 processors activated (9045.14 BogoMIPS).
+Total of 2 processors activated (10853.56 BogoMIPS).
 devtmpfs: initialized
 NET: Registered protocol family 16
 ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
@@ -592,7 +590,7 @@ Monitor-Mwait will be used to enter C-1 state
 Monitor-Mwait will be used to enter C-3 state
 Marking TSC unstable due to TSC halts in idle
 thermal LNXTHERM:00: registered as thermal_zone0
-ACPI: Thermal Zone [THRM] (54 C)
+ACPI: Thermal Zone [THRM] (57 C)
 Non-volatile memory driver v1.3
 brd: module loaded
 loop: module loaded
@@ -627,7 +625,7 @@ ehci_hcd 0000:00:1a.7: USB 2.0 started, EHCI 1.00
 usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb1: Product: EHCI Host Controller
-usb usb1: Manufacturer: Linux 2.6.38-rc8 ehci_hcd
+usb usb1: Manufacturer: Linux 2.6.38 ehci_hcd
 usb usb1: SerialNumber: 0000:00:1a.7
 hub 1-0:1.0: USB hub found
 hub 1-0:1.0: 6 ports detected
@@ -635,15 +633,15 @@ ehci_hcd 0000:00:1d.7: PCI INT A -> GSI 23 (level, low) -> IRQ 23
 ehci_hcd 0000:00:1d.7: setting latency timer to 64
 ehci_hcd 0000:00:1d.7: EHCI Host Controller
 ehci_hcd 0000:00:1d.7: new USB bus registered, assigned bus number 2
-ACPI: Battery Slot [BAT0] (battery present)
 ehci_hcd 0000:00:1d.7: debug port 1
+ACPI: Battery Slot [BAT0] (battery present)
 ehci_hcd 0000:00:1d.7: cache line size of 32 is not supported
 ehci_hcd 0000:00:1d.7: irq 23, io mem 0xf9fff800
 ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00
 usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb2: Product: EHCI Host Controller
-usb usb2: Manufacturer: Linux 2.6.38-rc8 ehci_hcd
+usb usb2: Manufacturer: Linux 2.6.38 ehci_hcd
 usb usb2: SerialNumber: 0000:00:1d.7
 hub 2-0:1.0: USB hub found
 hub 2-0:1.0: 6 ports detected
@@ -657,7 +655,7 @@ uhci_hcd 0000:00:1a.0: irq 16, io base 0x0000bc00
 usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb3: Product: UHCI Host Controller
-usb usb3: Manufacturer: Linux 2.6.38-rc8 uhci_hcd
+usb usb3: Manufacturer: Linux 2.6.38 uhci_hcd
 usb usb3: SerialNumber: 0000:00:1a.0
 hub 3-0:1.0: USB hub found
 hub 3-0:1.0: 2 ports detected
@@ -669,7 +667,7 @@ uhci_hcd 0000:00:1a.1: irq 21, io base 0x0000b880
 usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb4: Product: UHCI Host Controller
-usb usb4: Manufacturer: Linux 2.6.38-rc8 uhci_hcd
+usb usb4: Manufacturer: Linux 2.6.38 uhci_hcd
 usb usb4: SerialNumber: 0000:00:1a.1
 hub 4-0:1.0: USB hub found
 hub 4-0:1.0: 2 ports detected
@@ -681,7 +679,7 @@ uhci_hcd 0000:00:1a.2: irq 19, io base 0x0000b800
 usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb5: Product: UHCI Host Controller
-usb usb5: Manufacturer: Linux 2.6.38-rc8 uhci_hcd
+usb usb5: Manufacturer: Linux 2.6.38 uhci_hcd
 usb usb5: SerialNumber: 0000:00:1a.2
 hub 5-0:1.0: USB hub found
 hub 5-0:1.0: 2 ports detected
@@ -693,7 +691,7 @@ uhci_hcd 0000:00:1d.0: irq 23, io base 0x0000b480
 usb usb6: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb6: Product: UHCI Host Controller
-usb usb6: Manufacturer: Linux 2.6.38-rc8 uhci_hcd
+usb usb6: Manufacturer: Linux 2.6.38 uhci_hcd
 usb usb6: SerialNumber: 0000:00:1d.0
 hub 6-0:1.0: USB hub found
 hub 6-0:1.0: 2 ports detected
@@ -705,7 +703,7 @@ uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000b400
 usb usb7: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb7: Product: UHCI Host Controller
-usb usb7: Manufacturer: Linux 2.6.38-rc8 uhci_hcd
+usb usb7: Manufacturer: Linux 2.6.38 uhci_hcd
 usb usb7: SerialNumber: 0000:00:1d.1
 hub 7-0:1.0: USB hub found
 hub 7-0:1.0: 2 ports detected
@@ -717,7 +715,7 @@ uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000b080
 usb usb8: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb8: Product: UHCI Host Controller
-usb usb8: Manufacturer: Linux 2.6.38-rc8 uhci_hcd
+usb usb8: Manufacturer: Linux 2.6.38 uhci_hcd
 usb usb8: SerialNumber: 0000:00:1d.2
 hub 8-0:1.0: USB hub found
 hub 8-0:1.0: 2 ports detected
@@ -755,8 +753,8 @@ ata1.00: ACPI cmd ef/10:06:00:00:00:a0 (SET FEATURES) succeeded
 ata1.00: ACPI cmd ef/90:03:00:00:00:a0 (SET FEATURES) succeeded
 ata1.00: configured for UDMA/133
 scsi 0:0:0:0: Direct-Access     ATA      Hitachi HTS54323 FB4O PQ: 0 ANSI: 5
-sd 0:0:0:0: [sda] 625142448 512-byte logical blocks: (320 GB/298 GiB)
 sd 0:0:0:0: Attached scsi generic sg0 type 0
+sd 0:0:0:0: [sda] 625142448 512-byte logical blocks: (320 GB/298 GiB)
 sd 0:0:0:0: [sda] Write Protect is off
 sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
 sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
@@ -795,7 +793,7 @@ generic-usb 0003:046D:C062.0001: input,hidraw0: USB HID v1.10 Mouse [Logitech US
 ata6: SATA link down (SStatus 0 SControl 300)
 Freeing unused kernel memory: 400k freed
 dracut: dracut-008-7.fc15
-udev[110]: starting version 166
+udev[111]: starting version 166
 dracut: Starting plymouth daemon
 firewire_ohci 0000:09:01.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 sdhci: Secure Digital Host Controller Interface driver
@@ -810,40 +808,39 @@ firewire_core: created device fw0: GUID 001e8c0000057669, S400
 EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
 dracut: Checking filesystems
 dracut: fsck -T -t noopts=_netdev -A -a
-dracut: /dev/sda3: clean, 220019/2575440 files, 2022593/10290203 blocks (check in 4 mounts)
+dracut: /dev/sda3: clean, 221072/2575440 files, 2045764/10290203 blocks
 dracut: Remounting /dev/sda3 with -o ro,
 EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
 dracut: Mounted root filesystem /dev/sda3
 dracut: Switching root
-systemd[1]: systemd 19 running in system mode. (+PAM +LIBWRAP +AUDIT +SELINUX +SYSVINIT +LIBCRYPTSETUP; fedora)
+systemd[1]: systemd 20 running in system mode. (+PAM +LIBWRAP +AUDIT +SELINUX +SYSVINIT +LIBCRYPTSETUP; fedora)
 NET: Registered protocol family 10
 systemd[1]: Set hostname to <terrop>.
 systemd[1]: Failed to connect to audit log: Protocol not supported
 systemd[1]: Failed to initialize automounter: No such file or directory
 systemd[1]: Unit sys-kernel-security.automount entered failed state.
 EXT4-fs (sda3): re-mounted. Opts: (null)
-udev[377]: starting version 166
+udev[367]: starting version 166
 asus_laptop: Asus Laptop Support version 0.42
 asus_laptop:   M50Vm model detected
 asus_laptop: Backlight controlled by ACPI video driver
 input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input7
 Registered led device: asus::mail
 Registered led device: asus::touchpad
-microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
 input: PC Speaker as /devices/platform/pcspkr/input/input8
 iTCO_wdt: Intel TCO WatchDog Timer Driver v1.06
 iTCO_wdt: Found a ICH9M TCO device (Version=2, TCOBASE=0x0860)
 iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
+microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
+cfg80211: Calling CRDA to update world regulatory domain
 r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
 r8169 0000:08:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
 r8169 0000:08:00.0: setting latency timer to 64
 r8169 0000:08:00.0: irq 48 for MSI/MSI-X
-r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc90010230000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
+r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc900101fc000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
 microcode: CPU1 sig=0x10676, pf=0x80, revision=0x60c
 microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
-cfg80211: Calling CRDA to update world regulatory domain
-microcode: CPU0 updated to revision 0x60f, date = 2010-09-29
-microcode: CPU1 updated to revision 0x60f, date = 2010-09-29
+udevd-work[401]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/power/level} for writing: No such file or directory
 iwlagn: Intel(R) Wireless WiFi Link AGN driver for Linux, in-tree:
 iwlagn: Copyright(c) 2003-2010 Intel Corporation
 iwlagn 0000:03:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
@@ -855,7 +852,8 @@ iwlagn 0000:03:00.0: Tunable channels: 13 802.11bg, 24 802.11a channels
 iwlagn 0000:03:00.0: irq 49 for MSI/MSI-X
 iwlagn 0000:03:00.0: loaded firmware version 8.83.5.1 build 33692
 ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
-udevd-work[425]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/power/level} for writing: No such file or directory
+microcode: CPU0 updated to revision 0x60f, date = 2010-09-29
+microcode: CPU1 updated to revision 0x60f, date = 2010-09-29
 cfg80211: World regulatory domain updated:
 cfg80211:     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
 cfg80211:     (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
@@ -863,16 +861,20 @@ cfg80211:     (2457000 KHz - 2482000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (5170000 KHz - 5250000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (5735000 KHz - 5835000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+Linux video capture interface: v2.00
+mtp-probe[630]: checking bus 5, device 2: "/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2"
+mtp-probe[616]: checking bus 7, device 2: "/sys/devices/pci0000:00/0000:00:1d.1/usb7/7-1"
+mtp-probe[630]: bus: 5, device: 2 was not an MTP device
+mtp-probe[616]: bus: 7, device: 2 was an MTP device
+uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
+input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input9
+usbcore: registered new interface driver uvcvideo
+USB Video Class driver (v1.0.0)
+udevd-work[401]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/5-2:1.0/power/level} for writing: No such file or directory
 HDA Intel 0000:00:1b.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
 HDA Intel 0000:00:1b.0: irq 50 for MSI/MSI-X
 HDA Intel 0000:00:1b.0: setting latency timer to 64
 hda_codec: ALC663: SKU not ready 0x598301f0
-mtp-probe[657]: checking bus 7, device 2: "/sys/devices/pci0000:00/0000:00:1d.1/usb7/7-1"
-mtp-probe[654]: checking bus 5, device 2: "/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2"
-mtp-probe[654]: bus: 5, device: 2 was not an MTP device
-mtp-probe[657]: bus: 7, device: 2 was an MTP device
-udevd-work[420]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/5-2:1.0/power/level} for writing: No such file or directory
-Linux video capture interface: v2.00
 cfg80211: Calling CRDA for country: FI
 cfg80211: Regulatory domain changed to country: FI
 cfg80211:     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
@@ -880,64 +882,140 @@ cfg80211:     (2402000 KHz - 2482000 KHz @ 40000 KHz), (N/A, 2000 mBm)
 cfg80211:     (5170000 KHz - 5250000 KHz @ 40000 KHz), (N/A, 2000 mBm)
 cfg80211:     (5250000 KHz - 5330000 KHz @ 40000 KHz), (N/A, 2000 mBm)
 cfg80211:     (5490000 KHz - 5710000 KHz @ 40000 KHz), (N/A, 2700 mBm)
-uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
-input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input9
-usbcore: registered new interface driver uvcvideo
-USB Video Class driver (v1.0.0)
-mount
-systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
-[753]: mount: unknown filesystem type 'hugetlbfs'
-systemd[1]: Unit dev-hugepages.mount entered failed state.
 nvidia: module license 'NVIDIA' taints kernel.
 Disabling lock debugging due to kernel taint
 nvidia 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 nvidia 0000:01:00.0: setting latency timer to 64
 vgaarb: device changed decodes: PCI:0000:01:00.0,olddecodes=io+mem,decodes=none:owns=io+mem
-NVRM: loading NVIDIA UNIX x86_64 Kernel Module  260.19.36  Tue Jan 18 16:56:11 PST 2011
-mount[786]: mount: unknown filesystem type 'hugetlbfs'
+NVRM: loading NVIDIA UNIX x86_64 Kernel Module  270.30  Fri Feb 25 14:34:55 PST 2011
+mount[736]: mount: unknown filesystem type 'hugetlbfs'
 systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
 systemd[1]: Unit dev-hugepages.mount entered failed state.
+mount[759]: mount: unknown filesystem type 'hugetlbfs'
+systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
+systemd[1]: Unit dev-hugepages.mount entered failed state.
+device label /home devid 1 transid 227361 /dev/mapper/VolGroup00-home
 Adding 7569404k swap on /dev/mapper/VolGroup00-swap.  Priority:0 extents:1 across:7569404k 
-device label /home devid 1 transid 221609 /dev/mapper/VolGroup00-home
-systemd-fsck[825]: /usr/local: clean, 155710/2883584 files, 8378784/11517952 blocks
+systemd-fsck[797]: /usr/local: clean, 155548/2883584 files, 8430250/11517952 blocks
 EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null)
-alsactl[871]: segfault at 28 ip 00007f5182ca16ea sp 00007fffe7d6a6c0 error 4 in ld-2.13.90.so[7f5182c98000+20000]
-mount
+mount[904]: 
 systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
-[911]: mount: unknown filesystem type 'hugetlbfs'
+mount: unknown filesystem type 'hugetlbfs'
 systemd[1]: Unit dev-hugepages.mount entered failed state.
-/usr/sbin/crond[888]: (CRON) INFO (running with inotify support)
-/usr/sbin/gpm[924]: *** info [daemon/startup.c(136)]:
-/usr/sbin/gpm[924]: Started gpm successfully. Entered daemon mode.
-rtkit-daemon[900]: Successfully called chroot.
-rtkit-daemon[900]: Successfully dropped privileges.
-rtkit-daemon[900]: Successfully limited resources.
-rtkit-daemon[900]: Running.
-rtkit-daemon[900]: Watchdog thread running.
-rtkit-daemon[900]: Canary thread running.
-mount[980]: mount: unknown filesystem type 'hugetlbfs'
+/usr/sbin/gpm[908]: *** info [daemon/startup.c(136)]:
+/usr/sbin/gpm[908]: Started gpm successfully. Entered daemon mode.
+/usr/sbin/crond[871]: (CRON) INFO (running with inotify support)
+vboxdrv: Found 2 processor cores.
+VBoxDrv: dbg - g_abExecMemory=ffffffffa0d0f440
+vboxdrv: fAsync=0 offMin=0x1a0 offMax=0x20a3
+vboxdrv: TSC mode is 'synchronous', kernel timer mode is 'normal'.
+vboxdrv: Successfully loaded version 4.0.4 (interface 0x00160000).
+NetworkManager[841]: <info> NetworkManager (version 0.8.2-8.git20101117.fc15) is starting...
+NetworkManager[841]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+rtkit-daemon[889]: Successfully called chroot.
+rtkit-daemon[889]: Successfully dropped privileges.
+rtkit-daemon[889]: Successfully limited resources.
+rtkit-daemon[889]: Running.
+rtkit-daemon[889]: Watchdog thread running.
+rtkit-daemon[889]: Canary thread running.
+mount[974]: mount: unknown filesystem type 'hugetlbfs'
+NetworkManager[841]: <info> VPN: loaded org.freedesktop.NetworkManager.openvpn
+NetworkManager[841]: <info> VPN: loaded org.freedesktop.NetworkManager.vpnc
+NetworkManager[841]: <info> trying to start the modem manager...
+sshd (989): /proc/989/oom_adj is deprecated, please use /proc/989/oom_score_adj instead.
+NetworkManager[841]: <info> monitoring kernel firmware directory '/lib/firmware'.
+NetworkManager[841]: ifcfg-rh: Acquired D-Bus service com.redhat.ifcfgrh1
+NetworkManager[841]: <info> Loaded plugin ifcfg-rh: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+NetworkManager[841]: ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-wlan0 ...
+NetworkManager[841]: ifcfg-rh:     error: Missing SSID
+NetworkManager[841]: ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-lo ...
+NetworkManager[841]: ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-eth0 ...
+NetworkManager[841]: ifcfg-rh:     read connection 'System eth0'
+NetworkManager[841]: <info> found WiFi radio killswitch rfkill0 (at /sys/devices/pci0000:00/0000:00:1c.1/0000:03:00.0/ieee80211/phy0/rfkill0) (driver <unknown>)
+NetworkManager[841]: <info> WiFi disabled by radio killswitch; disabled by state file
+NetworkManager[841]: <info> WWAN enabled by radio killswitch; enabled by state file
+NetworkManager[841]: <info> WiMAX enabled by radio killswitch; enabled by state file
+NetworkManager[841]: <info> Networking is enabled by state file
+NetworkManager[841]: <info> (wlan0): driver supports SSID scans (scan_capa 0x01).
+NetworkManager[841]: <info> (wlan0): new 802.11 WiFi device (driver: 'iwlagn' ifindex: 3)
+NetworkManager[841]: <info> (wlan0): exported as /org/freedesktop/NetworkManager/Devices/0
+NetworkManager[841]: <info> (wlan0): now managed
+NetworkManager[841]: <info> (wlan0): device state change: 1 -> 2 (reason 2)
+NetworkManager[841]: <info> (wlan0): bringing up device.
+NetworkManager[841]: <info> (wlan0): deactivating device (reason: 2).
+NetworkManager[841]: <info> (eth0): carrier is OFF
+NetworkManager[841]: <info> (eth0): new Ethernet device (driver: 'r8169' ifindex: 2)
+NetworkManager[841]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/1
+NetworkManager[841]: <info> (eth0): now managed
+NetworkManager[841]: <info> (eth0): device state change: 1 -> 2 (reason 2)
+NetworkManager[841]: <info> (eth0): bringing up device.
 r8169 0000:08:00.0: eth0: link down
 r8169 0000:08:00.0: eth0: link down
 ADDRCONF(NETDEV_UP): eth0: link is not ready
-sshd (1028): /proc/1028/oom_adj is deprecated, please use /proc/1028/oom_score_adj instead.
+NetworkManager[841]: <info> (eth0): preparing device.
+NetworkManager[841]: <info> (eth0): deactivating device (reason: 2).
+NetworkManager[841]: <warn> /sys/devices/virtual/net/vboxnet0: couldn't determine device driver; ignoring...
+NetworkManager[841]: <info> Trying to start the supplicant...
+NetworkManager[841]: <info> modem-manager is now available
+NetworkManager[841]: <info> (wlan0): supplicant manager state:  down -> idle
 r8169 0000:08:00.0: eth0: link up
 ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+NetworkManager[841]: <info> (eth0): carrier now ON (device state 2)
+NetworkManager[841]: <info> (eth0): device state change: 2 -> 3 (reason 40)
+NetworkManager[841]: <info> Activation (eth0) starting connection 'System eth0'
+NetworkManager[841]: <info> (eth0): device state change: 3 -> 4 (reason 0)
+NetworkManager[841]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+NetworkManager[841]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+NetworkManager[841]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+NetworkManager[841]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+NetworkManager[841]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+NetworkManager[841]: <info> (eth0): device state change: 4 -> 5 (reason 0)
+NetworkManager[841]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+NetworkManager[841]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+NetworkManager[841]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+NetworkManager[841]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+NetworkManager[841]: <info> (eth0): device state change: 5 -> 7 (reason 0)
+NetworkManager[841]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+NetworkManager[841]: <info> dhclient started with pid 1037
+NetworkManager[841]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+NetworkManager[841]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+NetworkManager[841]: <info> (eth0): DHCPv4 state changed preinit -> reboot
+NetworkManager[841]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) scheduled...
+NetworkManager[841]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) started...
+NetworkManager[841]: <info>   address 192.168.100.29
+NetworkManager[841]: <info>   prefix 24 (255.255.255.0)
+NetworkManager[841]: <info>   gateway 192.168.100.1
+NetworkManager[841]: <info>   hostname 'terrop'
+NetworkManager[841]: <info>   nameserver '192.168.100.1'
+NetworkManager[841]: <info>   domain name 'Elisa'
+NetworkManager[841]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) scheduled...
+NetworkManager[841]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) complete.
+NetworkManager[841]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) started...
+NetworkManager[841]: <info> (eth0): device state change: 7 -> 8 (reason 0)
+NetworkManager[841]: <info> Policy set 'System eth0' (eth0) as default for IPv4 routing and DNS.
+NetworkManager[841]: <info> Updating /etc/hosts with new system hostname
+NetworkManager[841]: <info> Activation (eth0) successful, device activated.
+NetworkManager[841]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) complete.
+NetworkManager[841]: <error> [1300175843.580007] [nm-manager.c:1368] user_proxy_init(): could not init user settings proxy: (3) Could not get owner of name 'org.freedesktop.NetworkManagerUserSettings': no such name
 eth0: no IPv6 routers present
-rtkit-daemon[900]: Successfully made thread 1306 of process 1306 (/usr/bin/pulseaudio) owned by '42' high priority at nice level -11.
-rtkit-daemon[900]: Supervising 1 threads of 1 processes of 1 users.
-rtkit-daemon[900]: Failed to make thread 1307 RT: Operation not permitted
-rtkit-daemon[900]: Failed to make thread 1307 RT: Operation not permitted
-rtkit-daemon[900]: Failed to make thread 1308 RT: Operation not permitted
-rtkit-daemon[900]: Failed to make thread 1308 RT: Operation not permitted
-accounts-daemon[1368]: ** (accounts-daemon:1368): WARNING **: user terrop has 4 groups
-accounts-daemon[1368]: ** (accounts-daemon:1368): WARNING **: user arirop has 2 groups
-accounts-daemon[1368]: ** (accounts-daemon:1368): WARNING **: failed to load gdms custom.conf: Key file does not have key 'AutomaticLoginEnable'
-/usr/sbin/gpm[924]: *** info [daemon/processrequest.c(42)]:
-/usr/sbin/gpm[924]: Request on 6 (console 2)
-accounts-daemon[1368]: ** (accounts-daemon:1368): WARNING **: unable to lookup name /home/terrop
+rtkit-daemon[889]: Successfully made thread 1276 of process 1276 (/usr/bin/pulseaudio) owned by '42' high priority at nice level -11.
+rtkit-daemon[889]: Supervising 1 threads of 1 processes of 1 users.
+rtkit-daemon[889]: Failed to make thread 1277 RT: Operation not permitted
+rtkit-daemon[889]: Failed to make thread 1277 RT: Operation not permitted
+rtkit-daemon[889]: Failed to make thread 1278 RT: Operation not permitted
+rtkit-daemon[889]: Failed to make thread 1278 RT: Operation not permitted
+NetworkManager[841]: <warn> bluez error getting default adapter: Activation of org.bluez timed out
+accounts-daemon[1338]: ** (accounts-daemon:1338): WARNING **: user terrop has 4 groups
+accounts-daemon[1338]: ** (accounts-daemon:1338): WARNING **: user arirop has 2 groups
+accounts-daemon[1338]: ** (accounts-daemon:1338): WARNING **: failed to load gdms custom.conf: Key file does not have key 'AutomaticLoginEnable'
+NetworkManager[841]: <error> [1300175859.364789] [nm-manager.c:1368] user_proxy_init(): could not init user settings proxy: (3) Could not get owner of name 'org.freedesktop.NetworkManagerUserSettings': no such name
+NetworkManager[841]: <error> [1300175859.365127] [nm-manager.c:1368] user_proxy_init(): could not init user settings proxy: (3) Could not get owner of name 'org.freedesktop.NetworkManagerUserSettings': no such name
+NetworkManager[841]: <error> [1300175859.365414] [nm-manager.c:1368] user_proxy_init(): could not init user settings proxy: (3) Could not get owner of name 'org.freedesktop.NetworkManagerUserSettings': no such name
+NetworkManager[841]: <error> [1300175859.365774] [nm-manager.c:1368] user_proxy_init(): could not init user settings proxy: (3) Could not get owner of name 'org.freedesktop.NetworkManagerUserSettings': no such name
+NetworkManager[841]: <error> [1300175859.366038] [nm-manager.c:1368] user_proxy_init(): could not init user settings proxy: (3) Could not get owner of name 'org.freedesktop.NetworkManagerUserSettings': no such name
 fuse init (API version 7.16)
-bluetoothd[2592]: bluetoothd[2592]: Bluetooth deamon 4.87
-bluetoothd[2592]: bluetoothd[2592]: Starting SDP server
+bluetoothd[1450]: bluetoothd[1450]: Bluetooth deamon 4.87
+bluetoothd[1450]: bluetoothd[1450]: Starting SDP server
 Bluetooth: Core ver 2.15
 NET: Registered protocol family 31
 Bluetooth: HCI device and connection manager initialized
@@ -946,8 +1024,9 @@ Bluetooth: L2CAP ver 2.15
 Bluetooth: L2CAP socket layer initialized
 Bluetooth: BNEP (Ethernet Emulation) ver 1.3
 Bluetooth: BNEP filters: protocol multicast
-bluetoothd[2592]: bluetoothd[2592]: Parsing /etc/bluetooth/input.conf failed: No such file or directory
-bluetoothd[2592]: bluetoothd[2592]: Parsing /etc/bluetooth/audio.conf failed: No such file or directory
+bluetoothd[1450]: bluetoothd[1450]: Parsing /etc/bluetooth/input.conf failed: No such file or directory
+bluetoothd[1450]: bluetoothd[1450]: Parsing /etc/bluetooth/audio.conf failed: No such file or directory
 Bluetooth: SCO (Voice Link) ver 0.6
 Bluetooth: SCO socket layer initialized
-accounts-daemon[1368]: ** (accounts-daemon:1368): WARNING **: user root has 7 groups
+NetworkManager[841]: <warn> bluez error getting default adapter: No such adapter
+accounts-daemon[1338]: ** (accounts-daemon:1338): WARNING **: user root has 7 groups
