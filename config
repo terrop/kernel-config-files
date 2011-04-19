@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86_64 2.6.39-rc3 Kernel Configuration
-# Tue Apr 12 07:35:23 2011
+# Linux/x86_64 2.6.39-rc4 Kernel Configuration
+# Tue Apr 19 08:51:26 2011
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -2163,7 +2163,6 @@ CONFIG_DCA=m
 CONFIG_AUXDISPLAY=y
 # CONFIG_UIO is not set
 # CONFIG_STAGING is not set
-# CONFIG_SAMSUNG_LAPTOP is not set
 CONFIG_X86_PLATFORM_DEVICES=y
 # CONFIG_ACERHDF is not set
 CONFIG_ASUS_LAPTOP=m
@@ -2186,6 +2185,7 @@ CONFIG_ASUS_LAPTOP=m
 # CONFIG_INTEL_IPS is not set
 # CONFIG_IBM_RTL is not set
 # CONFIG_XO15_EBOOK is not set
+# CONFIG_SAMSUNG_LAPTOP is not set
 
 #
 # Firmware Drivers
