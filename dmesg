@@ -1,6 +1,6 @@
 Initializing cgroup subsys cpuset
 Initializing cgroup subsys cpu
-Linux version 2.6.39-rc5 (terrop@terrop) (gcc version 4.6.0 20110419 (Red Hat 4.6.0-5) (GCC) ) #1 SMP Wed Apr 27 12:07:16 EEST 2011
+Linux version 2.6.39-rc6 (terrop@terrop) (gcc version 4.6.0 20110428 (Red Hat 4.6.0-6) (GCC) ) #1 SMP Wed May 4 20:48:48 EEST 2011
 Command line: ro root=/dev/sda3
 KERNEL supported cpus:
   Intel GenuineIntel
@@ -101,7 +101,7 @@ Kernel command line: ro root=/dev/sda3
 PID hash table entries: 4096 (order: 3, 32768 bytes)
 Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
 Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
-Memory: 3081160k/3145216k available (3927k kernel code, 456k absent, 63600k reserved, 1546k data, 420k init)
+Memory: 3081152k/3145216k available (3930k kernel code, 456k absent, 63608k reserved, 1552k data, 420k init)
 SLUB: Genslabs=15, HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
 Hierarchical RCU implementation.
 	RCU-based detection of stalled CPUs is disabled.
@@ -110,9 +110,10 @@ Extended CMOS year: 2000
 Console: colour VGA+ 80x25
 console [tty0] enabled
 hpet clockevent registered
-Fast TSC calibration using PIT
-Detected 2261.187 MHz processor.
-Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.37 BogoMIPS (lpj=2261187)
+Fast TSC calibration failed
+TSC: PIT calibration matches HPET. 1 loops
+Detected 2261.253 MHz processor.
+Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.50 BogoMIPS (lpj=2261253)
 pid_max: default: 32768 minimum: 301
 Mount-cache hash table entries: 256
 Initializing cgroup subsys ns
@@ -128,8 +129,6 @@ ACPI: Core revision 20110316
 Setting APIC routing to flat
 ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
 CPU0: Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz stepping 06
-APIC calibration not consistent with PM-Timer: 119ms instead of 100ms
-APIC delta adjusted to PM-Timer: 1662682 (1995192)
 Performance Events: PEBS fmt0+, Core2 events, Intel PMU driver.
 ... version:                2
 ... bit width:              40
@@ -142,7 +141,7 @@ Booting Node   0, Processors  #1 Ok.
 smpboot cpu 1: start_ip = 99000
 CPU1: Thermal monitoring handled by SMI
 Brought up 2 CPUs
-Total of 2 processors activated (9044.68 BogoMIPS).
+Total of 2 processors activated (10853.71 BogoMIPS).
 devtmpfs: initialized
 NET: Registered protocol family 16
 ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
@@ -552,7 +551,6 @@ pci_bus 0000:09: resource 7 [mem 0x000d0000-0x000dffff]
 pci_bus 0000:09: resource 8 [mem 0xc0000000-0xffffffff]
 NET: Registered protocol family 2
 IP route cache hash table entries: 131072 (order: 8, 1048576 bytes)
-IPv4 FIB: Using LC-trie version 0.409
 TCP established hash table entries: 262144 (order: 10, 4194304 bytes)
 TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
 TCP: Hash tables configured (established 262144 bind 65536)
@@ -599,7 +597,7 @@ Monitor-Mwait will be used to enter C-1 state
 Monitor-Mwait will be used to enter C-3 state
 Marking TSC unstable due to TSC halts in idle
 thermal LNXTHERM:00: registered as thermal_zone0
-ACPI: Thermal Zone [THRM] (44 C)
+ACPI: Thermal Zone [THRM] (35 C)
 Non-volatile memory driver v1.3
 brd: module loaded
 loop: module loaded
@@ -634,7 +632,7 @@ ehci_hcd 0000:00:1a.7: USB 2.0 started, EHCI 1.00
 usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb1: Product: EHCI Host Controller
-usb usb1: Manufacturer: Linux 2.6.39-rc5 ehci_hcd
+usb usb1: Manufacturer: Linux 2.6.39-rc6 ehci_hcd
 usb usb1: SerialNumber: 0000:00:1a.7
 hub 1-0:1.0: USB hub found
 hub 1-0:1.0: 6 ports detected
@@ -650,7 +648,7 @@ ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00
 usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb2: Product: EHCI Host Controller
-usb usb2: Manufacturer: Linux 2.6.39-rc5 ehci_hcd
+usb usb2: Manufacturer: Linux 2.6.39-rc6 ehci_hcd
 usb usb2: SerialNumber: 0000:00:1d.7
 hub 2-0:1.0: USB hub found
 hub 2-0:1.0: 6 ports detected
@@ -664,7 +662,7 @@ uhci_hcd 0000:00:1a.0: irq 16, io base 0x0000bc00
 usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb3: Product: UHCI Host Controller
-usb usb3: Manufacturer: Linux 2.6.39-rc5 uhci_hcd
+usb usb3: Manufacturer: Linux 2.6.39-rc6 uhci_hcd
 usb usb3: SerialNumber: 0000:00:1a.0
 hub 3-0:1.0: USB hub found
 hub 3-0:1.0: 2 ports detected
@@ -676,7 +674,7 @@ uhci_hcd 0000:00:1a.1: irq 21, io base 0x0000b880
 usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb4: Product: UHCI Host Controller
-usb usb4: Manufacturer: Linux 2.6.39-rc5 uhci_hcd
+usb usb4: Manufacturer: Linux 2.6.39-rc6 uhci_hcd
 usb usb4: SerialNumber: 0000:00:1a.1
 hub 4-0:1.0: USB hub found
 hub 4-0:1.0: 2 ports detected
@@ -688,7 +686,7 @@ uhci_hcd 0000:00:1a.2: irq 19, io base 0x0000b800
 usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb5: Product: UHCI Host Controller
-usb usb5: Manufacturer: Linux 2.6.39-rc5 uhci_hcd
+usb usb5: Manufacturer: Linux 2.6.39-rc6 uhci_hcd
 usb usb5: SerialNumber: 0000:00:1a.2
 hub 5-0:1.0: USB hub found
 hub 5-0:1.0: 2 ports detected
@@ -700,7 +698,7 @@ uhci_hcd 0000:00:1d.0: irq 23, io base 0x0000b480
 usb usb6: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb6: Product: UHCI Host Controller
-usb usb6: Manufacturer: Linux 2.6.39-rc5 uhci_hcd
+usb usb6: Manufacturer: Linux 2.6.39-rc6 uhci_hcd
 usb usb6: SerialNumber: 0000:00:1d.0
 hub 6-0:1.0: USB hub found
 hub 6-0:1.0: 2 ports detected
@@ -712,7 +710,7 @@ uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000b400
 usb usb7: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb7: Product: UHCI Host Controller
-usb usb7: Manufacturer: Linux 2.6.39-rc5 uhci_hcd
+usb usb7: Manufacturer: Linux 2.6.39-rc6 uhci_hcd
 usb usb7: SerialNumber: 0000:00:1d.1
 hub 7-0:1.0: USB hub found
 hub 7-0:1.0: 2 ports detected
@@ -724,7 +722,7 @@ uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000b080
 usb usb8: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb8: Product: UHCI Host Controller
-usb usb8: Manufacturer: Linux 2.6.39-rc5 uhci_hcd
+usb usb8: Manufacturer: Linux 2.6.39-rc6 uhci_hcd
 usb usb8: SerialNumber: 0000:00:1d.2
 hub 8-0:1.0: USB hub found
 hub 8-0:1.0: 2 ports detected
@@ -793,63 +791,64 @@ usb 5-2: Product: Fingerprint Sensor
 ata6: SATA link down (SStatus 0 SControl 300)
 Freeing unused kernel memory: 420k freed
 dracut: dracut-009-6.fc15
-Synaptics Touchpad, model: 1, fw: 6.2, id: 0x280b1, caps: 0xb04711/0x60040d/0x0
 udev[113]: starting version 167
+Synaptics Touchpad, model: 1, fw: 6.2, id: 0x280b1, caps: 0xb04711/0x60040d/0x0
 input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio4/input/input5
-dracut: Starting plymouth daemon
 usb 7-1: new low speed USB device number 2 using uhci_hcd
-sdhci: Secure Digital Host Controller Interface driver
-sdhci: Copyright(c) Pierre Ossman
+dracut: Starting plymouth daemon
 firewire_ohci 0000:09:01.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 usb 7-1: New USB device found, idVendor=046d, idProduct=c062
 usb 7-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
 usb 7-1: Product: USB Laser Mouse
 usb 7-1: Manufacturer: Logitech
-firewire_ohci: Added fw-ohci device 0000:09:01.0, OHCI v1.0, 4 IR + 4 IT contexts, quirks 0x1
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
 input: Logitech USB Laser Mouse as /devices/pci0000:00/0000:00:1d.1/usb7/7-1/7-1:1.0/input/input6
+generic-usb 0003:046D:C062.0001: input,hidraw0: USB HID v1.10 Mouse [Logitech USB Laser Mouse] on usb-0000:00:1d.1-1/input0
+firewire_ohci: Added fw-ohci device 0000:09:01.0, OHCI v1.0, 4 IR + 4 IT contexts, quirks 0x1
 sdhci-pci 0000:09:01.1: SDHCI controller found [1180:0822] (rev 22)
 sdhci-pci 0000:09:01.1: PCI INT B -> GSI 17 (level, low) -> IRQ 17
-generic-usb 0003:046D:C062.0001: input,hidraw0: USB HID v1.10 Mouse [Logitech USB Laser Mouse] on usb-0000:00:1d.1-1/input0
 sdhci-pci 0000:09:01.1: Will use DMA mode even though HW doesn't fully claim to support it.
 Registered led device: mmc0::
 mmc0: SDHCI controller on PCI [0000:09:01.1] using DMA
-device label kernel devid 1 transid 83 /dev/sda1
-firewire_core: created device fw0: GUID 001e8c0000057669, S400
+device label kernel devid 1 transid 98 /dev/sda1
 EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
+firewire_core: created device fw0: GUID 001e8c0000057669, S400
 dracut: Checking filesystems
 dracut: fsck -T -t noopts=_netdev -A -a
-dracut: /dev/sda3: clean, 204872/2575440 files, 1960104/10290203 blocks
+dracut: /dev/sda3: clean, 205320/2575440 files, 1959275/10290203 blocks
 dracut: Remounting /dev/sda3 with -o ro,
 EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
 dracut: Mounted root filesystem /dev/sda3
 dracut: Switching root
-systemd[1]: systemd 25 running in system mode. (+PAM +LIBWRAP +AUDIT +SELINUX +SYSVINIT +LIBCRYPTSETUP; fedora)
+systemd[1]: systemd 26 running in system mode. (+PAM +LIBWRAP +AUDIT +SELINUX +SYSVINIT +LIBCRYPTSETUP; fedora)
 NET: Registered protocol family 10
 systemd[1]: Set hostname to <terrop>.
 systemd[1]: Failed to connect to audit log: Protocol not supported
 systemd[1]: Failed to initialize automounter: No such file or directory
 systemd[1]: Unit sys-kernel-security.automount entered failed state.
 EXT4-fs (sda3): re-mounted. Opts: (null)
-udev[415]: starting version 167
-microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
-input: PC Speaker as /devices/platform/pcspkr/input/input7
-r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
-r8169 0000:08:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
-r8169 0000:08:00.0: setting latency timer to 64
-r8169 0000:08:00.0: irq 48 for MSI/MSI-X
-r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc90010236000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
+udev[383]: starting version 167
+WARNING! power/level is deprecated; use power/control instead
 iTCO_wdt: Intel TCO WatchDog Timer Driver v1.06
 iTCO_wdt: Found a ICH9M TCO device (Version=2, TCOBASE=0x0860)
 iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
 cfg80211: Calling CRDA to update world regulatory domain
+microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
 asus_laptop: Asus Laptop Support version 0.42
 asus_laptop:   M50Vm model detected
 asus_laptop: Backlight controlled by ACPI video driver
-input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input8
+input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input7
 Registered led device: asus::mail
+input: PC Speaker as /devices/platform/pcspkr/input/input8
 Registered led device: asus::touchpad
-udevd-work[455]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/power/level} for writing: No such file or directory
-Linux video capture interface: v2.00
+microcode: CPU1 sig=0x10676, pf=0x80, revision=0x60c
+microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
+r8169 0000:08:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+r8169 0000:08:00.0: setting latency timer to 64
+r8169 0000:08:00.0: irq 48 for MSI/MSI-X
+r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc900102f0000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
 iwlagn: Intel(R) Wireless WiFi Link AGN driver for Linux, in-tree:
 iwlagn: Copyright(c) 2003-2010 Intel Corporation
 iwlagn 0000:03:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
@@ -859,26 +858,24 @@ iwlagn 0000:03:00.0: device EEPROM VER=0x11f, CALIB=0x4
 iwlagn 0000:03:00.0: Device SKU: 0Xb
 iwlagn 0000:03:00.0: Tunable channels: 13 802.11bg, 24 802.11a channels
 iwlagn 0000:03:00.0: irq 49 for MSI/MSI-X
+iwlagn 0000:03:00.0: loaded firmware version 8.83.5.1 build 33692
+Registered led device: phy0-led
+ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
+Linux video capture interface: v2.00
 uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
 input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input9
 usbcore: registered new interface driver uvcvideo
 USB Video Class driver (v1.0.0)
-microcode: CPU1 sig=0x10676, pf=0x80, revision=0x60c
-microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
 microcode: CPU0 updated to revision 0x60f, date = 2010-09-29
 microcode: CPU1 updated to revision 0x60f, date = 2010-09-29
-iwlagn 0000:03:00.0: loaded firmware version 8.83.5.1 build 33692
-Registered led device: phy0-led
-ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
+mtp-probe[584]: checking bus 7, device 2: "/sys/devices/pci0000:00/0000:00:1d.1/usb7/7-1"
+mtp-probe[587]: checking bus 5, device 2: "/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2"
+mtp-probe[584]: bus: 7, device: 2 was not an MTP device
+mtp-probe[587]: bus: 5, device: 2 was not an MTP device
+udevd-work[434]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/5-2:1.0/power/level} for writing: No such file or directory
 HDA Intel 0000:00:1b.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
 HDA Intel 0000:00:1b.0: irq 50 for MSI/MSI-X
 HDA Intel 0000:00:1b.0: setting latency timer to 64
-mtp-probe[622]: checking bus 7, device 2: "/sys/devices/pci0000:00/0000:00:1d.1/usb7/7-1"
-mtp-probe[645]: checking bus 5, device 2: "/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2"
-mtp-probe[622]: bus: 7, device: 2 was not an MTP device
-mtp-probe[645]: bus: 5, device: 2 was not an MTP device
-udevd-work[454]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/5-2:1.0/power/level} for writing: No such file or directory
-hda_codec: ALC663: SKU not ready 0x598301f0
 cfg80211: World regulatory domain updated:
 cfg80211:     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
 cfg80211:     (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
@@ -886,6 +883,9 @@ cfg80211:     (2457000 KHz - 2482000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (5170000 KHz - 5250000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (5735000 KHz - 5835000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+hda_codec: ALC663: SKU not ready 0x598301f0
+nvidia: module license 'NVIDIA' taints kernel.
+Disabling lock debugging due to kernel taint
 cfg80211: Calling CRDA for country: FI
 cfg80211: Regulatory domain changed to country: FI
 cfg80211:     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
@@ -893,41 +893,42 @@ cfg80211:     (2402000 KHz - 2482000 KHz @ 40000 KHz), (N/A, 2000 mBm)
 cfg80211:     (5170000 KHz - 5250000 KHz @ 40000 KHz), (N/A, 2000 mBm)
 cfg80211:     (5250000 KHz - 5330000 KHz @ 40000 KHz), (N/A, 2000 mBm)
 cfg80211:     (5490000 KHz - 5710000 KHz @ 40000 KHz), (N/A, 2700 mBm)
-mount[732]: 
-systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
-mount: unknown filesystem type 'hugetlbfs'
-systemd[1]: Unit dev-hugepages.mount entered failed state.
-nvidia: module license 'NVIDIA' taints kernel.
-Disabling lock debugging due to kernel taint
 nvidia 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 nvidia 0000:01:00.0: setting latency timer to 64
 vgaarb: device changed decodes: PCI:0000:01:00.0,olddecodes=io+mem,decodes=none:owns=io+mem
 NVRM: loading NVIDIA UNIX x86_64 Kernel Module  270.41.03  Sat Apr  9 00:06:19 PDT 2011
-mount[757]: mount: unknown filesystem type 'hugetlbfs'
-systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
-systemd[1]: Unit dev-hugepages.mount entered failed state.
-device label /home devid 1 transid 262234 /dev/mapper/VolGroup00-home
-Adding 7569404k swap on /dev/mapper/VolGroup00-swap.  Priority:0 extents:1 across:7569404k 
-systemd-fsck[802]: /usr/local: clean, 160790/2883584 files, 8949431/11517952 blocks
-EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null)
-mount[884]: 
+mount[704]: 
 systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
 mount: unknown filesystem type 'hugetlbfs'
 systemd[1]: Unit dev-hugepages.mount entered failed state.
-/usr/sbin/gpm[888]: *** info [daemon/startup.c(136)]:
-/usr/sbin/gpm[888]: Started gpm successfully. Entered daemon mode.
-/usr/sbin/crond[859]: (CRON) INFO (running with inotify support)
-NetworkManager[833]: <info> NetworkManager (version 0.8.998-3.git20110419.fc15) is starting...
-NetworkManager[833]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
-rtkit-daemon[872]: Successfully called chroot.
-rtkit-daemon[872]: Successfully dropped privileges.
-rtkit-daemon[872]: Successfully limited resources.
-rtkit-daemon[872]: Running.
-rtkit-daemon[872]: Watchdog thread running.
-rtkit-daemon[872]: Canary thread running.
-dbus-daemon[900]: [system] Activating systemd to hand-off service name='org.freedesktop.NetworkManager' unit='dbus-org.freedesktop.NetworkManager.service'
-dbus-daemon[900]: [system] Successfully activated service 'org.freedesktop.systemd1'
-mount[918]: mount: unknown filesystem type 'hugetlbfs'
+mount[729]: mount: unknown filesystem type 'hugetlbfs'
+systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
+
+systemd[1]: Unit dev-hugepages.mount entered failed state.
+Adding 7569404k swap on /dev/mapper/VolGroup00-swap.  Priority:0 extents:1 across:7569404k 
+device label /home devid 1 transid 269033 /dev/mapper/VolGroup00-home
+systemd-fsck[761]: /usr/local: clean, 161436/2883584 files, 9411750/11517952 blocks
+mount[785]: mount: unknown filesystem type 'hugetlbfs'
+systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
+systemd[1]: Unit dev-hugepages.mount entered failed state.
+EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null)
+mount[868]: mount: unknown filesystem type 'hugetlbfs'
+systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
+systemd[1]: Unit dev-hugepages.mount entered failed state.
+/usr/sbin/crond[843]: (CRON) INFO (running with inotify support)
+/usr/sbin/gpm[890]: *** info [daemon/startup.c(136)]:
+/usr/sbin/gpm[890]: Started gpm successfully. Entered daemon mode.
+NetworkManager[817]: <info> NetworkManager (version 0.8.998-4.git20110427.fc15) is starting...
+NetworkManager[817]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+rtkit-daemon[864]: Successfully called chroot.
+rtkit-daemon[864]: Successfully dropped privileges.
+rtkit-daemon[864]: Successfully limited resources.
+rtkit-daemon[864]: Running.
+dbus-daemon[888]: [system] Activating systemd to hand-off: service name='org.freedesktop.NetworkManager' unit='dbus-org.freedesktop.NetworkManager.service'
+dbus-daemon[888]: [system] Successfully activated service 'org.freedesktop.systemd1'
+rtkit-daemon[864]: Watchdog thread running.
+rtkit-daemon[864]: Canary thread running.
+mount[902]: mount: unknown filesystem type 'hugetlbfs'
 systemd[1]: dev-hugepages.mount mount process exited, code=exited status=32
 systemd[1]: Unit dev-hugepages.mount entered failed state.
 r8169 0000:08:00.0: eth0: link down
@@ -941,7 +942,7 @@ Bluetooth: L2CAP socket layer initialized
 Bluetooth: SCO socket layer initialized
 Bluetooth: BNEP (Ethernet Emulation) ver 1.3
 Bluetooth: BNEP filters: protocol multicast
-sshd (990): /proc/990/oom_adj is deprecated, please use /proc/990/oom_score_adj instead.
+sshd (958): /proc/958/oom_adj is deprecated, please use /proc/958/oom_score_adj instead.
 r8169 0000:08:00.0: eth0: link up
 ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 eth0: no IPv6 routers present
