@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86_64 3.0.0-rc4 Kernel Configuration
+# Linux/x86_64 3.0.0-rc5 Kernel Configuration
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -2354,7 +2354,6 @@ CONFIG_CIFS_POSIX=y
 # CONFIG_CIFS_DEBUG2 is not set
 # CONFIG_CIFS_DFS_UPCALL is not set
 # CONFIG_CIFS_ACL is not set
-# CONFIG_CIFS_NFSD_EXPORT is not set
 # CONFIG_NCP_FS is not set
 # CONFIG_CODA_FS is not set
 # CONFIG_AFS_FS is not set
