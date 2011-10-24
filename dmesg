@@ -1,7 +1,7 @@
 Initializing cgroup subsys cpuset
 Initializing cgroup subsys cpu
-Linux version 3.1.0-rc10+ (terrop@terrop) (gcc version 4.6.1 20111003 (Red Hat 4.6.1-10) (GCC) ) #1 SMP Sat Oct 22 16:12:07 EEST 2011
-Command line: BOOT_IMAGE=/boot/vmlinuz-3.1.0-rc10+ root=/dev/sda3 ro SYSFONT=latarcyrheb-sun16 LANG=en_US.utf8 KEYTABLE=fi
+Linux version 3.1.0 (terrop@terrop) (gcc version 4.6.1 20111003 (Red Hat 4.6.1-10) (GCC) ) #1 SMP Mon Oct 24 12:46:10 EEST 2011
+Command line: BOOT_IMAGE=/boot/vmlinuz-3.1.0 root=/dev/sda3 ro SYSFONT=latarcyrheb-sun16 LANG=en_US.utf8 KEYTABLE=fi
 KERNEL supported cpus:
   Intel GenuineIntel
 BIOS-provided physical RAM map:
@@ -43,8 +43,8 @@ Base memory trampoline at [ffff880000099000] 99000 size 20480
 init_memory_mapping: 0000000000000000-00000000bff80000
  0000000000 - 00bfe00000 page 2M
  00bfe00000 - 00bff80000 page 4k
-kernel direct mapping tables up to bff80000 @ bff7b000-bff80000
-RAMDISK: 37612000 - 37b01000
+kernel direct mapping tables up to bff80000 @ 1fffb000-20000000
+RAMDISK: 37614000 - 37b02000
 ACPI: RSDP 00000000000f9370 00024 (v02 ACPIAM)
 ACPI: XSDT 00000000bff80100 00084 (v01 _ASUS_ Notebook 20080811 MSFT 00000097)
 ACPI: FACP 00000000bff80290 000F4 (v03 081108 FACP2148 20080811 MSFT 00000097)
@@ -98,7 +98,7 @@ PERCPU: Embedded 24 pages/cpu @ffff8800bfc00000 s69248 r8192 d20864 u1048576
 pcpu-alloc: s69248 r8192 d20864 u1048576 alloc=1*2097152
 pcpu-alloc: [0] 0 1 
 Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 773899
-Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.1.0-rc10+ root=/dev/sda3 ro SYSFONT=latarcyrheb-sun16 LANG=en_US.utf8 KEYTABLE=fi
+Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.1.0 root=/dev/sda3 ro SYSFONT=latarcyrheb-sun16 LANG=en_US.utf8 KEYTABLE=fi
 PID hash table entries: 4096 (order: 3, 32768 bytes)
 Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
 Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
@@ -111,8 +111,8 @@ Console: colour VGA+ 80x25
 console [tty0] enabled
 hpet clockevent registered
 Fast TSC calibration using PIT
-Detected 2261.373 MHz processor.
-Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.74 BogoMIPS (lpj=2261373)
+Detected 2261.187 MHz processor.
+Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.37 BogoMIPS (lpj=2261187)
 pid_max: default: 32768 minimum: 301
 Mount-cache hash table entries: 256
 Initializing cgroup subsys devices
@@ -133,8 +133,8 @@ DMAR: RMRR base: 0x000000bfff0000 end: 0x000000bfffffff
 DMAR: No ATSR found
 ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
 CPU0: Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz stepping 06
-APIC calibration not consistent with PM-Timer: 119ms instead of 100ms
-APIC delta adjusted to PM-Timer: 1662680 (1995203)
+APIC calibration not consistent with PM-Timer: 118ms instead of 100ms
+APIC delta adjusted to PM-Timer: 1662689 (1978572)
 Performance Events: PEBS fmt0+, Core2 events, Intel PMU driver.
 ... version:                2
 ... bit width:              40
@@ -147,7 +147,7 @@ Booting Node   0, Processors  #1 Ok.
 smpboot cpu 1: start_ip = 99000
 CPU1: Thermal monitoring handled by SMI
 Brought up 2 CPUs
-Total of 2 processors activated (9045.05 BogoMIPS).
+Total of 2 processors activated (9044.67 BogoMIPS).
 devtmpfs: initialized
 NET: Registered protocol family 16
 ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
@@ -553,7 +553,7 @@ NET: Registered protocol family 1
 pci 0000:01:00.0: Boot video device
 PCI: CLS 32 bytes, default 64
 Trying to unpack rootfs image as initramfs...
-Freeing initrd memory: 5052k freed
+Freeing initrd memory: 5048k freed
 IOMMU 0 0xfed90000: using Register based invalidation
 IOMMU 1 0xfed93000: using Register based invalidation
 IOMMU: Setting RMRR:
@@ -578,7 +578,7 @@ IOMMU: Setting identity map for device 0000:00:1f.0 [0x0 - 0xffffff]
 PCI-DMA: Intel(R) Virtualization Technology for Directed I/O
 Simple Boot Flag at 0x51 set to 0x1
 audit: initializing netlink socket (disabled)
-type=2000 audit(1319300851.328:1): initialized
+type=2000 audit(1319460928.327:1): initialized
 Btrfs loaded
 msgmni has been set to 6014
 Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
@@ -635,7 +635,7 @@ Monitor-Mwait will be used to enter C-1 state
 Monitor-Mwait will be used to enter C-3 state
 Marking TSC unstable due to TSC halts in idle
 thermal LNXTHERM:00: registered as thermal_zone0
-ACPI: Thermal Zone [THRM] (74 C)
+ACPI: Thermal Zone [THRM] (64 C)
 Non-volatile memory driver v1.3
 brd: module loaded
 loop: module loaded
@@ -670,7 +670,7 @@ ehci_hcd 0000:00:1a.7: USB 2.0 started, EHCI 1.00
 usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb1: Product: EHCI Host Controller
-usb usb1: Manufacturer: Linux 3.1.0-rc10+ ehci_hcd
+usb usb1: Manufacturer: Linux 3.1.0 ehci_hcd
 usb usb1: SerialNumber: 0000:00:1a.7
 hub 1-0:1.0: USB hub found
 hub 1-0:1.0: 6 ports detected
@@ -681,12 +681,11 @@ ehci_hcd 0000:00:1d.7: new USB bus registered, assigned bus number 2
 ehci_hcd 0000:00:1d.7: debug port 1
 ehci_hcd 0000:00:1d.7: cache line size of 32 is not supported
 ehci_hcd 0000:00:1d.7: irq 23, io mem 0xf9fff800
-ACPI: Battery Slot [BAT0] (battery present)
 ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00
 usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb2: Product: EHCI Host Controller
-usb usb2: Manufacturer: Linux 3.1.0-rc10+ ehci_hcd
+usb usb2: Manufacturer: Linux 3.1.0 ehci_hcd
 usb usb2: SerialNumber: 0000:00:1d.7
 hub 2-0:1.0: USB hub found
 hub 2-0:1.0: 6 ports detected
@@ -700,9 +699,10 @@ uhci_hcd 0000:00:1a.0: irq 16, io base 0x0000bc00
 usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb3: Product: UHCI Host Controller
-usb usb3: Manufacturer: Linux 3.1.0-rc10+ uhci_hcd
+usb usb3: Manufacturer: Linux 3.1.0 uhci_hcd
 usb usb3: SerialNumber: 0000:00:1a.0
 hub 3-0:1.0: USB hub found
+ACPI: Battery Slot [BAT0] (battery present)
 hub 3-0:1.0: 2 ports detected
 uhci_hcd 0000:00:1a.1: PCI INT B -> GSI 21 (level, low) -> IRQ 21
 uhci_hcd 0000:00:1a.1: setting latency timer to 64
@@ -712,7 +712,7 @@ uhci_hcd 0000:00:1a.1: irq 21, io base 0x0000b880
 usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb4: Product: UHCI Host Controller
-usb usb4: Manufacturer: Linux 3.1.0-rc10+ uhci_hcd
+usb usb4: Manufacturer: Linux 3.1.0 uhci_hcd
 usb usb4: SerialNumber: 0000:00:1a.1
 hub 4-0:1.0: USB hub found
 hub 4-0:1.0: 2 ports detected
@@ -724,7 +724,7 @@ uhci_hcd 0000:00:1a.2: irq 19, io base 0x0000b800
 usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb5: Product: UHCI Host Controller
-usb usb5: Manufacturer: Linux 3.1.0-rc10+ uhci_hcd
+usb usb5: Manufacturer: Linux 3.1.0 uhci_hcd
 usb usb5: SerialNumber: 0000:00:1a.2
 hub 5-0:1.0: USB hub found
 hub 5-0:1.0: 2 ports detected
@@ -736,7 +736,7 @@ uhci_hcd 0000:00:1d.0: irq 23, io base 0x0000b480
 usb usb6: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb6: Product: UHCI Host Controller
-usb usb6: Manufacturer: Linux 3.1.0-rc10+ uhci_hcd
+usb usb6: Manufacturer: Linux 3.1.0 uhci_hcd
 usb usb6: SerialNumber: 0000:00:1d.0
 hub 6-0:1.0: USB hub found
 hub 6-0:1.0: 2 ports detected
@@ -748,7 +748,7 @@ uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000b400
 usb usb7: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb7: Product: UHCI Host Controller
-usb usb7: Manufacturer: Linux 3.1.0-rc10+ uhci_hcd
+usb usb7: Manufacturer: Linux 3.1.0 uhci_hcd
 usb usb7: SerialNumber: 0000:00:1d.1
 hub 7-0:1.0: USB hub found
 hub 7-0:1.0: 2 ports detected
@@ -760,7 +760,7 @@ uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000b080
 usb usb8: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb8: Product: UHCI Host Controller
-usb usb8: Manufacturer: Linux 3.1.0-rc10+ uhci_hcd
+usb usb8: Manufacturer: Linux 3.1.0 uhci_hcd
 usb usb8: SerialNumber: 0000:00:1d.2
 hub 8-0:1.0: USB hub found
 hub 8-0:1.0: 2 ports detected
@@ -800,10 +800,10 @@ ata1.00: ACPI cmd ef/90:03:00:00:00:a0 (SET FEATURES) succeeded
 ata1.00: configured for UDMA/133
 scsi 0:0:0:0: Direct-Access     ATA      Hitachi HTS54323 FB4O PQ: 0 ANSI: 5
 sd 0:0:0:0: [sda] 625142448 512-byte logical blocks: (320 GB/298 GiB)
+sd 0:0:0:0: Attached scsi generic sg0 type 0
 sd 0:0:0:0: [sda] Write Protect is off
 sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
 sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
-sd 0:0:0:0: Attached scsi generic sg0 type 0
  sda: sda1 sda2 sda3 sda4 < sda5 >
 sd 0:0:0:0: [sda] Attached SCSI disk
 usb 2-5: new high speed USB device number 3 using ehci_hcd
@@ -827,19 +827,18 @@ usb 5-1: new full speed USB device number 2 using uhci_hcd
 ata6: SATA link down (SStatus 0 SControl 300)
 Freeing unused kernel memory: 424k freed
 Write protecting the kernel read-only data: 8192k
-Freeing unused kernel memory: 2040k freed
+Freeing unused kernel memory: 2036k freed
 Freeing unused kernel memory: 808k freed
 Synaptics Touchpad, model: 1, fw: 6.2, id: 0x280b1, caps: 0xb04711/0x60040d/0x0
+dracut: dracut-013-16.fc16
+udevd[95]: starting version 173
+input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio4/input/input5
 usb 5-1: New USB device found, idVendor=0b05, idProduct=1751
 usb 5-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
 usb 5-1: Product: BT-253
 usb 5-1: Manufacturer: Broadcom Corp
 usb 5-1: SerialNumber: 002243A52A4C
-dracut: dracut-013-16.fc16
-input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio4/input/input5
-udevd[95]: starting version 173
 dracut: Starting plymouth daemon
-usb 5-2: new full speed USB device number 3 using uhci_hcd
 sdhci: Secure Digital Host Controller Interface driver
 sdhci: Copyright(c) Pierre Ossman
 sdhci-pci 0000:09:01.1: SDHCI controller found [1180:0822] (rev 22)
@@ -849,21 +848,22 @@ Registered led device: mmc0::
 mmc0: SDHCI controller on PCI [0000:09:01.1] using DMA
 firewire_ohci 0000:09:01.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 firewire_ohci: Added fw-ohci device 0000:09:01.0, OHCI v1.0, 4 IR + 4 IT contexts, quirks 0x1
+usb 5-2: new full speed USB device number 3 using uhci_hcd
 usb 5-2: New USB device found, idVendor=08ff, idProduct=1600
 usb 5-2: New USB device strings: Mfr=0, Product=1, SerialNumber=0
 usb 5-2: Product: Fingerprint Sensor
 usb 7-2: new low speed USB device number 2 using uhci_hcd
 EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
+firewire_core: created device fw0: GUID 001e8c0000057669, S400
+dracut: Checking ext4: /dev/sda3
+dracut: issuing e2fsck -a   /dev/sda3
 usb 7-2: New USB device found, idVendor=046d, idProduct=c062
 usb 7-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
 usb 7-2: Product: USB Laser Mouse
 usb 7-2: Manufacturer: Logitech
 input: Logitech USB Laser Mouse as /devices/pci0000:00/0000:00:1d.1/usb7/7-2/7-2:1.0/input/input6
 generic-usb 0003:046D:C062.0001: input,hidraw0: USB HID v1.10 Mouse [Logitech USB Laser Mouse] on usb-0000:00:1d.1-2/input0
-firewire_core: created device fw0: GUID 001e8c0000057669, S400
-dracut: Checking ext4: /dev/sda3
-dracut: issuing e2fsck -a   /dev/sda3
-dracut: /dev/sda3: clean, 214411/2575440 files, 3350925/10290203 blocks
+dracut: /dev/sda3: clean, 213714/2575440 files, 3303816/10290203 blocks
 dracut: Remounting /dev/sda3 with -o ro
 EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
 dracut: Mounted root filesystem /dev/sda3
@@ -872,36 +872,14 @@ systemd[1]: RTC configured in localtime, applying delta of 180 minutes to system
 systemd[1]: systemd 37 running in system mode. (+PAM +LIBWRAP +AUDIT +SELINUX +SYSVINIT +LIBCRYPTSETUP; fedora)
 NET: Registered protocol family 10
 systemd[1]: Set hostname to <terrop>.
-systemd-readahead-replay[351]: Bumped block_nr parameter of 8:0 to 16384. This is a temporary hack and should be removed one day.
-udevd[361]: starting version 173
-asus_laptop: Asus Laptop Support version 0.42
-asus_laptop:   M50Vm model detected
-cfg80211: Calling CRDA to update world regulatory domain
-Intel(R) Wireless WiFi Link AGN driver for Linux, in-tree:
-Copyright(c) 2003-2011 Intel Corporation
-iwlagn 0000:03:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
-iwlagn 0000:03:00.0: setting latency timer to 64
-iwlagn 0000:03:00.0: pci_resource_len = 0x00002000
-iwlagn 0000:03:00.0: pci_resource_base = ffffc90010284000
-iwlagn 0000:03:00.0: HW Revision ID = 0x0
-iwlagn 0000:03:00.0: irq 50 for MSI/MSI-X
-iwlagn 0000:03:00.0: Detected Intel(R) WiFi Link 5100 AGN, REV=0x54
-iwlagn 0000:03:00.0: L1 Disabled; Enabling L0S
-r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
-r8169 0000:08:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
-r8169 0000:08:00.0: setting latency timer to 64
-r8169 0000:08:00.0: irq 51 for MSI/MSI-X
-r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc90010282000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 51
-iwlagn 0000:03:00.0: device EEPROM VER=0x11f, CALIB=0x4
-iwlagn 0000:03:00.0: Device SKU: 0Xf0
-asus_laptop: Backlight controlled by ACPI video driver
-input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input7
-iwlagn 0000:03:00.0: Tunable channels: 13 802.11bg, 24 802.11a channels
-Registered led device: asus::mail
-Registered led device: asus::touchpad
+systemd-readahead-replay[363]: Bumped block_nr parameter of 8:0 to 16384. This is a temporary hack and should be removed one day.
+udevd[373]: starting version 173
 EXT4-fs (sda3): re-mounted. Opts: (null)
 WARNING! power/level is deprecated; use power/control instead
-input: PC Speaker as /devices/platform/pcspkr/input/input8
+iTCO_wdt: Intel TCO WatchDog Timer Driver v1.06
+iTCO_wdt: Found a ICH9M TCO device (Version=2, TCOBASE=0x0860)
+iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
+input: PC Speaker as /devices/platform/pcspkr/input/input7
 Bluetooth: Core ver 2.16
 NET: Registered protocol family 31
 Bluetooth: HCI device and connection manager initialized
@@ -909,41 +887,55 @@ Bluetooth: HCI socket layer initialized
 Bluetooth: L2CAP socket layer initialized
 Bluetooth: SCO socket layer initialized
 Bluetooth: Generic Bluetooth USB driver ver 0.6
-iTCO_wdt: Intel TCO WatchDog Timer Driver v1.06
-iTCO_wdt: Found a ICH9M TCO device (Version=2, TCOBASE=0x0860)
-iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
 usbcore: registered new interface driver btusb
+asus_laptop: Asus Laptop Support version 0.42
+asus_laptop:   M50Vm model detected
+asus_laptop: Backlight controlled by ACPI video driver
+input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input8
+Registered led device: asus::mail
+Registered led device: asus::touchpad
 microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
-iwlagn 0000:03:00.0: loaded firmware version 8.83.5.1 build 33692
-Registered led device: phy0-led
-ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
 microcode: CPU0 updated to revision 0x60f, date = 2010-09-29
 microcode: CPU1 sig=0x10676, pf=0x80, revision=0x60c
 microcode: CPU1 updated to revision 0x60f, date = 2010-09-29
-cfg80211: World regulatory domain updated:
 microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
+r8169 0000:08:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+r8169 0000:08:00.0: setting latency timer to 64
+r8169 0000:08:00.0: irq 50 for MSI/MSI-X
+r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc900102fe000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 50
+cfg80211: Calling CRDA to update world regulatory domain
+cfg80211: World regulatory domain updated:
 cfg80211:     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
 cfg80211:     (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (2457000 KHz - 2482000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (5170000 KHz - 5250000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
 cfg80211:     (5735000 KHz - 5835000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
-snd_hda_intel 0000:00:1b.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
-snd_hda_intel 0000:00:1b.0: irq 52 for MSI/MSI-X
-snd_hda_intel 0000:00:1b.0: setting latency timer to 64
-hda_codec: ALC663: SKU not ready 0x598301f0
-mtp-probe[586]: checking bus 7, device 2: "/sys/devices/pci0000:00/0000:00:1d.1/usb7/7-2"
-mtp-probe[572]: checking bus 2, device 3: "/sys/devices/pci0000:00/0000:00:1d.7/usb2/2-5"
-mtp-probe[512]: checking bus 5, device 3: "/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2"
-mtp-probe[586]: bus: 7, device: 2 was not an MTP device
-mtp-probe[572]: bus: 2, device: 3 was not an MTP device
-mtp-probe[512]: bus: 5, device: 3 was not an MTP device
-udevd[387]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/5-2:1.0/power/level} for writing: No such file or directory
+mtp-probe[454]: checking bus 5, device 3: "/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2"
+mtp-probe[457]: checking bus 7, device 2: "/sys/devices/pci0000:00/0000:00:1d.1/usb7/7-2"
+mtp-probe[490]: checking bus 2, device 3: "/sys/devices/pci0000:00/0000:00:1d.7/usb2/2-5"
+mtp-probe[490]: bus: 2, device: 3 was not an MTP device
+mtp-probe[457]: bus: 7, device: 2 was not an MTP device
+mtp-probe[454]: bus: 5, device: 3 was not an MTP device
+udevd[418]: error opening ATTR{/sys/devices/pci0000:00/0000:00:1a.2/usb5/5-2/5-2:1.0/power/level} for writing: No such file or directory
+Intel(R) Wireless WiFi Link AGN driver for Linux, in-tree:
+Copyright(c) 2003-2011 Intel Corporation
+iwlagn 0000:03:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+iwlagn 0000:03:00.0: setting latency timer to 64
+iwlagn 0000:03:00.0: pci_resource_len = 0x00002000
+iwlagn 0000:03:00.0: pci_resource_base = ffffc900103e0000
+iwlagn 0000:03:00.0: HW Revision ID = 0x0
+iwlagn 0000:03:00.0: irq 51 for MSI/MSI-X
+iwlagn 0000:03:00.0: Detected Intel(R) WiFi Link 5100 AGN, REV=0x54
+iwlagn 0000:03:00.0: L1 Disabled; Enabling L0S
 Linux video capture interface: v2.00
-uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
-input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input9
-usbcore: registered new interface driver uvcvideo
-USB Video Class driver (1.1.1)
+iwlagn 0000:03:00.0: device EEPROM VER=0x11f, CALIB=0x4
+iwlagn 0000:03:00.0: Device SKU: 0Xf0
+iwlagn 0000:03:00.0: Tunable channels: 13 802.11bg, 24 802.11a channels
+iwlagn 0000:03:00.0: loaded firmware version 8.83.5.1 build 33692
+Registered led device: phy0-led
+ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
 cfg80211: Calling CRDA for country: FI
 cfg80211: Regulatory domain changed to country: FI
 cfg80211:     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
@@ -951,38 +943,52 @@ cfg80211:     (2402000 KHz - 2482000 KHz @ 40000 KHz), (N/A, 2000 mBm)
 cfg80211:     (5170000 KHz - 5250000 KHz @ 40000 KHz), (N/A, 2000 mBm)
 cfg80211:     (5250000 KHz - 5330000 KHz @ 40000 KHz), (N/A, 2000 mBm)
 cfg80211:     (5490000 KHz - 5710000 KHz @ 40000 KHz), (N/A, 2700 mBm)
+uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
+input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input9
+usbcore: registered new interface driver uvcvideo
+USB Video Class driver (1.1.1)
+snd_hda_intel 0000:00:1b.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
+snd_hda_intel 0000:00:1b.0: irq 52 for MSI/MSI-X
+snd_hda_intel 0000:00:1b.0: setting latency timer to 64
+hda_codec: ALC663: SKU not ready 0x598301f0
 nvidia: module license 'NVIDIA' taints kernel.
 Disabling lock debugging due to kernel taint
 nvidia 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
 nvidia 0000:01:00.0: setting latency timer to 64
 vgaarb: device changed decodes: PCI:0000:01:00.0,olddecodes=io+mem,decodes=none:owns=io+mem
 NVRM: loading NVIDIA UNIX x86_64 Kernel Module  290.03  Mon Oct 17 10:23:33 PDT 2011
-rmmod[727]: ERROR: Module scsi_wait_scan does not exist in /proc/modules
-fedora-storage-init[733]: Setting up Logical Volume Management:   4 logical volume(s) in volume group "VolGroup00" now active
-fedora-storage-init[733]: [  OK  ]
+rmmod[750]: ERROR: Module scsi_wait_scan does not exist in /proc/modules
+fedora-storage-init[756]: Setting up Logical Volume Management:   4 logical volume(s) in volume group "VolGroup00" now active
 Adding 7569404k swap on /dev/mapper/VolGroup00-swap.  Priority:0 extents:1 across:7569404k 
-systemd-fsck[767]: /usr/local: clean, 211579/2883584 files, 5219211/11517952 blocks
-systemd-fsck[784]: /dev/mapper/VolGroup00-home: clean, 54839/1921360 files, 4630198/7675904 blocks
+systemd-fsck[788]: /usr/local: clean, 211977/2883584 files, 5222586/11517952 blocks
 EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null)
+fedora-storage-init[756]: [  OK  ]
+systemd-fsck[807]: /dev/mapper/VolGroup00-home: clean, 52185/1921360 files, 4407225/7675904 blocks (check after next mount)
 EXT4-fs (dm-2): mounted filesystem with ordered data mode. Opts: (null)
-fedora-storage-init[773]: Setting up Logical Volume Management:   4 logical volume(s) in volume group "VolGroup00" now active
-fedora-storage-init[773]: [  OK  ]
-lvm[804]: 4 logical volume(s) in volume group "VolGroup00" monitored
-NetworkManager[817]: <info> NetworkManager (version 0.9.1.90-4.git20110927.fc16) is starting...
-NetworkManager[817]: NetworkManager[817]: <info> NetworkManager (version 0.9.1.90-4.git20110927.fc16) is starting...
-NetworkManager[817]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
-NetworkManager[817]: NetworkManager[817]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
-/usr/sbin/gpm[838]: *** info [daemon/startup.c(136)]:
-/usr/sbin/gpm[838]: Started gpm successfully. Entered daemon mode.
-/usr/sbin/crond[828]: (CRON) INFO (running with inotify support)
-rtkit-daemon[834]: Successfully called chroot.
-rtkit-daemon[834]: Successfully dropped privileges.
-rtkit-daemon[834]: Successfully limited resources.
-rtkit-daemon[834]: Running.
-rtkit-daemon[834]: Watchdog thread running.
-rtkit-daemon[834]: Canary thread running.
-dbus[846]: [system] Activating via systemd: service name='org.freedesktop.NetworkManager' unit='dbus-org.freedesktop.NetworkManager.service'
-dbus-daemon[846]: dbus[846]: [system] Activating via systemd: service name='org.freedesktop.NetworkManager' unit='dbus-org.freedesktop.NetworkManager.service'
+fedora-storage-init[806]: Setting up Logical Volume Management:   4 logical volume(s) in volume group "VolGroup00" now active
+fedora-storage-init[806]: [  OK  ]
+lvm[826]: 4 logical volume(s) in volume group "VolGroup00" monitored
+NetworkManager[841]: NetworkManager[841]: <info> NetworkManager (version 0.9.1.90-4.git20110927.fc16) is starting...
+NetworkManager[841]: <info> NetworkManager (version 0.9.1.90-4.git20110927.fc16) is starting...
+NetworkManager[841]: NetworkManager[841]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+NetworkManager[841]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+/usr/sbin/gpm[860]: *** info [daemon/startup.c(136)]:
+/usr/sbin/gpm[860]: Started gpm successfully. Entered daemon mode.
+/usr/sbin/crond[852]: (CRON) INFO (running with inotify support)
+rtkit-daemon[856]: Successfully called chroot.
+rtkit-daemon[856]: Successfully dropped privileges.
+rtkit-daemon[856]: Successfully limited resources.
+rtkit-daemon[856]: Running.
+NetworkManager[841]: <info> VPN: loaded org.freedesktop.NetworkManager.openvpn
+NetworkManager[841]: NetworkManager[841]: <info> VPN: loaded org.freedesktop.NetworkManager.openvpn
+dbus-daemon[866]: dbus[866]: [system] Activating via systemd: service name='org.freedesktop.NetworkManager' unit='dbus-org.freedesktop.NetworkManager.service'
+dbus[866]: [system] Activating via systemd: service name='org.freedesktop.NetworkManager' unit='dbus-org.freedesktop.NetworkManager.service'
+rtkit-daemon[856]: Watchdog thread running.
+rtkit-daemon[856]: Canary thread running.
+NetworkManager[841]: <info> VPN: loaded org.freedesktop.NetworkManager.vpnc
+NetworkManager[841]: NetworkManager[841]: <info> VPN: loaded org.freedesktop.NetworkManager.vpnc
+dbus-daemon[866]: dbus[866]: [system] Activating service name='org.freedesktop.PolicyKit1' (using servicehelper)
+dbus[866]: [system] Activating service name='org.freedesktop.PolicyKit1' (using servicehelper)
 iwlagn 0000:03:00.0: L1 Disabled; Enabling L0S
 iwlagn 0000:03:00.0: Radio type=0x1-0x2-0x0
 iwlagn 0000:03:00.0: L1 Disabled; Enabling L0S
@@ -993,11 +999,11 @@ ADDRCONF(NETDEV_UP): eth0: link is not ready
 wlan0: authenticate with 08:76:ff:42:a6:54 (try 1)
 wlan0: authenticated
 wlan0: associate with 08:76:ff:42:a6:54 (try 1)
-wlan0: RX AssocResp from 08:76:ff:42:a6:54 (capab=0x411 status=0 aid=3)
+wlan0: RX AssocResp from 08:76:ff:42:a6:54 (capab=0x411 status=0 aid=2)
 wlan0: associated
 ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
-fuse init (API version 7.17)
 wlan0: no IPv6 routers present
+fuse init (API version 7.17)
+mount[1194]: mount: fusectl already mounted or /sys/fs/fuse/connections busy
+mount[1194]: mount: according to mtab, fusectl is already mounted on /sys/fs/fuse/connections
 iwlagn 0000:03:00.0: Tx aggregation enabled on ra = 08:76:ff:42:a6:54 tid = 0
-libceph: loaded (mon/osd proto 15/24, osdmap 5/6 5/6)
-ceph: loaded (mds proto 32)
