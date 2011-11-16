@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86_64 3.2.0-rc1 Kernel Configuration
+# Linux/x86_64 3.2.0-rc2 Kernel Configuration
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1419,7 +1419,6 @@ CONFIG_I2C_I801=m
 #
 # Enable Device Drivers -> PPS to see the PTP clock options.
 #
-# CONFIG_PINCTRL is not set
 CONFIG_ARCH_WANT_OPTIONAL_GPIOLIB=y
 # CONFIG_GPIOLIB is not set
 # CONFIG_W1 is not set
