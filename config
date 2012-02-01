@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86_64 3.3.0-rc1 Kernel Configuration
+# Linux/x86_64 3.3.0-rc2 Kernel Configuration
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -2028,7 +2028,6 @@ CONFIG_USB_SUSPEND=y
 # CONFIG_USB_OTG_WHITELIST is not set
 # CONFIG_USB_OTG_BLACKLIST_HUB is not set
 # CONFIG_USB_MON is not set
-# CONFIG_USB_WUSB is not set
 # CONFIG_USB_WUSB_CBAF is not set
 
 #
