@@ -1,7 +1,7 @@
 Initializing cgroup subsys cpuset
 Initializing cgroup subsys cpu
-Linux version 3.3.0-rc4 (terrop@terrop) (gcc version 4.7.0 20120208 (Red Hat 4.7.0-0.12) (GCC) ) #1 SMP Sun Feb 19 09:32:56 EET 2012
-Command line: BOOT_IMAGE=/boot/vmlinuz-3.3.0-rc4 root=/dev/sda3 ro SYSFONT=latarcyrheb-sun16 LANG=en_US.utf8 KEYTABLE=fi
+Linux version 3.3.0-rc6 (terrop@terrop) (gcc version 4.7.0 20120224 (Red Hat 4.7.0-0.16) (GCC) ) #1 SMP Sun Mar 4 10:39:48 EET 2012
+Command line: BOOT_IMAGE=/boot/vmlinuz-3.3.0-rc6 root=/dev/sda3 ro SYSFONT=latarcyrheb-sun16 LANG=en_US.utf8 KEYTABLE=fi
 KERNEL supported cpus:
   Intel GenuineIntel
 BIOS-provided physical RAM map:
@@ -98,11 +98,11 @@ PERCPU: Embedded 25 pages/cpu @ffff8800bfc00000 s71104 r8192 d23104 u1048576
 pcpu-alloc: s71104 r8192 d23104 u1048576 alloc=1*2097152
 pcpu-alloc: [0] 0 1 
 Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 773899
-Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.3.0-rc4 root=/dev/sda3 ro SYSFONT=latarcyrheb-sun16 LANG=en_US.utf8 KEYTABLE=fi
+Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.3.0-rc6 root=/dev/sda3 ro SYSFONT=latarcyrheb-sun16 LANG=en_US.utf8 KEYTABLE=fi
 PID hash table entries: 4096 (order: 3, 32768 bytes)
 Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
 Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
-Memory: 3074460k/3145216k available (4227k kernel code, 456k absent, 70300k reserved, 4254k data, 412k init)
+Memory: 3074460k/3145216k available (4229k kernel code, 456k absent, 70300k reserved, 4252k data, 412k init)
 SLUB: Genslabs=15, HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
 Hierarchical RCU implementation.
 NR_IRQS:4352 nr_irqs:512 16
@@ -111,8 +111,8 @@ Console: colour VGA+ 80x25
 console [tty0] enabled
 hpet clockevent registered
 Fast TSC calibration using PIT
-Detected 2261.114 MHz processor.
-Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.22 BogoMIPS (lpj=2261114)
+Detected 2261.119 MHz processor.
+Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.23 BogoMIPS (lpj=2261119)
 pid_max: default: 32768 minimum: 301
 Mount-cache hash table entries: 256
 Initializing cgroup subsys devices
@@ -125,6 +125,8 @@ using mwait in idle threads.
 ACPI: Core revision 20120111
 ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
 CPU0: Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz stepping 06
+APIC calibration not consistent with PM-Timer: 118ms instead of 100ms
+APIC delta adjusted to PM-Timer: 1662682 (1978572)
 Performance Events: PEBS fmt0+, Core2 events, Intel PMU driver.
 ... version:                2
 ... bit width:              40
@@ -137,7 +139,7 @@ Booting Node   0, Processors  #1 Ok.
 smpboot cpu 1: start_ip = 99000
 CPU1: Thermal monitoring handled by SMI
 Brought up 2 CPUs
-Total of 2 processors activated (9044.45 BogoMIPS).
+Total of 2 processors activated (9044.47 BogoMIPS).
 devtmpfs: initialized
 PM: Registering ACPI NVS region at bff8e800 (333824 bytes)
 NET: Registered protocol family 16
@@ -519,7 +521,7 @@ Freeing initrd memory: 5256k freed
 Simple Boot Flag at 0x51 set to 0x1
 sha1_ssse3: Using SSSE3 optimized SHA-1 implementation
 audit: initializing netlink socket (disabled)
-type=2000 audit(1329645915.270:1): initialized
+type=2000 audit(1330862321.270:1): initialized
 Btrfs loaded
 msgmni has been set to 6015
 Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
@@ -569,7 +571,7 @@ Monitor-Mwait will be used to enter C-3 state
 Marking TSC unstable due to TSC halts in idle
 ACPI: acpi_idle registered with cpuidle
 thermal LNXTHERM:00: registered as thermal_zone0
-ACPI: Thermal Zone [THRM] (66 C)
+ACPI: Thermal Zone [THRM] (61 C)
 Non-volatile memory driver v1.3
 loop: module loaded
 ahci 0000:00:1f.2: version 3.0
@@ -601,7 +603,7 @@ ehci_hcd 0000:00:1a.7: USB 2.0 started, EHCI 1.00
 usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb1: Product: EHCI Host Controller
-usb usb1: Manufacturer: Linux 3.3.0-rc4 ehci_hcd
+usb usb1: Manufacturer: Linux 3.3.0-rc6 ehci_hcd
 usb usb1: SerialNumber: 0000:00:1a.7
 hub 1-0:1.0: USB hub found
 hub 1-0:1.0: 6 ports detected
@@ -615,7 +617,7 @@ ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00
 usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb2: Product: EHCI Host Controller
-usb usb2: Manufacturer: Linux 3.3.0-rc4 ehci_hcd
+usb usb2: Manufacturer: Linux 3.3.0-rc6 ehci_hcd
 usb usb2: SerialNumber: 0000:00:1d.7
 hub 2-0:1.0: USB hub found
 hub 2-0:1.0: 6 ports detected
@@ -628,7 +630,7 @@ uhci_hcd 0000:00:1a.0: irq 16, io base 0x0000bc00
 usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb3: Product: UHCI Host Controller
-usb usb3: Manufacturer: Linux 3.3.0-rc4 uhci_hcd
+usb usb3: Manufacturer: Linux 3.3.0-rc6 uhci_hcd
 usb usb3: SerialNumber: 0000:00:1a.0
 hub 3-0:1.0: USB hub found
 hub 3-0:1.0: 2 ports detected
@@ -639,7 +641,7 @@ uhci_hcd 0000:00:1a.1: irq 21, io base 0x0000b880
 usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb4: Product: UHCI Host Controller
-usb usb4: Manufacturer: Linux 3.3.0-rc4 uhci_hcd
+usb usb4: Manufacturer: Linux 3.3.0-rc6 uhci_hcd
 usb usb4: SerialNumber: 0000:00:1a.1
 hub 4-0:1.0: USB hub found
 hub 4-0:1.0: 2 ports detected
@@ -650,7 +652,7 @@ uhci_hcd 0000:00:1a.2: irq 19, io base 0x0000b800
 usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb5: Product: UHCI Host Controller
-usb usb5: Manufacturer: Linux 3.3.0-rc4 uhci_hcd
+usb usb5: Manufacturer: Linux 3.3.0-rc6 uhci_hcd
 usb usb5: SerialNumber: 0000:00:1a.2
 hub 5-0:1.0: USB hub found
 hub 5-0:1.0: 2 ports detected
@@ -661,7 +663,7 @@ uhci_hcd 0000:00:1d.0: irq 23, io base 0x0000b480
 usb usb6: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb6: Product: UHCI Host Controller
-usb usb6: Manufacturer: Linux 3.3.0-rc4 uhci_hcd
+usb usb6: Manufacturer: Linux 3.3.0-rc6 uhci_hcd
 usb usb6: SerialNumber: 0000:00:1d.0
 hub 6-0:1.0: USB hub found
 hub 6-0:1.0: 2 ports detected
@@ -672,7 +674,7 @@ uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000b400
 usb usb7: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb7: Product: UHCI Host Controller
-usb usb7: Manufacturer: Linux 3.3.0-rc4 uhci_hcd
+usb usb7: Manufacturer: Linux 3.3.0-rc6 uhci_hcd
 usb usb7: SerialNumber: 0000:00:1d.1
 hub 7-0:1.0: USB hub found
 hub 7-0:1.0: 2 ports detected
@@ -680,11 +682,10 @@ uhci_hcd 0000:00:1d.2: setting latency timer to 64
 uhci_hcd 0000:00:1d.2: UHCI Host Controller
 uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 8
 uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000b080
-ACPI: Battery Slot [BAT0] (battery present)
 usb usb8: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb8: Product: UHCI Host Controller
-usb usb8: Manufacturer: Linux 3.3.0-rc4 uhci_hcd
+usb usb8: Manufacturer: Linux 3.3.0-rc6 uhci_hcd
 usb usb8: SerialNumber: 0000:00:1d.2
 hub 8-0:1.0: USB hub found
 hub 8-0:1.0: 2 ports detected
@@ -692,6 +693,7 @@ Initializing USB Mass Storage driver...
 usbcore: registered new interface driver usb-storage
 USB Mass Storage support registered.
 i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+ACPI: Battery Slot [BAT0] (battery present)
 i8042: Detected active multiplexing controller, rev 1.1
 serio: i8042 KBD port at 0x60,0x64 irq 1
 serio: i8042 AUX0 port at 0x60,0x64 irq 12
@@ -711,7 +713,7 @@ TCP cubic registered
 Initializing XFRM netlink socket
 NET: Registered protocol family 17
 registered taskstats version 1
-rtc_cmos 00:03: setting system clock to 2012-02-19 10:05:16 UTC (1329645916)
+rtc_cmos 00:03: setting system clock to 2012-03-04 11:58:42 UTC (1330862322)
 input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input4
 ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
 ata1.00: ACPI cmd f5/00:00:00:00:00:a0 (SECURITY FREEZE LOCK) filtered out
@@ -739,10 +741,10 @@ ata2.00: ATAPI: TSSTcorp CDDVDW TS-L633A, AS00, max UDMA/100
 ata2.00: applying bridge limits
 ata2.00: ACPI cmd ef/10:06:00:00:00:a0 (SET FEATURES) succeeded
 ata2.00: ACPI cmd ef/90:03:00:00:00:a0 (SET FEATURES) succeeded
-ata2.00: configured for UDMA/100
 usb 2-5: New USB device found, idVendor=04f2, idProduct=b033
 usb 2-5: New USB device strings: Mfr=0, Product=1, SerialNumber=0
 usb 2-5: Product: USB2.0 1.3M UVC WebCam
+ata2.00: configured for UDMA/100
 scsi 1:0:0:0: CD-ROM            TSSTcorp CDDVDW TS-L633A  AS00 PQ: 0 ANSI: 5
 sr0: scsi3-mmc drive: 24x/24x writer dvd-ram cd/rw xa/form2 cdda tray
 cdrom: Uniform CD-ROM driver Revision: 3.20
@@ -760,7 +762,7 @@ usb 5-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
 usb 5-1: Product: BT-253
 usb 5-1: Manufacturer: Broadcom Corp
 usb 5-1: SerialNumber: 002243A52A4C
-dracut: dracut-016-1.fc17
+dracut: dracut-017-19.git20120301.fc17
 input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio4/input/input5
 udevd[97]: starting version 181
 dracut: Starting plymouth daemon
@@ -792,29 +794,40 @@ generic-usb 0003:046D:C062.0001: input,hidraw0: USB HID v1.10 Mouse [Logitech US
 firewire_core: created device fw0: GUID 001e8c0000057669, S400
 dracut: Checking ext4: /dev/sda3
 dracut: issuing e2fsck -a  /dev/sda3
-dracut: /dev/sda3: clean, 235999/2575440 files, 3987410/10290203 blocks
+dracut: /dev/sda3: clean, 234455/2575440 files, 3989728/10290203 blocks
 dracut: Remounting /dev/sda3 with -o ro
 EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
 dracut: Mounted root filesystem /dev/sda3
 dracut: Switching root
 NET: Registered protocol family 10
-udevd[275]: starting version 181
+udevd[264]: starting version 181
 EXT4-fs (sda3): re-mounted. Opts: (null)
+microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
+input: PC Speaker as /devices/platform/pcspkr/input/input7
 iTCO_wdt: Intel TCO WatchDog Timer Driver v1.07
 iTCO_wdt: Found a ICH9M TCO device (Version=2, TCOBASE=0x0860)
 iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
-input: PC Speaker as /devices/platform/pcspkr/input/input7
+asus_laptop: Asus Laptop Support version 0.42
+asus_laptop:   M50Vm model detected
+asus_laptop: Backlight controlled by ACPI video driver
+input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input8
+Registered led device: asus::mail
+Registered led device: asus::touchpad
+microcode: CPU0 updated to revision 0x60f, date = 2010-09-29
+microcode: CPU1 sig=0x10676, pf=0x80, revision=0x60c
+microcode: CPU1 updated to revision 0x60f, date = 2010-09-29
+microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
 Bluetooth: Core ver 2.16
 NET: Registered protocol family 31
 Bluetooth: HCI device and connection manager initialized
 Bluetooth: HCI socket layer initialized
 Bluetooth: L2CAP socket layer initialized
 Bluetooth: SCO socket layer initialized
+usbcore: registered new interface driver btusb
 r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
 r8169 0000:08:00.0: irq 48 for MSI/MSI-X
-r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc900103e4000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
+r8169 0000:08:00.0: eth0: RTL8168c/8111c at 0xffffc900103b0000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
 r8169 0000:08:00.0: eth0: jumbo features [frames: 6128 bytes, tx checksumming: ko]
-usbcore: registered new interface driver btusb
 cfg80211: Calling CRDA to update world regulatory domain
 Intel(R) Wireless WiFi Link AGN driver for Linux, in-tree:
 Copyright(c) 2003-2011 Intel Corporation
@@ -832,22 +845,11 @@ iwlwifi 0000:03:00.0: L1 Disabled; Enabling L0S
 iwlwifi 0000:03:00.0: device EEPROM VER=0x11f, CALIB=0x4
 iwlwifi 0000:03:00.0: Device SKU: 0xF0
 iwlwifi 0000:03:00.0: Tunable channels: 13 802.11bg, 24 802.11a channels
-asus_laptop: Asus Laptop Support version 0.42
-asus_laptop:   M50Vm model detected
-asus_laptop: Backlight controlled by ACPI video driver
-input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input8
-Registered led device: asus::mail
-Registered led device: asus::touchpad
-microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
-microcode: CPU0 updated to revision 0x60f, date = 2010-09-29
-microcode: CPU1 sig=0x10676, pf=0x80, revision=0x60c
-microcode: CPU1 updated to revision 0x60f, date = 2010-09-29
-microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
 snd_hda_intel 0000:00:1b.0: irq 50 for MSI/MSI-X
+hda_codec: ALC663: SKU not ready 0x598301f0
 iwlwifi 0000:03:00.0: loaded firmware version 8.83.5.1 build 33692
 Registered led device: phy0-led
 ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
-hda_codec: ALC663: SKU not ready 0x598301f0
 cfg80211: World regulatory domain updated:
 cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
 cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
