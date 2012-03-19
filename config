@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86_64 3.3.0-rc7 Kernel Configuration
+# Linux/x86_64 3.3.0 Kernel Configuration
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -2342,6 +2342,8 @@ CONFIG_X86_PLATFORM_DEVICES=y
 # CONFIG_ACERHDF is not set
 CONFIG_ASUS_LAPTOP=m
 # CONFIG_FUJITSU_LAPTOP is not set
+# CONFIG_FUJITSU_TABLET is not set
+# CONFIG_AMILO_RFKILL is not set
 # CONFIG_HP_ACCEL is not set
 # CONFIG_MSI_LAPTOP is not set
 # CONFIG_PANASONIC_LAPTOP is not set
