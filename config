@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86_64 3.4.0-rc3 Kernel Configuration
+# Linux/x86_64 3.4.0-rc4 Kernel Configuration
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1968,7 +1968,7 @@ CONFIG_SND_HDA_POWER_SAVE_DEFAULT=0
 # CONFIG_SOUND_PRIME is not set
 CONFIG_HID_SUPPORT=y
 CONFIG_HID=y
-CONFIG_HID_BATTERY_STRENGTH=y
+# CONFIG_HID_BATTERY_STRENGTH is not set
 CONFIG_HIDRAW=y
 
 #
