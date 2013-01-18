@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86_64 3.8.0-rc3 Kernel Configuration
+# Linux/x86_64 3.8.0-rc4 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -2606,7 +2606,7 @@ CONFIG_PANIC_ON_OOPS_VALUE=0
 # CONFIG_DETECT_HUNG_TASK is not set
 # CONFIG_SCHED_DEBUG is not set
 # CONFIG_SCHEDSTATS is not set
-# CONFIG_TIMER_STATS is not set
+CONFIG_TIMER_STATS=y
 # CONFIG_DEBUG_OBJECTS is not set
 # CONFIG_SLUB_DEBUG_ON is not set
 # CONFIG_SLUB_STATS is not set
