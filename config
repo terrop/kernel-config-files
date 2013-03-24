@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 3.9.0-rc3 Kernel Configuration
+# Linux/x86 3.9.0-rc4 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -2724,8 +2724,7 @@ CONFIG_HAVE_ARCH_KMEMCHECK=y
 # CONFIG_TEST_KSTRTOX is not set
 CONFIG_STRICT_DEVMEM=y
 # CONFIG_X86_VERBOSE_BOOTUP is not set
-CONFIG_EARLY_PRINTK=y
-# CONFIG_EARLY_PRINTK_DBGP is not set
+# CONFIG_EARLY_PRINTK is not set
 # CONFIG_DEBUG_STACKOVERFLOW is not set
 # CONFIG_X86_PTDUMP is not set
 CONFIG_DEBUG_RODATA=y
