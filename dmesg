@@ -1,8 +1,8 @@
 Initializing cgroup subsys cpuset
 Initializing cgroup subsys cpu
 Initializing cgroup subsys cpuacct
-Linux version 3.14.0-rc8 (terrop@terrop) (gcc version 4.8.2 20140120 (Red Hat 4.8.2-14) (GCC) ) #1 SMP Tue Mar 25 10:24:39 EET 2014
-Command line: BOOT_IMAGE=/boot/vmlinuz-3.14.0-rc8 root=/dev/sda3 ro net.ifnames=0 LANG=en_US.utf8
+Linux version 3.14.0 (terrop@terrop) (gcc version 4.8.2 20140120 (Red Hat 4.8.2-14) (GCC) ) #1 SMP Mon Mar 31 11:33:07 EEST 2014
+Command line: BOOT_IMAGE=/boot/vmlinuz-3.14.0 root=/dev/sda3 ro net.ifnames=0 LANG=en_US.utf8
 KERNEL supported cpus:
   Intel GenuineIntel
 e820: BIOS-provided physical RAM map:
@@ -42,12 +42,12 @@ x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
 Base memory trampoline at [ffff880000098000] 98000 size 24576
 init_memory_mapping: [mem 0x00000000-0x000fffff]
  [mem 0x00000000-0x000fffff] page 4k
-BRK [0x019c9000, 0x019c9fff] PGTABLE
 BRK [0x019ca000, 0x019cafff] PGTABLE
 BRK [0x019cb000, 0x019cbfff] PGTABLE
+BRK [0x019cc000, 0x019ccfff] PGTABLE
 init_memory_mapping: [mem 0xbfc00000-0xbfdfffff]
  [mem 0xbfc00000-0xbfdfffff] page 2M
-BRK [0x019cc000, 0x019ccfff] PGTABLE
+BRK [0x019cd000, 0x019cdfff] PGTABLE
 init_memory_mapping: [mem 0xbc000000-0xbfbfffff]
  [mem 0xbc000000-0xbfbfffff] page 2M
 init_memory_mapping: [mem 0x80000000-0xbbffffff]
@@ -57,8 +57,8 @@ init_memory_mapping: [mem 0x00100000-0x7fffffff]
  [mem 0x00200000-0x7fffffff] page 2M
 init_memory_mapping: [mem 0xbfe00000-0xbff7ffff]
  [mem 0xbfe00000-0xbff7ffff] page 4k
-BRK [0x019cd000, 0x019cdfff] PGTABLE
-RAMDISK: [mem 0x36ec8000-0x3775bfff]
+BRK [0x019ce000, 0x019cefff] PGTABLE
+RAMDISK: [mem 0x36ed2000-0x37760fff]
 ACPI: RSDP 00000000000f9370 000024 (v02 ACPIAM)
 ACPI: XSDT 00000000bff80100 000084 (v01 _ASUS_ Notebook 20080811 MSFT 00000097)
 ACPI: FACP 00000000bff80290 0000F4 (v03 081108 FACP2148 20080811 MSFT 00000097)
@@ -113,11 +113,11 @@ PERCPU: Embedded 26 pages/cpu @ffff8800bfa00000 s75136 r8192 d23168 u1048576
 pcpu-alloc: s75136 r8192 d23168 u1048576 alloc=1*2097152
 pcpu-alloc: [0] 0 1 
 Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 773898
-Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.14.0-rc8 root=/dev/sda3 ro net.ifnames=0 LANG=en_US.utf8
+Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.14.0 root=/dev/sda3 ro net.ifnames=0 LANG=en_US.utf8
 PID hash table entries: 4096 (order: 3, 32768 bytes)
 Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
 Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
-Memory: 3070252K/3144820K available (4893K kernel code, 408K rwdata, 1516K rodata, 728K init, 656K bss, 74568K reserved)
+Memory: 3070268K/3144820K available (4894K kernel code, 409K rwdata, 1516K rodata, 732K init, 656K bss, 74552K reserved)
 SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
 Hierarchical RCU implementation.
 NR_IRQS:4352 nr_irqs:512 16
@@ -127,12 +127,13 @@ allocated 12582912 bytes of page_cgroup
 please try 'cgroup_disable=memory' option if you don't want memory cgroups
 hpet clockevent registered
 tsc: Fast TSC calibration using PIT
-tsc: Detected 2261.319 MHz processor
-Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.63 BogoMIPS (lpj=2261319)
+tsc: Detected 2261.258 MHz processor
+Calibrating delay loop (skipped), value calculated using timer frequency.. 4522.51 BogoMIPS (lpj=2261258)
 pid_max: default: 32768 minimum: 301
 ACPI: Core revision 20131218
 ACPI: All ACPI Tables successfully acquired
-Mount-cache hash table entries: 256
+Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
 Initializing cgroup subsys memory
 Initializing cgroup subsys devices
 Initializing cgroup subsys freezer
@@ -144,11 +145,11 @@ CPU0: Thermal monitoring handled by SMI
 Last level iTLB entries: 4KB 128, 2MB 4, 4MB 4
 Last level dTLB entries: 4KB 256, 2MB 0, 4MB 32, 1GB 0
 tlb_flushall_shift: -1
-Freeing SMP alternatives memory: 24K (ffffffff8191e000 - ffffffff81924000)
+Freeing SMP alternatives memory: 24K (ffffffff8191f000 - ffffffff81925000)
 ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
 smpboot: CPU0: Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz (fam: 06, model: 17, stepping: 06)
-APIC calibration not consistent with PM-Timer: 119ms instead of 100ms
-APIC delta adjusted to PM-Timer: 1662686 (1995192)
+APIC calibration not consistent with PM-Timer: 139ms instead of 100ms
+APIC delta adjusted to PM-Timer: 1662685 (2327739)
 Performance Events: PEBS fmt0+, 4-deep LBR, Core2 events, Intel PMU driver.
 ... version:                2
 ... bit width:              40
@@ -161,13 +162,13 @@ x86: Booting SMP configuration:
 .... node  #0, CPUs:      #1
 CPU1: Thermal monitoring handled by SMI
 x86: Booted up 1 node, 2 CPUs
-smpboot: Total of 2 processors activated (9045.27 BogoMIPS)
+smpboot: Total of 2 processors activated (9045.03 BogoMIPS)
 devtmpfs: initialized
 PM: Registering ACPI NVS region [mem 0xbff8e800-0xbffdffff] (333824 bytes)
 xor: measuring software checksum speed
-   prefetch64-sse:  9252.000 MB/sec
-   generic_sse:  8120.000 MB/sec
-xor: using function: prefetch64-sse (9252.000 MB/sec)
+   prefetch64-sse:  9244.000 MB/sec
+   generic_sse:  8112.000 MB/sec
+xor: using function: prefetch64-sse (9244.000 MB/sec)
 NET: Registered protocol family 16
 cpuidle: using governor ladder
 cpuidle: using governor menu
@@ -177,10 +178,10 @@ PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0
 PCI: not using MMCONFIG
 PCI: Using configuration type 1 for base access
 bio: create slab <bio-0> at 0
-raid6: sse2x1    3683 MB/s
-raid6: sse2x2    3933 MB/s
-raid6: sse2x4    6246 MB/s
-raid6: using algorithm sse2x4 (6246 MB/s)
+raid6: sse2x1    3675 MB/s
+raid6: sse2x2    3941 MB/s
+raid6: sse2x4    6093 MB/s
+raid6: using algorithm sse2x4 (6093 MB/s)
 raid6: using ssse3x2 recovery algorithm
 ACPI: Added _OSI(Module Device)
 ACPI: Added _OSI(Processor Device)
@@ -319,8 +320,6 @@ pci 0000:00:1c.5:   bridge window [io  0xe000-0xefff]
 pci 0000:00:1c.5:   bridge window [mem 0xfea00000-0xfeafffff]
 pci 0000:00:1c.5:   bridge window [mem 0xf8f00000-0xf8ffffff 64bit pref]
 pci 0000:09:01.0: [1180:0832] type 00 class 0x0c0010
-pci 0000:09:01.0: proprietary Ricoh MMC controller disabled (via firewire function)
-pci 0000:09:01.0: MMC cards are now supported by standard SDHCI controller
 pci 0000:09:01.0: reg 0x10: [mem 0xfebff800-0xfebfffff]
 pci 0000:09:01.0: PME# supported from D0 D3hot D3cold
 pci 0000:09:01.1: [1180:0822] type 00 class 0x080500
@@ -328,11 +327,11 @@ pci 0000:09:01.1: reg 0x10: [mem 0xfebff400-0xfebff4ff]
 pci 0000:09:01.1: supports D1 D2
 pci 0000:09:01.1: PME# supported from D0 D1 D2 D3hot D3cold
 pci 0000:09:01.2: [1180:0592] type 00 class 0x088000
-pci 0000:09:01.2: reg 0x10: [mem 0xfebfec00-0xfebfecff]
+pci 0000:09:01.2: reg 0x10: [mem 0xfebff000-0xfebff0ff]
 pci 0000:09:01.2: supports D1 D2
 pci 0000:09:01.2: PME# supported from D0 D1 D2 D3hot D3cold
 pci 0000:09:01.3: [1180:0852] type 00 class 0x088000
-pci 0000:09:01.3: reg 0x10: [mem 0xfebfe800-0xfebfe8ff]
+pci 0000:09:01.3: reg 0x10: [mem 0xfebfec00-0xfebfecff]
 pci 0000:09:01.3: supports D1 D2
 pci 0000:09:01.3: PME# supported from D0 D1 D2 D3hot D3cold
 pci 0000:00:1e.0: PCI bridge to [bus 09] (subtractive decode)
@@ -491,7 +490,7 @@ NET: Registered protocol family 1
 pci 0000:01:00.0: Boot video device
 PCI: CLS 32 bytes, default 64
 Unpacking initramfs...
-Freeing initrd memory: 8784K (ffff880036ec8000 - ffff88003775c000)
+Freeing initrd memory: 8764K (ffff880036ed2000 - ffff880037761000)
 Simple Boot Flag at 0x51 set to 0x1
 sha1_ssse3: Using SSSE3 optimized SHA-1 implementation
 futex hash table entries: 512 (order: 3, 32768 bytes)
@@ -539,7 +538,7 @@ Monitor-Mwait will be used to enter C-3 state
 tsc: Marking TSC unstable due to TSC halts in idle
 ACPI: acpi_idle registered with cpuidle
 thermal LNXTHERM:00: registered as thermal_zone0
-ACPI: Thermal Zone [THRM] (38 C)
+ACPI: Thermal Zone [THRM] (71 C)
 Non-volatile memory driver v1.3
 loop: module loaded
 ACPI Warning: SystemIO range 0x0000000000000828-0x000000000000082f conflicts with OpRegion 0x0000000000000800-0x000000000000084f (\PMIO) (20131218/utaddress-258)
@@ -577,7 +576,7 @@ ehci-pci 0000:00:1a.7: USB 2.0 started, EHCI 1.00
 usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb1: Product: EHCI Host Controller
-usb usb1: Manufacturer: Linux 3.14.0-rc8 ehci_hcd
+usb usb1: Manufacturer: Linux 3.14.0 ehci_hcd
 usb usb1: SerialNumber: 0000:00:1a.7
 hub 1-0:1.0: USB hub found
 hub 1-0:1.0: 6 ports detected
@@ -590,7 +589,7 @@ ehci-pci 0000:00:1d.7: USB 2.0 started, EHCI 1.00
 usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
 usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb2: Product: EHCI Host Controller
-usb usb2: Manufacturer: Linux 3.14.0-rc8 ehci_hcd
+usb usb2: Manufacturer: Linux 3.14.0 ehci_hcd
 usb usb2: SerialNumber: 0000:00:1d.7
 hub 2-0:1.0: USB hub found
 hub 2-0:1.0: 6 ports detected
@@ -603,7 +602,7 @@ uhci_hcd 0000:00:1a.0: irq 16, io base 0x0000bc00
 usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb3: Product: UHCI Host Controller
-usb usb3: Manufacturer: Linux 3.14.0-rc8 uhci_hcd
+usb usb3: Manufacturer: Linux 3.14.0 uhci_hcd
 usb usb3: SerialNumber: 0000:00:1a.0
 hub 3-0:1.0: USB hub found
 hub 3-0:1.0: 2 ports detected
@@ -613,7 +612,7 @@ uhci_hcd 0000:00:1a.1: irq 21, io base 0x0000b880
 usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb4: Product: UHCI Host Controller
-usb usb4: Manufacturer: Linux 3.14.0-rc8 uhci_hcd
+usb usb4: Manufacturer: Linux 3.14.0 uhci_hcd
 usb usb4: SerialNumber: 0000:00:1a.1
 hub 4-0:1.0: USB hub found
 hub 4-0:1.0: 2 ports detected
@@ -623,7 +622,7 @@ uhci_hcd 0000:00:1a.2: irq 19, io base 0x0000b800
 usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb5: Product: UHCI Host Controller
-usb usb5: Manufacturer: Linux 3.14.0-rc8 uhci_hcd
+usb usb5: Manufacturer: Linux 3.14.0 uhci_hcd
 usb usb5: SerialNumber: 0000:00:1a.2
 hub 5-0:1.0: USB hub found
 hub 5-0:1.0: 2 ports detected
@@ -633,7 +632,7 @@ uhci_hcd 0000:00:1d.0: irq 23, io base 0x0000b480
 usb usb6: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb6: Product: UHCI Host Controller
-usb usb6: Manufacturer: Linux 3.14.0-rc8 uhci_hcd
+usb usb6: Manufacturer: Linux 3.14.0 uhci_hcd
 usb usb6: SerialNumber: 0000:00:1d.0
 hub 6-0:1.0: USB hub found
 hub 6-0:1.0: 2 ports detected
@@ -643,7 +642,7 @@ uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000b400
 usb usb7: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb7: Product: UHCI Host Controller
-usb usb7: Manufacturer: Linux 3.14.0-rc8 uhci_hcd
+usb usb7: Manufacturer: Linux 3.14.0 uhci_hcd
 usb usb7: SerialNumber: 0000:00:1d.1
 hub 7-0:1.0: USB hub found
 hub 7-0:1.0: 2 ports detected
@@ -653,7 +652,7 @@ uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000b080
 usb usb8: New USB device found, idVendor=1d6b, idProduct=0001
 usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
 usb usb8: Product: UHCI Host Controller
-usb usb8: Manufacturer: Linux 3.14.0-rc8 uhci_hcd
+usb usb8: Manufacturer: Linux 3.14.0 uhci_hcd
 usb usb8: SerialNumber: 0000:00:1d.2
 hub 8-0:1.0: USB hub found
 hub 8-0:1.0: 2 ports detected
@@ -683,7 +682,7 @@ NET: Registered protocol family 17
 registered taskstats version 1
 bio: create slab <bio-1> at 1
 Btrfs loaded
-rtc_cmos 00:02: setting system clock to 2014-03-25 14:06:38 UTC (1395756398)
+rtc_cmos 00:02: setting system clock to 2014-03-31 12:12:16 UTC (1396267936)
 input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input4
 ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
 ata1.00: ACPI cmd f5/00:00:00:00:00:a0 (SECURITY FREEZE LOCK) filtered out
@@ -696,11 +695,11 @@ ata1.00: ACPI cmd ef/10:06:00:00:00:a0 (SET FEATURES) succeeded
 ata1.00: ACPI cmd ef/90:03:00:00:00:a0 (SET FEATURES) succeeded
 ata1.00: configured for UDMA/133
 scsi 0:0:0:0: Direct-Access     ATA      Hitachi HTS54323 FB4O PQ: 0 ANSI: 5
-sd 0:0:0:0: Attached scsi generic sg0 type 0
 sd 0:0:0:0: [sda] 625142448 512-byte logical blocks: (320 GB/298 GiB)
 sd 0:0:0:0: [sda] Write Protect is off
 sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
 sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+sd 0:0:0:0: Attached scsi generic sg0 type 0
  sda: sda1 sda2 sda3 sda4 < sda5 sda6 sda7 sda8 >
 sd 0:0:0:0: [sda] Attached SCSI disk
 ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
@@ -717,12 +716,12 @@ cdrom: Uniform CD-ROM driver Revision: 3.20
 sr 1:0:0:0: Attached scsi CD-ROM sr0
 sr 1:0:0:0: Attached scsi generic sg1 type 5
 ata6: SATA link down (SStatus 0 SControl 300)
-Freeing unused kernel memory: 728K (ffffffff81868000 - ffffffff8191e000)
+Freeing unused kernel memory: 732K (ffffffff81868000 - ffffffff8191f000)
 Write protecting the kernel read-only data: 8192k
 Freeing unused kernel memory: 1240K (ffff8800014ca000 - ffff880001600000)
 Freeing unused kernel memory: 532K (ffff88000177b000 - ffff880001800000)
-random: systemd urandom read with 29 bits of entropy available
-systemd[1]: systemd 210 running in system mode. (+PAM +LIBWRAP +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ +SECCOMP -APPARMOR)
+random: systemd urandom read with 35 bits of entropy available
+systemd[1]: systemd 212 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ +SECCOMP -APPARMOR)
 systemd[1]: Detected architecture 'x86-64'.
 systemd[1]: Running in initial RAM disk.
 systemd[1]: Set hostname to <terrop>.
@@ -753,19 +752,19 @@ systemd[1]: Starting Journal Service...
 systemd[1]: Started Journal Service.
 psmouse serio4: synaptics: Touchpad model: 1, fw: 6.2, id: 0x280b1, caps: 0xb04711/0x60040d/0x0, board id: 3655, fw id: 496516
 usb 2-5: new high-speed USB device number 4 using ehci-pci
-systemd-udevd[124]: starting version 210
+systemd-udevd[126]: starting version 212
 input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio4/input/input12
 usb 2-5: New USB device found, idVendor=04f2, idProduct=b033
 usb 2-5: New USB device strings: Mfr=0, Product=1, SerialNumber=0
 usb 2-5: Product: USB2.0 1.3M UVC WebCam
 firewire_ohci 0000:09:01.0: added OHCI v1.0 device as card 0, 4 IR + 4 IT contexts, quirks 0x11
 usb 5-1: new full-speed USB device number 2 using uhci_hcd
+random: nonblocking pool is initialized
 usb 5-1: New USB device found, idVendor=0b05, idProduct=1751
 usb 5-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
 usb 5-1: Product: BT-253
 usb 5-1: Manufacturer: Broadcom Corp
 usb 5-1: SerialNumber: 002243A52A4C
-random: nonblocking pool is initialized
 firewire_core 0000:09:01.0: created device fw0: GUID 001e8c0000057669, S400
 usb 5-2: new full-speed USB device number 3 using uhci_hcd
 usb 5-2: New USB device found, idVendor=08ff, idProduct=1600
@@ -779,44 +778,54 @@ usb 6-2: Manufacturer: Logitech
 logitech-djreceiver 0003:046D:C52B.0003: hiddev0,hidraw0: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:00:1d.0-2/input2
 input: Logitech Unifying Device. Wireless PID:4024 as /devices/pci0000:00/0000:00:1d.0/usb6/6-2/6-2:1.2/0003:046D:C52B.0003/0003:046D:C52B.0004/input/input13
 logitech-djdevice 0003:046D:C52B.0004: input,hidraw1: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:4024] on usb-0000:00:1d.0-2:1
-EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
 usb 7-2: new low-speed USB device number 2 using uhci_hcd
-systemd-journald[81]: Received SIGTERM from PID 1 (systemd).
+EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
 usb 7-2: New USB device found, idVendor=046d, idProduct=c062
 usb 7-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
 usb 7-2: Product: USB Laser Mouse
 usb 7-2: Manufacturer: Logitech
-systemd[1]: RTC configured in localtime, applying delta of 120 minutes to system time.
-systemd-readahead[207]: Bumped block_nr parameter of 8:0 to 20480. This is a temporary hack and should be removed one day.
-systemd-udevd[229]: starting version 210
+systemd-journald[82]: Received SIGTERM from PID 1 (systemd).
+systemd[1]: RTC configured in localtime, applying delta of 180 minutes to system time.
+systemd-readahead[209]: Bumped block_nr parameter of 8:0 to 20480. This is a temporary hack and should be removed one day.
+systemd-udevd[233]: starting version 212
 EXT4-fs (sda3): re-mounted. Opts: (null)
 r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
 r8169 0000:08:00.0: can't disable ASPM; OS doesn't have ASPM control
 r8169 0000:08:00.0: irq 48 for MSI/MSI-X
-r8169 0000:08:00.0 eth0: RTL8168c/8111c at 0xffffc900102bc000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
+r8169 0000:08:00.0 eth0: RTL8168c/8111c at 0xffffc9001038e000, 00:23:54:13:6b:f2, XID 1c4000c0 IRQ 48
 r8169 0000:08:00.0 eth0: jumbo features [frames: 6128 bytes, tx checksumming: ko]
-Linux video capture interface: v2.00
-input: Logitech USB Laser Mouse as /devices/pci0000:00/0000:00:1d.1/usb7/7-2/7-2:1.0/0003:046D:C062.0005/input/input14
-hid-generic 0003:046D:C062.0005: input,hidraw2: USB HID v1.10 Mouse [Logitech USB Laser Mouse] on usb-0000:00:1d.1-2/input0
 cfg80211: Calling CRDA to update world regulatory domain
-asus_laptop: Asus Laptop Support version 0.42
-asus_laptop:   M50Vm model detected
-asus_laptop: Backlight controlled by ACPI video driver
-input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input15
-microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
 Intel(R) Wireless WiFi driver for Linux, in-tree:
 Copyright(c) 2003- 2014 Intel Corporation
 iwlwifi 0000:03:00.0: can't disable ASPM; OS doesn't have ASPM control
 iwlwifi 0000:03:00.0: irq 49 for MSI/MSI-X
+iwlwifi 0000:03:00.0: loaded firmware version 8.83.5.1 build 33692 op_mode iwldvm
+asus_laptop: Asus Laptop Support version 0.42
+asus_laptop:   M50Vm model detected
+asus_laptop: Backlight controlled by ACPI video driver
+input: Asus Laptop extra buttons as /devices/platform/asus_laptop/input/input14
 sdhci: Secure Digital Host Controller Interface driver
 sdhci: Copyright(c) Pierre Ossman
-uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
-input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input16
-usbcore: registered new interface driver uvcvideo
-USB Video Class driver (1.1.1)
+sdhci-pci 0000:09:01.1: SDHCI controller found [1180:0822] (rev 22)
+sdhci-pci 0000:09:01.1: Will use DMA mode even though HW doesn't fully claim to support it.
+sdhci-pci 0000:09:01.1: Will use DMA mode even though HW doesn't fully claim to support it.
+mmc0: SDHCI controller on PCI [0000:09:01.1] using DMA
+input: PC Speaker as /devices/platform/pcspkr/input/input15
+snd_hda_intel 0000:00:1b.0: irq 50 for MSI/MSI-X
+microcode: CPU0 sig=0x10676, pf=0x80, revision=0x60c
 microcode: CPU1 sig=0x10676, pf=0x80, revision=0x60c
 microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
-input: PC Speaker as /devices/platform/pcspkr/input/input17
+iwlwifi 0000:03:00.0: CONFIG_IWLWIFI_DEBUG disabled
+iwlwifi 0000:03:00.0: CONFIG_IWLWIFI_DEBUGFS disabled
+iwlwifi 0000:03:00.0: CONFIG_IWLWIFI_DEVICE_TRACING disabled
+iwlwifi 0000:03:00.0: Detected Intel(R) WiFi Link 5100 AGN, REV=0x54
+iwlwifi 0000:03:00.0: L1 Disabled; Enabling L0S
+ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
+hda_codec: ALC663: SKU not ready 0x598301f0
+nvidia: module license 'NVIDIA' taints kernel.
+Disabling lock debugging due to kernel taint
+vgaarb: device changed decodes: PCI:0000:01:00.0,olddecodes=io+mem,decodes=none:owns=none
+NVRM: loading NVIDIA UNIX x86_64 Kernel Module  331.38  Wed Jan  8 19:32:30 PST 2014
 Bluetooth: Core ver 2.18
 NET: Registered protocol family 31
 Bluetooth: HCI device and connection manager initialized
@@ -824,11 +833,13 @@ Bluetooth: HCI socket layer initialized
 Bluetooth: L2CAP socket layer initialized
 Bluetooth: SCO socket layer initialized
 usbcore: registered new interface driver btusb
-iwlwifi 0000:03:00.0: loaded firmware version 8.83.5.1 build 33692 op_mode iwldvm
-sdhci-pci 0000:09:01.1: SDHCI controller found [1180:0822] (rev 22)
-sdhci-pci 0000:09:01.1: Will use DMA mode even though HW doesn't fully claim to support it.
-sdhci-pci 0000:09:01.1: Will use DMA mode even though HW doesn't fully claim to support it.
-mmc0: SDHCI controller on PCI [0000:09:01.1] using DMA
+input: Logitech USB Laser Mouse as /devices/pci0000:00/0000:00:1d.1/usb7/7-2/7-2:1.0/0003:046D:C062.0005/input/input16
+hid-generic 0003:046D:C062.0005: input,hidraw2: USB HID v1.10 Mouse [Logitech USB Laser Mouse] on usb-0000:00:1d.1-2/input0
+Linux video capture interface: v2.00
+uvcvideo: Found UVC 1.00 device USB2.0 1.3M UVC WebCam (04f2:b033)
+input: USB2.0 1.3M UVC WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-5/2-5:1.0/input/input17
+usbcore: registered new interface driver uvcvideo
+USB Video Class driver (1.1.1)
 cfg80211: World regulatory domain updated:
 cfg80211:  DFS Master region: unset
 cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
@@ -838,14 +849,6 @@ cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (N/A, 2000 mBm)
 cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (N/A, 2000 mBm)
 cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 2000 mBm)
 cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm)
-snd_hda_intel 0000:00:1b.0: irq 50 for MSI/MSI-X
-hda_codec: ALC663: SKU not ready 0x598301f0
-iwlwifi 0000:03:00.0: CONFIG_IWLWIFI_DEBUG disabled
-iwlwifi 0000:03:00.0: CONFIG_IWLWIFI_DEBUGFS disabled
-iwlwifi 0000:03:00.0: CONFIG_IWLWIFI_DEVICE_TRACING disabled
-iwlwifi 0000:03:00.0: Detected Intel(R) WiFi Link 5100 AGN, REV=0x54
-iwlwifi 0000:03:00.0: L1 Disabled; Enabling L0S
-ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
 cfg80211: Calling CRDA for country: FI
 cfg80211: Regulatory domain changed to country: FI
 cfg80211:  DFS Master region: ETSI
@@ -855,17 +858,13 @@ cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (N/A, 2000 mBm)
 cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz), (N/A, 2000 mBm)
 cfg80211:   (5490000 KHz - 5710000 KHz @ 80000 KHz), (N/A, 2700 mBm)
 cfg80211:   (57240000 KHz - 65880000 KHz @ 2160000 KHz), (N/A, 4000 mBm)
-nvidia: module license 'NVIDIA' taints kernel.
-Disabling lock debugging due to kernel taint
-vgaarb: device changed decodes: PCI:0000:01:00.0,olddecodes=io+mem,decodes=none:owns=none
-NVRM: loading NVIDIA UNIX x86_64 Kernel Module  331.38  Wed Jan  8 19:32:30 PST 2014
 Adding 9527120k swap on /dev/sda8.  Priority:-1 extents:1 across:9527120k 
-BTRFS: device label data devid 1 transid 11062 /dev/sda7
-EXT4-fs (sda5): mounted filesystem with ordered data mode. Opts: (null)
+BTRFS: device label data devid 1 transid 11144 /dev/sda7
 EXT4-fs (sda6): mounted filesystem with ordered data mode. Opts: (null)
-BTRFS: device label data devid 1 transid 11062 /dev/sda7
+EXT4-fs (sda5): mounted filesystem with ordered data mode. Opts: (null)
+BTRFS: device label data devid 1 transid 11144 /dev/sda7
 BTRFS info (device sda7): disk space caching is enabled
-systemd-journald[211]: Received request to flush runtime journal from PID 1
+systemd-journald[213]: Received request to flush runtime journal from PID 1
 Bluetooth: BNEP (Ethernet Emulation) ver 1.3
 Bluetooth: BNEP filters: protocol multicast
 Bluetooth: BNEP socket layer initialized
@@ -880,9 +879,8 @@ nvidia 0000:01:00.0: irq 51 for MSI/MSI-X
 wlan0: authenticate with 08:76:ff:42:a6:54
 wlan0: send auth to 08:76:ff:42:a6:54 (try 1/3)
 wlan0: authenticated
-wlan0: waiting for beacon from 08:76:ff:42:a6:54
 wlan0: associate with 08:76:ff:42:a6:54 (try 1/3)
-wlan0: RX AssocResp from 08:76:ff:42:a6:54 (capab=0x411 status=0 aid=4)
+wlan0: RX AssocResp from 08:76:ff:42:a6:54 (capab=0x411 status=0 aid=2)
 wlan0: associated
 IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
 fuse init (API version 7.22)
