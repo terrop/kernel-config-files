@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 3.15.0-rc2 Kernel Configuration
+# Linux/x86 3.15.0-rc3 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -2626,7 +2626,6 @@ CONFIG_CLKBLD_I8253=y
 # PHY Subsystem
 #
 # CONFIG_GENERIC_PHY is not set
-# CONFIG_OMAP_CONTROL_PHY is not set
 # CONFIG_PHY_SAMSUNG_USB2 is not set
 # CONFIG_POWERCAP is not set
 # CONFIG_MCB is not set
