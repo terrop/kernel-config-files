@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 3.16.0-rc4 Kernel Configuration
+# Linux/x86 3.16.0-rc5 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -1510,7 +1510,6 @@ CONFIG_I2C_MUX=m
 # Multiplexer I2C Chip support
 #
 # CONFIG_I2C_MUX_PCA9541 is not set
-# CONFIG_I2C_MUX_PCA954x is not set
 # CONFIG_I2C_HELPER_AUTO is not set
 # CONFIG_I2C_SMBUS is not set
 
