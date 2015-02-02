@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 3.19.0-rc6 Kernel Configuration
+# Linux/x86 3.19.0-rc7 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -2771,11 +2771,6 @@ CONFIG_ASUS_LAPTOP=m
 # CONFIG_CHROME_PLATFORMS is not set
 
 #
-# SOC (System On Chip) specific Drivers
-#
-# CONFIG_SOC_TI is not set
-
-#
 # Hardware Spinlock drivers
 #
 
@@ -2805,6 +2800,7 @@ CONFIG_CLKBLD_I8253=y
 #
 # SOC (System On Chip) specific Drivers
 #
+# CONFIG_SOC_TI is not set
 # CONFIG_PM_DEVFREQ is not set
 # CONFIG_EXTCON is not set
 # CONFIG_MEMORY is not set
