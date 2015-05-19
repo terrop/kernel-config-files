@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.1.0-rc3 Kernel Configuration
+# Linux/x86 4.1.0-rc4 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -1319,7 +1319,6 @@ CONFIG_ETHERNET=y
 # CONFIG_NET_VENDOR_ALTEON is not set
 # CONFIG_ALTERA_TSE is not set
 # CONFIG_NET_VENDOR_AMD is not set
-# CONFIG_NET_XGENE is not set
 # CONFIG_NET_VENDOR_ARC is not set
 # CONFIG_NET_VENDOR_ATHEROS is not set
 # CONFIG_NET_CADENCE is not set
