@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.3.0-rc3 Kernel Configuration
+# Linux/x86 4.3.0-rc4 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -2003,7 +2003,7 @@ CONFIG_WATCHDOG_CORE=y
 # CONFIG_WAFER_WDT is not set
 # CONFIG_I6300ESB_WDT is not set
 # CONFIG_IE6XX_WDT is not set
-CONFIG_ITCO_WDT=y
+CONFIG_ITCO_WDT=m
 # CONFIG_ITCO_VENDOR_SUPPORT is not set
 # CONFIG_IT8712F_WDT is not set
 # CONFIG_IT87_WDT is not set
